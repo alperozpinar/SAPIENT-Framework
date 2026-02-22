@@ -1,0 +1,51 @@
+{
+  "scenario_1_greenwashing": {
+    "title": "Greenwashing Backlash Prediction",
+    "context": "GlobalChem Corp, a multinational chemical and materials manufacturer with annual revenue of $28B and operations in 45 countries, is preparing to announce a 'net-zero by 2040' commitment at its upcoming annual sustainability summit. The company's current carbon footprint is approximately 18M tonnes CO2e annually. An investigative report published two months ago by Reuters revealed that three of GlobalChem's key suppliers in Southeast Asia had been cited for environmental violations including illegal waste dumping. The company's previous sustainability report (2023) claimed '40% reduction in Scope 1 emissions since 2015' but did not address Scope 3 supply chain emissions.",
+    
+    "signal_state_rich": {
+      "description": "Full signal state S_t constructed from simulated sentinel monitoring",
+      "topics": {
+        "greenwashing_accusations": {"volume_trend": "rising_15pct_weekly", "sentiment": -0.62},
+        "net_zero_pledges": {"volume_trend": "stable", "sentiment": 0.15},
+        "supply_chain_transparency": {"volume_trend": "rising_8pct_weekly", "sentiment": -0.41},
+        "chemical_industry_regulation": {"volume_trend": "rising_3pct_weekly", "sentiment": -0.28}
+      },
+      "entities": {
+        "active_critics": ["Climate Action Network", "Greenpeace Chemical Watch", "@EcoJustice_EU"],
+        "competitors_mentioned": ["BASF net-zero 2050 pledge", "Dow carbon neutrality roadmap"],
+        "regulators_mentioned": ["EU CSRD implementation", "SEC climate disclosure rule"]
+      },
+      "frames": {
+        "greenwashing_accusation": 0.38,
+        "genuine_progress": 0.22,
+        "insufficient_action": 0.25,
+        "regulatory_compliance": 0.15
+      },
+      "anomalies": {
+        "supplier_violation_story_resurgence": {"score": 0.78, "trend": "accelerating"},
+        "activist_coordination_signal": {"score": 0.45, "trend": "emerging"}
+      }
+    },
+
+    "signal_state_generic": {
+      "description": "Generic topic-only context for A/B comparison (Condition B)",
+      "topic": "A large chemical company is about to announce a net-zero carbon emissions target."
+    },
+
+    "stimuli": {
+      "variant_A_targets": "GlobalChem Corp announces: 'We are committing to net-zero greenhouse gas emissions by 2040, ten years ahead of many industry peers. Our roadmap includes $4.5B in green technology investment, 100% renewable energy for all manufacturing sites by 2032, and science-based targets validated by SBTi. We will publish annual progress reports with third-party verification.'",
+      
+      "variant_B_progress": "GlobalChem Corp announces: 'Building on our proven track record of reducing Scope 1 emissions by 40% since 2015, we are now extending our commitment to achieve net-zero by 2040. Our journey so far includes transitioning 60% of our European operations to renewable energy, reducing water consumption by 25%, and investing over $2B in sustainable chemistry research. The next phase will address our full value chain.'",
+      
+      "variant_C_accountability": "GlobalChem Corp announces: 'We recognize that the chemical industry, including our own operations, has a significant environmental footprint. Recent reporting has highlighted gaps in our supply chain oversight that we take seriously. Today we announce a net-zero by 2040 target alongside three immediate actions: an independent supply chain audit to be completed within 6 months, a $500M supplier transition fund, and quarterly public reporting on Scope 1, 2, and 3 emissions starting Q1 2025. We have engaged an independent sustainability advisory board to hold us accountable.'"
+    },
+
+    "moderator_probes": [
+      "How credible do you find this announcement? What specific elements increase or decrease your trust?",
+      "What information is missing from this announcement that you would need to see?",
+      "How would you describe this announcement to someone in your professional or social network?",
+      "What would change your initial reaction—either positively or negatively?"
+    ]
+  }
+}
