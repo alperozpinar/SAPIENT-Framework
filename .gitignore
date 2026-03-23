@@ -3,6 +3,10 @@
 *.env
 !.env.example
 
+# Local working docs (Claude Code session artifacts)
+md_local/
+CLAUDE.md
+
 # Python
 __pycache__/
 *.pyc
