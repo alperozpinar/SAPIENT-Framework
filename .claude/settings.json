@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python run_fast.py*)",
+      "Bash(python run_all.py*)",
+      "Bash(python generate_tables.py*)",
+      "Bash(python -m py_compile*)",
+      "Bash(python -c*)",
+      "Bash(pip install*)",
+      "Bash(pip list*)",
+      "Bash(git *)"
+    ]
+  }
+}

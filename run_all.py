@@ -84,10 +84,14 @@ def main():
         print("  python run_all.py --all")
         return
     
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("ERROR: Set ANTHROPIC_API_KEY environment variable.")
-        print("  export ANTHROPIC_API_KEY='sk-ant-...'")
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from config.env_loader import get_api_key
+    from agents.llm_client import PROVIDER_MAP
+    provider = PROVIDER_MAP.get(args.model, "anthropic")
+    try:
+        api_key = get_api_key(provider)
+    except EnvironmentError as e:
+        print(f"ERROR: {e}")
         sys.exit(1)
     
     # Print cost estimate first
@@ -136,7 +140,7 @@ def main():
     
     elapsed = time.time() - start_time
     print(f"\n{'='*70}")
-    print(f"ALL EXPERIMENTS COMPLETE — Total time: {elapsed/60:.1f} minutes")
+    print(f"ALL EXPERIMENTS COMPLETE - Total time: {elapsed/60:.1f} minutes")
     print(f"Results saved in: sapient/results/")
     print(f"{'='*70}")
 

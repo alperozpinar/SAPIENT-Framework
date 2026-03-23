@@ -1,0 +1,37 @@
+{
+  "supported_models": {
+    "claude-sonnet-4-20250514": {
+      "provider": "anthropic",
+      "display_name": "Claude Sonnet 4",
+      "pricing": {"input_per_M": 3.00, "output_per_M": 15.00},
+      "max_tokens_default": 800,
+      "notes": "Varsayılan model. Makaledeki Exp 1-4 bununla koşturuldu."
+    },
+    "gpt-4o": {
+      "provider": "openai",
+      "display_name": "GPT-4o",
+      "pricing": {"input_per_M": 2.50, "output_per_M": 10.00},
+      "max_tokens_default": 800,
+      "notes": "Revision deneylerinde cross-model karşılaştırma için eklendi."
+    },
+    "gpt-4o-2024-11-20": {
+      "provider": "openai",
+      "display_name": "GPT-4o (Nov 2024)",
+      "pricing": {"input_per_M": 2.50, "output_per_M": 10.00},
+      "max_tokens_default": 800,
+      "notes": "Belirli versiyon pin'i — tekrarlanabilirlik için."
+    },
+    "gpt-4o-mini": {
+      "provider": "openai",
+      "display_name": "GPT-4o Mini",
+      "pricing": {"input_per_M": 0.15, "output_per_M": 0.60},
+      "max_tokens_default": 800,
+      "notes": "Düşük maliyetli test modeli."
+    }
+  },
+  "default_model": "claude-sonnet-4-20250514",
+  "env_variables": {
+    "anthropic": "ANTHROPIC_API_KEY",
+    "openai": "OPENAI_API_KEY"
+  }
+}

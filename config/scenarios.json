@@ -2,7 +2,7 @@
   "scenario_1_greenwashing": {
     "title": "Greenwashing Backlash Prediction",
     "context": "GlobalChem Corp, a multinational chemical and materials manufacturer with annual revenue of $28B and operations in 45 countries, is preparing to announce a 'net-zero by 2040' commitment at its upcoming annual sustainability summit. The company's current carbon footprint is approximately 18M tonnes CO2e annually. An investigative report published two months ago by Reuters revealed that three of GlobalChem's key suppliers in Southeast Asia had been cited for environmental violations including illegal waste dumping. The company's previous sustainability report (2023) claimed '40% reduction in Scope 1 emissions since 2015' but did not address Scope 3 supply chain emissions.",
-    
+
     "signal_state_rich": {
       "description": "Full signal state S_t constructed from simulated sentinel monitoring",
       "topics": {
@@ -35,10 +35,12 @@
 
     "stimuli": {
       "variant_A_targets": "GlobalChem Corp announces: 'We are committing to net-zero greenhouse gas emissions by 2040, ten years ahead of many industry peers. Our roadmap includes $4.5B in green technology investment, 100% renewable energy for all manufacturing sites by 2032, and science-based targets validated by SBTi. We will publish annual progress reports with third-party verification.'",
-      
+
       "variant_B_progress": "GlobalChem Corp announces: 'Building on our proven track record of reducing Scope 1 emissions by 40% since 2015, we are now extending our commitment to achieve net-zero by 2040. Our journey so far includes transitioning 60% of our European operations to renewable energy, reducing water consumption by 25%, and investing over $2B in sustainable chemistry research. The next phase will address our full value chain.'",
-      
-      "variant_C_accountability": "GlobalChem Corp announces: 'We recognize that the chemical industry, including our own operations, has a significant environmental footprint. Recent reporting has highlighted gaps in our supply chain oversight that we take seriously. Today we announce a net-zero by 2040 target alongside three immediate actions: an independent supply chain audit to be completed within 6 months, a $500M supplier transition fund, and quarterly public reporting on Scope 1, 2, and 3 emissions starting Q1 2025. We have engaged an independent sustainability advisory board to hold us accountable.'"
+
+      "variant_C_accountability": "GlobalChem Corp announces: 'We recognize that the chemical industry, including our own operations, has a significant environmental footprint. Recent reporting has highlighted gaps in our supply chain oversight that we take seriously. Today we announce a net-zero by 2040 target alongside three immediate actions: an independent supply chain audit to be completed within 6 months, a $500M supplier transition fund, and quarterly public reporting on Scope 1, 2, and 3 emissions starting Q1 2025. We have engaged an independent sustainability advisory board to hold us accountable.'",
+
+      "variant_C_paraphrase": "GlobalChem Corp states: 'Our industry bears a substantial environmental burden, and we acknowledge our role in it. In light of recent investigative coverage revealing weaknesses in how we monitor our suppliers, we are taking concrete steps. We are setting a 2040 net-zero goal, but more importantly, we are launching three actions effective immediately: a six-month independent audit of our entire supply chain, the creation of a $500 million fund to help suppliers transition to cleaner practices, and the start of quarterly Scope 1, 2, and 3 emissions disclosures beginning in Q1 2025. An external sustainability advisory board will oversee our progress and ensure public accountability.'"
     },
 
     "moderator_probes": [
@@ -46,6 +48,95 @@
       "What information is missing from this announcement that you would need to see?",
       "How would you describe this announcement to someone in your professional or social network?",
       "What would change your initial reaction—either positively or negatively?"
+    ]
+  },
+
+  "scenario_2_greenhushing": {
+    "title": "Greenhushing — ESG Disclosure Dilemma",
+    "context": "MeridianFinance, a mid-cap asset management firm with $45B AUM, has achieved meaningful ESG improvements: 30% portfolio carbon intensity reduction, full TCFD alignment, and A-rating from CDP. However, the firm's leadership is debating whether to publicly report these achievements. Recent trends show companies being penalized for perceived greenwashing when making sustainability claims, leading to a 'greenhushing' phenomenon where firms underreport progress to avoid scrutiny. MeridianFinance's main competitor, AtlasCapital, published a detailed ESG report last quarter that received mixed press coverage.",
+
+    "signal_state_rich": {
+      "description": "Signal state for ESG disclosure scenario",
+      "topics": {
+        "esg_disclosure_gap": {"volume_trend": "rising_10pct_weekly", "sentiment": -0.35},
+        "investor_esg_expectations": {"volume_trend": "stable", "sentiment": 0.28},
+        "competitor_reporting": {"volume_trend": "rising_5pct_weekly", "sentiment": 0.12},
+        "greenhushing_trend": {"volume_trend": "rising_20pct_weekly", "sentiment": -0.18}
+      },
+      "entities": {
+        "active_critics": ["ShareAction", "As You Sow", "@ESGWatchdog"],
+        "competitors_mentioned": ["AtlasCapital ESG Report Q3", "BlackRock sustainability pivot"],
+        "regulators_mentioned": ["EU SFDR Article 8/9", "SEC ESG fund naming rule"]
+      },
+      "frames": {
+        "transparency_imperative": 0.32,
+        "litigation_risk": 0.28,
+        "competitive_advantage": 0.22,
+        "regulatory_compliance": 0.18
+      },
+      "anomalies": {
+        "investor_esg_inquiry_spike": {"score": 0.65, "trend": "accelerating"},
+        "competitor_report_media_coverage": {"score": 0.52, "trend": "stable"}
+      }
+    },
+
+    "stimuli": {
+      "variant_A_disclose": "MeridianFinance announces: 'We are pleased to share our 2024 ESG Progress Report. Key achievements include a 30% reduction in portfolio carbon intensity since 2021, full TCFD-aligned disclosure, and an A-rating from CDP. Our sustainable investment products now represent 40% of AUM. We believe transparency builds trust with our stakeholders and drives industry-wide improvement. Full report available at meridianfinance.com/esg.'",
+
+      "variant_B_silent": "Industry news report: 'While competitor AtlasCapital published a comprehensive ESG report detailing their sustainability initiatives and portfolio decarbonization progress, MeridianFinance has remained notably silent on its ESG activities for the second consecutive quarter. Market analysts note that several mid-cap asset managers have reduced public ESG communications, a trend being called greenhushing. Investor inquiries about MeridianFinance ESG positioning have increased 45% quarter-over-quarter.'"
+    },
+
+    "moderator_probes": [
+      "How do you evaluate this communication approach? What signals does it send about the firm's ESG commitment?",
+      "What risks or opportunities do you see in this strategy?",
+      "How would this affect your investment or engagement decisions regarding this firm?",
+      "What would you advise the firm's leadership to do differently?"
+    ]
+  },
+
+  "scenario_4_crisis": {
+    "title": "Supply Chain Crisis — Sustainability Claims Under Fire",
+    "context": "EcoHarvest, a premium consumer goods company with $3.2B revenue, has built its brand around 'sustainably sourced' ingredients. An investigative documentary aired on a major network reveals that two key suppliers in West Africa have been engaging in deforestation and child labor. The documentary names EcoHarvest specifically and includes hidden camera footage. Social media mentions of EcoHarvest have doubled in 48 hours, with #EcoHarvestExposed trending. The company's stock dropped 8% in pre-market trading.",
+
+    "signal_state_rich": {
+      "description": "Crisis-level signal state",
+      "topics": {
+        "supply_chain_violations": {"volume_trend": "spiking_200pct", "sentiment": -0.85},
+        "brand_trust_erosion": {"volume_trend": "spiking_150pct", "sentiment": -0.72},
+        "sustainable_sourcing_scrutiny": {"volume_trend": "rising_40pct_weekly", "sentiment": -0.58},
+        "corporate_accountability": {"volume_trend": "rising_25pct_weekly", "sentiment": -0.31}
+      },
+      "entities": {
+        "active_critics": ["Rainforest Alliance (statement pending)", "Ethical Consumer Magazine", "@BoycottEcoHarvest", "Supply Chain Transparency Coalition"],
+        "competitors_mentioned": ["Patagonia supply chain model", "Unilever supplier auditing"],
+        "regulators_mentioned": ["EU Deforestation Regulation", "US Uyghur Forced Labor Prevention Act"]
+      },
+      "frames": {
+        "corporate_hypocrisy": 0.42,
+        "systemic_supply_chain_failure": 0.25,
+        "consumer_betrayal": 0.20,
+        "regulatory_failure": 0.13
+      },
+      "anomalies": {
+        "social_media_volume_spike": {"score": 0.92, "trend": "accelerating"},
+        "stock_price_correlation": {"score": 0.88, "trend": "accelerating"},
+        "boycott_coordination": {"score": 0.71, "trend": "emerging"}
+      }
+    },
+
+    "stimuli": {
+      "variant_A_apologize": "EcoHarvest CEO issues statement within 6 hours: 'We are deeply troubled by the findings in last night's documentary. We take full responsibility for the failures in our supply chain oversight. Effective immediately, we are: (1) suspending all purchases from the two named suppliers, (2) commissioning an independent third-party audit of our entire supply chain by Deloitte, to be completed in 90 days with results published publicly, (3) establishing a $25M remediation fund for affected communities, and (4) appointing a Chief Supply Chain Ethics Officer reporting directly to the board. We failed to live up to our own standards, and we owe our customers better. We will publish weekly progress updates.'",
+
+      "variant_B_rebut": "EcoHarvest releases statement 24 hours later: 'We are aware of the documentary aired last night and wish to provide important context. EcoHarvest maintains one of the most rigorous supplier auditing programs in our industry, with over 500 audits conducted annually. The footage shown represents isolated incidents at two facilities that supply less than 3% of our raw materials. Our own most recent audit of these suppliers, conducted four months ago, found no evidence of the practices depicted. We have initiated an investigation to determine the current status and timeline of these allegations. We remain committed to our sustainability standards and note that our overall supply chain compliance rate exceeds 97%.'",
+
+      "variant_C_delay": "72 hours after the documentary airs, EcoHarvest has not issued any official statement. The company's social media accounts have gone silent. A brief note on the investor relations page states: 'EcoHarvest is conducting a thorough internal review of the matters raised in recent media coverage. We will provide a comprehensive update once our review is complete. We ask stakeholders for patience as we gather the facts.' Meanwhile, social media criticism continues to intensify, with #EcoHarvestSilence joining #EcoHarvestExposed as a trending topic."
+    },
+
+    "moderator_probes": [
+      "How effective is this crisis response? What does it signal about the company's values and priorities?",
+      "How would this response affect your trust in and relationship with this brand?",
+      "What additional actions would you expect or demand from the company at this point?",
+      "How does this crisis change your broader view of corporate sustainability claims?"
     ]
   }
 }

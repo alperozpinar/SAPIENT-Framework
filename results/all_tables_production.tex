@@ -1,0 +1,303 @@
+% ============================================================
+% TABLE 1: EXP-1 AFG Protocol (Scenario 1, 3 Framing Variants)
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{AFG protocol results across three framing variants of a greenwashing announcement
+(Scenario 1). $K=20$ independent runs per variant, $n=8$ personas. Sentiment and credibility
+scored on 1--7 Likert scale. Stability ratio = fraction of themes with CV $\leq$ 0.5.
+Variance collapse measured as mean pairwise cosine similarity ($\delta = 0.85$ threshold).}
+\label{tab:exp1_results}
+\small
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Variant} & \textbf{Sentiment} & \textbf{Credibility} & \textbf{Themes} & \textbf{Stability} & \textbf{Cos. Sim.} \\
+\midrule
+    A Targets & 3.96 $\pm$ 1.01 & 3.81 $\pm$ 0.70 & 442 & 1.4% & 0.1961 \\
+    B Progress & 4.08 $\pm$ 0.95 & 3.85 $\pm$ 0.73 & 446 & 1.8% & 0.2011 \\
+    C Accountability & 4.24 $\pm$ 0.82 & 4.36 $\pm$ 0.74 & 371 & 2.2% & 0.1848 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 2: EXP-2 Signal State A/B Conditioning
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Signal state conditioning A/B test results. Condition A receives full sentinel
+signal state $S_t$; Condition B receives generic topic description only. $K=10$ runs, $n=8$
+personas per condition.}
+\label{tab:exp2_ab}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Metric} & \textbf{Condition A (signal)} & \textbf{Condition B (generic)} \\
+\midrule
+Sentiment (mean $\pm$ std) & 4.30 $\pm$ 0.81 & 3.94 $\pm$ 0.97 \\
+Unique themes & 248 & 277 \\
+Shared themes & \multicolumn{2}{c}{108} \\
+Signal-specific themes & 140 & --- \\
+Generic-only themes & --- & 169 \\
+Jaccard index & \multicolumn{2}{c}{0.259} \\
+Mean cosine similarity & 0.1831 & 0.1701 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 3: EXP-3 Multilingual (English vs Turkish)
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Multilingual comparison: English vs Turkish prompts on Scenario 1, Variant C.
+Equivalent persona specifications translated to Turkish. $K=10$ runs, $n=8$ personas per language.
+Persona consistency = mean intra-persona sentiment std across runs (lower = more consistent).}
+\label{tab:exp3_multilingual}
+\small
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Language} & \textbf{Sentiment} & \textbf{Credibility} & \textbf{Themes} & \textbf{Cos. Sim.} & \textbf{Pers. Cons.} \\
+\midrule
+    English & 4.22 $\pm$ 0.84 & 4.35 $\pm$ 0.69 & 246 & 0.1848 & 0.553 \\
+    Turkish & 3.76 $\pm$ 0.83 & 3.80 $\pm$ 0.73 & 301 & 0.1485 & 0.514 \\
+\midrule
+\multicolumn{6}{l}{Sentiment $t$-test: $t=3.499$, $p=0.001$} \\
+\multicolumn{6}{l}{Persona-level correlation: $r=0.808$, $p=0.015$ ($n=8$)} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 4: EXP-4 Variance Collapse Countermeasures
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Effect of variance collapse countermeasures. Mean pairwise cosine similarity
+(lower = more diverse responses). Flagged runs exceed $\delta = 0.85$ threshold.
+Sentiment std measures opinion spread across personas. Persona consistency = mean
+intra-persona std (lower = more stable). $K=10$ runs per condition, $n=8$ personas.}
+\label{tab:exp4_variance}
+\small
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Condition} & \textbf{Cos. Sim.} & \textbf{Flagged} & \textbf{Themes} & \textbf{Sent. Std} & \textbf{Pers. Cons.} \\
+\midrule
+    Uniform ($\tau=0.7$) & 0.1864 $\pm$ 0.0177 & 0 & 233 & 0.89 & 0.484 \\
+    Stratified ($\tau\in[0.6,1.1]$) & 0.1852 $\pm$ 0.0130 & 0 & 234 & 0.84 & 0.481 \\
+    Stratified + Adversarial & 0.1840 $\pm$ 0.0159 & 0 & 261 & 0.93 & 0.523 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 5: EXP-5 Greenhushing (Scenario 2)
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Greenhushing scenario results (Scenario 2): stakeholder reactions to ESG disclosure
+vs strategic silence. $K=10$ runs, $n=8$ finance-focused personas.
+Model: Claude Sonnet 4.}
+\label{tab:exp5_greenhushing}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Strategy} & \textbf{Sentiment} & \textbf{Credibility} & \textbf{Themes} & \textbf{Cos. Sim.} \\
+\midrule
+    A Disclose & 4.46 $\pm$ 0.67 & 4.31 $\pm$ 0.68 & 272 & 0.1944 \\
+    B Silent & 2.36 $\pm$ 0.48 & 5.97 $\pm$ 0.16 & 224 & 0.2562 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 6: EXP-6 Crisis Communication (Scenario 4)
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Crisis communication scenario results (Scenario 4): stakeholder reactions to
+three response strategies following a supply chain scandal. $K=10$, $n=8$ personas.
+Model: Claude Sonnet 4.}
+\label{tab:exp6_crisis}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Response} & \textbf{Sentiment} & \textbf{Credibility} & \textbf{Themes} \\
+\midrule
+    A Apologize & 3.98 $\pm$ 1.07 & 3.98 $\pm$ 0.81 & 292 \\
+    B Rebut & 2.65 $\pm$ 0.48 & 3.09 $\pm$ 0.62 & 250 \\
+    C Delay & 2.00 $\pm$ 0.16 & 2.06 $\pm$ 0.24 & 260 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 7: EXP-7 Cross-Model Comparison (Claude vs GPT-4o)
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Cross-model comparison: Claude Sonnet 4 vs GPT-4o on Scenario 1, Variant C.
+Same personas, signal state, and probes. $K=20$ independent runs per model.
+$^*p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.}
+\label{tab:exp7_cross_model}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Metric} & \textbf{Claude Sonnet 4} & \textbf{GPT-4o} \\
+\midrule
+Sentiment (mean $\pm$ std) & 4.27 $\pm$ 0.80 & 4.49 $\pm$ 0.71 \\
+Sentiment $t$-test & \multicolumn{2}{c}{$t=-2.576$, $p=0.010$*} \\
+Unique themes & 368 & 325 \\
+Theme Jaccard & \multicolumn{2}{c}{0.060} \\
+Mean cosine similarity & 0.1837 & 0.2786 \\
+Persona correlation & \multicolumn{2}{c}{$r=0.935$, $p=0.0006$} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 8: EXP-8 Prompt Sensitivity
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Prompt sensitivity test: original vs semantically equivalent paraphrase of
+Scenario 1, Variant C. $K=5$ runs per version. Model: Claude Sonnet 4.
+Non-significant ($n.s.$) $p$-values indicate robustness to surface-level prompt variation.
+$^*p<0.05$.}
+\label{tab:exp8_sensitivity}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Metric} & \textbf{Original} & \textbf{Paraphrase} & \textbf{$p$-value} & \textbf{Sig.} \\
+\midrule
+Sentiment mean & 4.22 & 4.50 & 0.102 & n.s. \\
+Credibility mean & 4.38 & 4.67 & 0.034 & $^*$ \\
+Theme Jaccard & \multicolumn{2}{c}{0.286} & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 9: Persona-Level Breakdown
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Persona-level sentiment and credibility breakdown for Scenario 1, Variant C
+(Accountability framing). $K=20$ runs, yielding $n$ observations per persona.
+Variation across personas demonstrates heterogeneous agent responses,
+confirming that the AFG protocol avoids opinion monoculture.}
+\label{tab:persona_breakdown}
+\small
+\begin{tabular}{@{}llccc@{}}
+\toprule
+\textbf{ID} & \textbf{Persona} & \textbf{Sentiment} & \textbf{Credibility} & \textbf{$n$} \\
+\midrule
+    P1 & Environmental Activist & 2.90 $\pm$ 0.30 & 3.00 $\pm$ 0.32 & 20 \\
+    P2 & ESG Fund Manager & 4.90 $\pm$ 0.30 & 4.80 $\pm$ 0.40 & 20 \\
+    P3 & Retail Consumer & 4.35 $\pm$ 0.48 & 4.15 $\pm$ 0.36 & 20 \\
+    P4 & Industry Journalist & 3.65 $\pm$ 0.48 & 4.30 $\pm$ 0.56 & 20 \\
+    P5 & Regulatory Observer & 4.85 $\pm$ 0.48 & 4.95 $\pm$ 0.22 & 20 \\
+    P6 & Company Employee & 4.70 $\pm$ 0.46 & 4.70 $\pm$ 0.46 & 20 \\
+    P7 & Competitor Strategy An... & 4.35 $\pm$ 0.57 & 4.70 $\pm$ 0.56 & 20 \\
+    P8 & Sustainability Academic & 4.25 $\pm$ 0.89 & 4.25 $\pm$ 0.62 & 20 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 10: Cross-Experiment Summary
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Cross-experiment summary of all SAPIENT empirical results. Sentiment on 1--7
+Likert scale (1=very negative, 7=very positive). Cosine similarity measures response
+diversity ($\delta=0.85$ collapse threshold). $n=8$ personas in all conditions.}
+\label{tab:summary}
+\small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Experiment} & \textbf{$K$} & \textbf{Sent. Mean} & \textbf{Sent. Std} & \textbf{Cos. Sim.} \\
+\midrule
+    1: A Targets & 20 & 3.96 & 1.01 & 0.1961 \\
+    1: B Progress & 20 & 4.08 & 0.95 & 0.2011 \\
+    1: C Accountability & 20 & 4.24 & 0.82 & 0.1848 \\
+    2: Signal (A) & 10 & 4.30 & 0.81 & --- \\
+    2: Generic (B) & 10 & 3.94 & 0.97 & --- \\
+    3: English & 10 & 4.22 & 0.84 & 0.1848 \\
+    3: Turkish & 10 & 3.76 & 0.83 & 0.1485 \\
+    4: Uniform & 10 & 4.22 & 0.89 & 0.1864 \\
+    4: Stratified & 10 & 4.19 & 0.84 & 0.1852 \\
+    4: Adversarial & 10 & 4.04 & 0.93 & 0.1840 \\
+    5: Disclose & 10 & 4.46 & 0.67 & 0.1944 \\
+    5: Silent & 10 & 2.36 & 0.48 & 0.2562 \\
+    6: Apologize & 10 & 3.98 & 1.07 & --- \\
+    6: Rebut & 10 & 2.65 & 0.48 & --- \\
+    6: Delay & 10 & 2.00 & 0.16 & --- \\
+    7: Claude & 20 & 4.27 & 0.80 & 0.1837 \\
+    7: GPT-4o & 20 & 4.49 & 0.71 & 0.2786 \\
+    8: Original & 5 & 4.22 & --- & --- \\
+    8: Paraphrase & 5 & 4.50 & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 11: Statistical Significance Dashboard
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Statistical significance dashboard for all hypothesis tests.
+Independent-samples $t$-tests for between-condition comparisons; Pearson $r$ for
+persona-level correlations. $^*p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.}
+\label{tab:significance}
+\small
+\begin{tabular}{@{}llccc@{}}
+\toprule
+\textbf{Exp.} & \textbf{Comparison} & \textbf{Statistic} & \textbf{$p$-value} & \textbf{Sig.} \\
+\midrule
+    EXP-2 & Signal vs Generic sentiment & $t=2.552$ & $0.012$ & $^*$ \\
+    EXP-3 & English vs Turkish sentiment & $t=3.499$ & $0.001$ & $^{***}$ \\
+    EXP-7 & Claude vs GPT-4o sentiment & $t=-2.576$ & $0.010$ & $^*$ \\
+    EXP-7 & Persona-level correlation & $r=0.935$ & $0.0006$ & $^{***}$ \\
+    EXP-8 & Prompt sensitivity (sentiment) & $t=-1.657$ & $0.102$ & n.s. \\
+    EXP-8 & Prompt sensitivity (credibility) & $t=-2.158$ & $0.034$ & $^*$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+% ============================================================
+% TABLE 12: Runtime & Cost Summary
+% ============================================================
+\begin{table}[H]
+\centering
+\caption{Aggregate runtime and API usage statistics across all experiments.
+Costs computed using published API pricing (Claude Sonnet 4: \$3/\$15 per MTok;
+GPT-4o: \$2.50/\$10 per MTok).}
+\label{tab:runtime}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Total API calls & 3,328 \\
+Total input tokens & 2,425,411 \\
+Total output tokens & 779,050 \\
+Total tokens & 3,204,461 \\
+Estimated cost (USD) & \$18.50 \\
+Total elapsed time & 33.9 min \\
+Mean latency & --- \\
+Parallel concurrency & 3 sessions (Claude), 1 session (GPT-4o) \\
+\bottomrule
+\end{tabular}
+\end{table}

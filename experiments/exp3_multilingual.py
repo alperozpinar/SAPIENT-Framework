@@ -15,7 +15,6 @@ import time
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import anthropic
 from agents.moderator_agent import run_afg_experiment
 from metrics.analysis import (
     generate_full_report, print_summary,
@@ -94,54 +93,52 @@ TURKISH_PROBES = [
 
 def run_exp3(api_key: str, K: int = 5, model: str = "claude-sonnet-4-20250514"):
     """Run multilingual comparison: English vs Turkish."""
-    client = anthropic.Anthropic(api_key=api_key)
-    
     with open(os.path.join(os.path.dirname(__file__), "..", "config", "personas.json")) as f:
         en_personas = json.load(f)["personas"]
-    
+
     with open(os.path.join(os.path.dirname(__file__), "..", "config", "scenarios.json")) as f:
         scenario = json.load(f)["scenario_1_greenwashing"]
-    
+
     en_stimulus = scenario["stimuli"]["variant_C_accountability"]
     en_probes = scenario["moderator_probes"][:2]
     signal_state = scenario["signal_state_rich"]
-    
+
     # --- English ---
     print("\n" + "=" * 60)
     print("ENGLISH SESSION")
     print("=" * 60)
-    
+
     result_en = run_afg_experiment(
-        client=client, personas=en_personas, stimulus=en_stimulus,
+        api_key=api_key, personas=en_personas, stimulus=en_stimulus,
         probes=en_probes, K=K, signal_state=signal_state,
         temperature_mode="stratified", model=model, experiment_label="exp3_EN"
     )
     report_en = generate_full_report(result_en)
     print_summary(report_en)
-    
+
     # --- Turkish ---
     print("\n" + "=" * 60)
     print("TURKISH SESSION")
     print("=" * 60)
-    
+
     result_tr = run_afg_experiment(
-        client=client, personas=TURKISH_PERSONAS, stimulus=TURKISH_STIMULUS,
+        api_key=api_key, personas=TURKISH_PERSONAS, stimulus=TURKISH_STIMULUS,
         probes=TURKISH_PROBES, K=K, signal_state=signal_state,
         temperature_mode="stratified", model=model, experiment_label="exp3_TR"
     )
     report_tr = generate_full_report(result_tr)
     print_summary(report_tr)
-    
+
     # --- Cross-lingual comparison ---
     print("\n" + "=" * 70)
     print("CROSS-LINGUAL COMPARISON: EN vs TR")
     print("=" * 70)
-    
+
     sent_en = report_en.get("sentiment", {}).get("overall", {})
     sent_tr = report_tr.get("sentiment", {}).get("overall", {})
     vc_en = report_en.get("variance_collapse", {})
     vc_tr = report_tr.get("variance_collapse", {})
-    
+
     print(f"\nSentiment:")
     print(f"  EN: mean={sent_en.get('mean', 0):.2f}, std={sent_en.get('std', 0):.2f}")
     print(f"  TR: mean={sent_tr.get('mean', 0):.2f}, std={sent_tr.get('std', 0):.2f}")
@@ -151,18 +148,18 @@ def run_exp3(api_key: str, K: int = 5, model: str = "claude-sonnet-4-20250514"):
     print(f"\nTheme Count:")
     print(f"  EN: {report_en.get('theme_stability', {}).get('total_unique_themes', 0)}")
     print(f"  TR: {report_tr.get('theme_stability', {}).get('total_unique_themes', 0)}")
-    
+
     # Save
     output_dir = os.path.join(os.path.dirname(__file__), "..", "results")
     os.makedirs(output_dir, exist_ok=True)
     timestamp = time.strftime("%Y%m%d_%H%M%S")
-    
+
     with open(os.path.join(output_dir, f"exp3_multilingual_{timestamp}.json"), "w") as f:
         json.dump({
             "english": {"result": result_en, "report": report_en},
             "turkish": {"result": result_tr, "report": report_tr},
         }, f, indent=2, default=str, ensure_ascii=False)
-    
+
     print(f"\nResults saved to {output_dir}/exp3_multilingual_{timestamp}.json")
 
 

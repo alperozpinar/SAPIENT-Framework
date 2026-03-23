@@ -10,23 +10,24 @@ import json
 import time
 import numpy as np
 from typing import Optional
-import anthropic
 
 from .persona_agent import build_persona_system_prompt
+from .llm_client import achat
 
 
 async def _async_persona_call(
-    client: anthropic.AsyncAnthropic,
+    api_key: str,
     persona: dict,
     stimulus: str,
     probe: str,
     signal_state: Optional[dict],
     temperature: float,
-    model: str
+    model: str,
+    usage_tracker=None,
 ) -> dict:
     """Single async persona API call."""
     system_prompt = build_persona_system_prompt(persona, signal_state)
-    
+
     user_message = f"""ANNOUNCEMENT TO EVALUATE:
 {stimulus}
 
@@ -47,21 +48,24 @@ Please respond with a JSON object containing:
 
 Respond ONLY with the JSON object, no other text."""
 
-    response = await client.messages.create(
+    response = await achat(
+        system_prompt=system_prompt,
+        user_message=user_message,
         model=model,
-        max_tokens=800,
         temperature=temperature,
-        system=system_prompt,
-        messages=[{"role": "user", "content": user_message}]
+        max_tokens=800,
+        api_key=api_key,
     )
-    
-    raw_text = response.content[0].text.strip()
+    if usage_tracker:
+        usage_tracker.record(response)
+
+    raw_text = response.content.strip()
     if raw_text.startswith("```"):
         raw_text = raw_text.split("```")[1]
         if raw_text.startswith("json"):
             raw_text = raw_text[4:]
         raw_text = raw_text.strip()
-    
+
     try:
         parsed = json.loads(raw_text)
     except json.JSONDecodeError:
@@ -70,7 +74,7 @@ Respond ONLY with the JSON object, no other text."""
             "concerns": [], "positive_aspects": [], "missing_information": [],
             "likely_action": "unknown", "key_themes": [], "_parse_error": True
         }
-    
+
     parsed["persona_id"] = persona["id"]
     parsed["persona_label"] = persona["label"]
     parsed["_raw"] = raw_text
@@ -80,18 +84,19 @@ Respond ONLY with the JSON object, no other text."""
 
 
 async def _async_followup_call(
-    client: anthropic.AsyncAnthropic,
+    api_key: str,
     persona: dict,
     stimulus: str,
     initial_response: dict,
     followup_probe: str,
     signal_state: Optional[dict],
     temperature: float,
-    model: str
+    model: str,
+    usage_tracker=None,
 ) -> dict:
     """Single async followup call."""
     system_prompt = build_persona_system_prompt(persona, signal_state)
-    
+
     messages = [
         {"role": "user", "content": f"ANNOUNCEMENT: {stimulus}\n\nWhat is your initial reaction?"},
         {"role": "assistant", "content": json.dumps({
@@ -110,40 +115,48 @@ Respond with a JSON object:
 
 Respond ONLY with the JSON object."""}
     ]
-    
-    response = await client.messages.create(
-        model=model, max_tokens=500, temperature=temperature,
-        system=system_prompt, messages=messages
+
+    response = await achat(
+        system_prompt=system_prompt,
+        user_message="",
+        model=model,
+        temperature=temperature,
+        max_tokens=500,
+        api_key=api_key,
+        messages=messages,
     )
-    
-    raw_text = response.content[0].text.strip()
+    if usage_tracker:
+        usage_tracker.record(response)
+
+    raw_text = response.content.strip()
     if raw_text.startswith("```"):
         raw_text = raw_text.split("```")[1]
         if raw_text.startswith("json"):
             raw_text = raw_text[4:]
         raw_text = raw_text.strip()
-    
+
     try:
         parsed = json.loads(raw_text)
     except json.JSONDecodeError:
         parsed = {"followup_response": raw_text, "sentiment_shift": None, "new_themes": [], "_parse_error": True}
-    
+
     parsed["persona_id"] = persona["id"]
     return parsed
 
 
 async def _run_session_async(
-    client: anthropic.AsyncAnthropic,
+    api_key: str,
     personas: list[dict],
     stimulus: str,
     probes: list[str],
     signal_state: Optional[dict],
     temperatures: list[float],
     model: str,
-    session_id: str
+    session_id: str,
+    usage_tracker=None,
 ) -> dict:
     """Run one AFG session with all personas in parallel."""
-    
+
     session = {
         "session_id": session_id,
         "n_personas": len(personas),
@@ -156,18 +169,19 @@ async def _run_session_async(
         "sentiment_scores": [],
         "credibility_scores": []
     }
-    
+
     # Phase 1: All initial responses in parallel
     tasks = [
         _async_persona_call(
-            client, persona, stimulus, probes[0], signal_state,
-            temperatures[i] if i < len(temperatures) else 0.8, model
+            api_key, persona, stimulus, probes[0], signal_state,
+            temperatures[i] if i < len(temperatures) else 0.8, model,
+            usage_tracker=usage_tracker,
         )
         for i, persona in enumerate(personas)
     ]
     initial_responses = await asyncio.gather(*tasks)
     session["initial_responses"] = list(initial_responses)
-    
+
     for resp in initial_responses:
         if resp.get("sentiment") is not None:
             session["sentiment_scores"].append(resp["sentiment"])
@@ -175,23 +189,24 @@ async def _run_session_async(
             session["credibility_scores"].append(resp["credibility"])
         if resp.get("key_themes"):
             session["all_themes"].extend(resp["key_themes"])
-    
+
     # Phase 2: All followups in parallel
     if len(probes) > 1:
         fu_tasks = [
             _async_followup_call(
-                client, persona, stimulus, initial_responses[i], probes[1],
-                signal_state, temperatures[i] if i < len(temperatures) else 0.8, model
+                api_key, persona, stimulus, initial_responses[i], probes[1],
+                signal_state, temperatures[i] if i < len(temperatures) else 0.8, model,
+                usage_tracker=usage_tracker,
             )
             for i, persona in enumerate(personas)
         ]
         followup_responses = await asyncio.gather(*fu_tasks)
         session["followup_responses"] = list(followup_responses)
-        
+
         for fu in followup_responses:
             if fu.get("new_themes"):
                 session["all_themes"].extend(fu["new_themes"])
-    
+
     # Normalize themes
     seen = set()
     normalized = []
@@ -201,7 +216,7 @@ async def _run_session_async(
             seen.add(t_clean)
             normalized.append(t_clean)
     session["theme_list"] = normalized
-    
+
     session["mean_sentiment"] = (
         sum(session["sentiment_scores"]) / len(session["sentiment_scores"])
         if session["sentiment_scores"] else None
@@ -210,7 +225,7 @@ async def _run_session_async(
         sum(session["credibility_scores"]) / len(session["credibility_scores"])
         if session["credibility_scores"] else None
     )
-    
+
     return session
 
 
@@ -224,16 +239,16 @@ async def _run_experiment_async(
     temperature_mode: str,
     model: str,
     experiment_label: str,
-    max_concurrent_runs: int = 4
+    max_concurrent_runs: int = 3,
+    usage_tracker=None,
 ) -> dict:
     """
     Run K AFG sessions with concurrency at two levels:
     - Within each session: all 8 personas run in parallel
     - Across sessions: up to max_concurrent_runs sessions run simultaneously
     """
-    client = anthropic.AsyncAnthropic(api_key=api_key)
     n = len(personas)
-    
+
     if temperature_mode == "stratified":
         temps = np.linspace(0.6, 1.0, n).tolist()
     elif temperature_mode == "uniform_low":
@@ -242,21 +257,22 @@ async def _run_experiment_async(
         temps = [1.0] * n
     else:
         temps = [0.8] * n
-    
+
     semaphore = asyncio.Semaphore(max_concurrent_runs)
-    
+
     async def _bounded_session(k):
         async with semaphore:
             print(f"  [{experiment_label}] Starting run {k+1}/{K}")
             result = await _run_session_async(
-                client, personas, stimulus, probes, signal_state,
-                temps, model, f"{experiment_label}_run_{k}"
+                api_key, personas, stimulus, probes, signal_state,
+                temps, model, f"{experiment_label}_run_{k}",
+                usage_tracker=usage_tracker,
             )
             print(f"  [{experiment_label}] Completed run {k+1}/{K}")
             return result
-    
+
     sessions = await asyncio.gather(*[_bounded_session(k) for k in range(K)])
-    
+
     return {
         "experiment_label": experiment_label,
         "K": K,
@@ -277,7 +293,8 @@ def run_afg_experiment_parallel(
     temperature_mode: str = "stratified",
     model: str = "claude-sonnet-4-20250514",
     experiment_label: str = "exp",
-    max_concurrent_runs: int = 4
+    max_concurrent_runs: int = 4,
+    usage_tracker=None,
 ) -> dict:
     """
     Synchronous wrapper for the async experiment runner.
@@ -286,5 +303,6 @@ def run_afg_experiment_parallel(
     return asyncio.run(_run_experiment_async(
         api_key, personas, stimulus, probes, K,
         signal_state, temperature_mode, model,
-        experiment_label, max_concurrent_runs
+        experiment_label, max_concurrent_runs,
+        usage_tracker=usage_tracker,
     ))

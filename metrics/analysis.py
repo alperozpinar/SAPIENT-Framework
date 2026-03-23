@@ -342,14 +342,14 @@ def print_summary(report: dict):
     ts = report.get("theme_stability", {})
     print(f"\n--- Theme Stability ---")
     print(f"Total unique themes: {ts.get('total_unique_themes', 'N/A')}")
-    print(f"Stable themes (CV ≤ 0.5): {ts.get('n_stable', 'N/A')}")
+    print(f"Stable themes (CV <= 0.5): {ts.get('n_stable', 'N/A')}")
     print(f"Unstable themes (CV > 0.5): {ts.get('n_unstable', 'N/A')}")
     print(f"Stability ratio: {ts.get('stability_ratio', 0):.2%}")
     
     vc = report.get("variance_collapse", {})
     print(f"\n--- Variance Collapse Check ---")
     print(f"Mean pairwise similarity: {vc.get('overall_mean', 'N/A'):.4f}" if vc.get('overall_mean') else "N/A")
-    print(f"Threshold δ = {vc.get('delta_threshold', 0.85)}")
+    print(f"Threshold delta = {vc.get('delta_threshold', 0.85)}")
     print(f"Flagged runs: {vc.get('n_flagged', 0)} / {report['K']}")
     
     sent = report.get("sentiment", {}).get("overall", {})

@@ -1,17 +1,18 @@
 """
 Persona Agent for SAPIENT AFG Protocol.
-Maps persona specification θ_i = ⟨d_i, p_i, r_i, b_i, ℓ_i⟩ to Claude API calls.
+Maps persona specification θ_i = ⟨d_i, p_i, r_i, b_i, ℓ_i⟩ to LLM API calls.
 """
 
-import anthropic
 import json
 from typing import Optional
+
+from .llm_client import chat
 
 
 def build_persona_system_prompt(persona: dict, signal_state: Optional[dict] = None) -> str:
     """
     Construct a system prompt that conditions the LLM to behave as persona θ_i.
-    
+
     The prompt encodes demographics, psychographics, role, and behavioral priors
     without revealing the simulation context to the model.
     """
@@ -19,8 +20,8 @@ def build_persona_system_prompt(persona: dict, signal_state: Optional[dict] = No
     p = persona["psychographics"]
     r = persona["role"]
     b = persona["behavioral_priors"]
-    
-    prompt = f"""You are participating in a discussion about a corporate sustainability announcement. 
+
+    prompt = f"""You are participating in a discussion about a corporate sustainability announcement.
 Respond authentically from the perspective described below. Do not break character.
 
 YOUR BACKGROUND:
@@ -46,7 +47,7 @@ RESPONSE RULES:
 4. Keep responses to 150-250 words unless the question calls for more detail.
 5. You may express strong opinions consistent with your background.
 """
-    
+
     if signal_state and "topics" in signal_state:
         prompt += f"""
 CURRENT CONTEXT (information you have been exposed to recently):
@@ -56,12 +57,12 @@ CURRENT CONTEXT (information you have been exposed to recently):
 - Competitor announcements: {', '.join(signal_state.get('entities', {}).get('competitors_mentioned', ['other companies have made similar pledges']))}.
 - A recent investigative report about supply chain violations has been gaining attention (anomaly score: {signal_state.get('anomalies', {}).get('supplier_violation_story_resurgence', {}).get('score', 'N/A')}).
 """
-    
+
     return prompt
 
 
 def get_persona_response(
-    client: anthropic.Anthropic,
+    api_key: str,
     persona: dict,
     stimulus: str,
     probe: str,
@@ -74,7 +75,7 @@ def get_persona_response(
     Returns structured response.
     """
     system_prompt = build_persona_system_prompt(persona, signal_state)
-    
+
     user_message = f"""ANNOUNCEMENT TO EVALUATE:
 {stimulus}
 
@@ -95,23 +96,24 @@ Please respond with a JSON object containing:
 
 Respond ONLY with the JSON object, no other text."""
 
-    response = client.messages.create(
+    response = chat(
+        system_prompt=system_prompt,
+        user_message=user_message,
         model=model,
-        max_tokens=800,
         temperature=temperature,
-        system=system_prompt,
-        messages=[{"role": "user", "content": user_message}]
+        max_tokens=800,
+        api_key=api_key,
     )
-    
-    raw_text = response.content[0].text.strip()
-    
+
+    raw_text = response.content.strip()
+
     # Parse JSON, handling potential markdown wrapping
     if raw_text.startswith("```"):
         raw_text = raw_text.split("```")[1]
         if raw_text.startswith("json"):
             raw_text = raw_text[4:]
         raw_text = raw_text.strip()
-    
+
     try:
         parsed = json.loads(raw_text)
     except json.JSONDecodeError:
@@ -126,18 +128,18 @@ Respond ONLY with the JSON object, no other text."""
             "key_themes": [],
             "_parse_error": True
         }
-    
+
     parsed["persona_id"] = persona["id"]
     parsed["persona_label"] = persona["label"]
     parsed["_raw"] = raw_text
     parsed["_model"] = model
     parsed["_temperature"] = temperature
-    
+
     return parsed
 
 
 def get_persona_followup(
-    client: anthropic.Anthropic,
+    api_key: str,
     persona: dict,
     stimulus: str,
     initial_response: dict,
@@ -150,14 +152,14 @@ def get_persona_followup(
     Second turn: moderator follow-up probe after initial response.
     """
     system_prompt = build_persona_system_prompt(persona, signal_state)
-    
+
     messages = [
         {
             "role": "user",
             "content": f"ANNOUNCEMENT: {stimulus}\n\nWhat is your initial reaction to this announcement?"
         },
         {
-            "role": "assistant", 
+            "role": "assistant",
             "content": json.dumps({
                 "interpretation": initial_response.get("interpretation", ""),
                 "sentiment": initial_response.get("sentiment"),
@@ -178,26 +180,28 @@ Respond with a JSON object:
 Respond ONLY with the JSON object."""
         }
     ]
-    
-    response = client.messages.create(
+
+    response = chat(
+        system_prompt=system_prompt,
+        user_message="",
         model=model,
-        max_tokens=500,
         temperature=temperature,
-        system=system_prompt,
-        messages=messages
+        max_tokens=500,
+        api_key=api_key,
+        messages=messages,
     )
-    
-    raw_text = response.content[0].text.strip()
+
+    raw_text = response.content.strip()
     if raw_text.startswith("```"):
         raw_text = raw_text.split("```")[1]
         if raw_text.startswith("json"):
             raw_text = raw_text[4:]
         raw_text = raw_text.strip()
-    
+
     try:
         parsed = json.loads(raw_text)
     except json.JSONDecodeError:
         parsed = {"followup_response": raw_text, "sentiment_shift": None, "new_themes": [], "_parse_error": True}
-    
+
     parsed["persona_id"] = persona["id"]
     return parsed

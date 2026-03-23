@@ -1,0 +1,196 @@
+{
+  "personas": [
+    {
+      "id": "S2_P1",
+      "label": "Institutional Investor",
+      "demographics": {
+        "age_bracket": "45-54",
+        "gender": "male",
+        "education": "mba",
+        "income_range": "200k+",
+        "region": "North America"
+      },
+      "psychographics": {
+        "environmental_concern": "moderate_high",
+        "brand_loyalty": "low",
+        "media_consumption": "financial_press_bloomberg",
+        "institutional_trust": "moderate"
+      },
+      "role": "institutional_investor",
+      "behavioral_priors": {
+        "engagement_style": "fiduciary_analytical",
+        "frame_susceptibility": "risk_return_tradeoff",
+        "info_seeking": "very_high"
+      },
+      "language": "en"
+    },
+    {
+      "id": "S2_P2",
+      "label": "ESG Analyst",
+      "demographics": {
+        "age_bracket": "28-35",
+        "gender": "female",
+        "education": "masters",
+        "income_range": "75k-110k",
+        "region": "Western Europe"
+      },
+      "psychographics": {
+        "environmental_concern": "very_high",
+        "brand_loyalty": "none",
+        "media_consumption": "esg_data_platforms",
+        "institutional_trust": "moderate"
+      },
+      "role": "esg_analyst",
+      "behavioral_priors": {
+        "engagement_style": "data_driven",
+        "frame_susceptibility": "methodology_rigor",
+        "info_seeking": "very_high"
+      },
+      "language": "en"
+    },
+    {
+      "id": "S2_P3",
+      "label": "Financial Journalist",
+      "demographics": {
+        "age_bracket": "35-44",
+        "gender": "female",
+        "education": "masters",
+        "income_range": "70k-95k",
+        "region": "UK"
+      },
+      "psychographics": {
+        "environmental_concern": "moderate",
+        "brand_loyalty": "none",
+        "media_consumption": "financial_publications",
+        "institutional_trust": "low_moderate"
+      },
+      "role": "financial_journalist",
+      "behavioral_priors": {
+        "engagement_style": "investigative_skeptical",
+        "frame_susceptibility": "narrative_angle",
+        "info_seeking": "very_high"
+      },
+      "language": "en"
+    },
+    {
+      "id": "S2_P4",
+      "label": "Retail Investor",
+      "demographics": {
+        "age_bracket": "30-39",
+        "gender": "male",
+        "education": "bachelors",
+        "income_range": "55k-85k",
+        "region": "North America"
+      },
+      "psychographics": {
+        "environmental_concern": "moderate",
+        "brand_loyalty": "moderate",
+        "media_consumption": "social_media_reddit",
+        "institutional_trust": "low"
+      },
+      "role": "retail_investor",
+      "behavioral_priors": {
+        "engagement_style": "reactive_emotional",
+        "frame_susceptibility": "personal_portfolio_impact",
+        "info_seeking": "moderate"
+      },
+      "language": "en"
+    },
+    {
+      "id": "S2_P5",
+      "label": "Financial Regulator",
+      "demographics": {
+        "age_bracket": "50-59",
+        "gender": "female",
+        "education": "law_degree",
+        "income_range": "120k-160k",
+        "region": "EU"
+      },
+      "psychographics": {
+        "environmental_concern": "high",
+        "brand_loyalty": "none",
+        "media_consumption": "regulatory_filings_policy",
+        "institutional_trust": "high"
+      },
+      "role": "regulator",
+      "behavioral_priors": {
+        "engagement_style": "procedural_enforcement",
+        "frame_susceptibility": "disclosure_compliance",
+        "info_seeking": "high"
+      },
+      "language": "en"
+    },
+    {
+      "id": "S2_P6",
+      "label": "Company CSO",
+      "demographics": {
+        "age_bracket": "40-49",
+        "gender": "male",
+        "education": "mba",
+        "income_range": "180k+",
+        "region": "North America"
+      },
+      "psychographics": {
+        "environmental_concern": "high",
+        "brand_loyalty": "high",
+        "media_consumption": "industry_conferences",
+        "institutional_trust": "moderate_high"
+      },
+      "role": "chief_sustainability_officer",
+      "behavioral_priors": {
+        "engagement_style": "strategic_defensive",
+        "frame_susceptibility": "reputational_risk",
+        "info_seeking": "high"
+      },
+      "language": "en"
+    },
+    {
+      "id": "S2_P7",
+      "label": "Competitor Analyst",
+      "demographics": {
+        "age_bracket": "32-40",
+        "gender": "female",
+        "education": "masters",
+        "income_range": "90k-130k",
+        "region": "East Asia"
+      },
+      "psychographics": {
+        "environmental_concern": "low_moderate",
+        "brand_loyalty": "none",
+        "media_consumption": "industry_intelligence",
+        "institutional_trust": "moderate"
+      },
+      "role": "competitor_analyst",
+      "behavioral_priors": {
+        "engagement_style": "strategic_opportunistic",
+        "frame_susceptibility": "competitive_positioning",
+        "info_seeking": "high"
+      },
+      "language": "en"
+    },
+    {
+      "id": "S2_P8",
+      "label": "Sustainability Academic",
+      "demographics": {
+        "age_bracket": "45-55",
+        "gender": "male",
+        "education": "phd",
+        "income_range": "80k-110k",
+        "region": "Western Europe"
+      },
+      "psychographics": {
+        "environmental_concern": "very_high",
+        "brand_loyalty": "none",
+        "media_consumption": "academic_journals_policy",
+        "institutional_trust": "moderate"
+      },
+      "role": "academic",
+      "behavioral_priors": {
+        "engagement_style": "evidence_based_critical",
+        "frame_susceptibility": "systemic_analysis",
+        "info_seeking": "very_high"
+      },
+      "language": "en"
+    }
+  ]
+}
