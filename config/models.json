@@ -27,11 +27,20 @@
       "pricing": {"input_per_M": 0.15, "output_per_M": 0.60},
       "max_tokens_default": 800,
       "notes": "Düşük maliyetli test modeli."
+    },
+    "gemini-2.5-flash": {
+      "provider": "google",
+      "display_name": "Gemini 2.5 Flash",
+      "pricing": {"input_per_M": 0.15, "output_per_M": 0.60},
+      "max_tokens_default": 800,
+      "concurrency": 2,
+      "notes": "Revision deneylerinde 3-way cross-model karşılaştırma için eklendi."
     }
   },
   "default_model": "claude-sonnet-4-20250514",
   "env_variables": {
     "anthropic": "ANTHROPIC_API_KEY",
-    "openai": "OPENAI_API_KEY"
+    "openai": "OPENAI_API_KEY",
+    "google": "GEMINI_API_KEY"
   }
 }

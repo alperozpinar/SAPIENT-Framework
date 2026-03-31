@@ -237,10 +237,10 @@ def run_exp6(api_key, K, model, tracker=None):
     return _run(api_key, K=K, model=model, tracker=tracker)
 
 
-def run_exp7(key_claude, key_openai, K, tracker=None):
+def run_exp7(key_claude, key_openai, K, key_gemini=None, tracker=None):
     """EXP-7: Cross-model comparison."""
     from experiments.exp7_cross_model import run_exp7 as _run
-    return _run(key_claude, key_openai, K=K, tracker=tracker)
+    return _run(key_claude, key_openai, K=K, key_gemini=key_gemini, tracker=tracker)
 
 
 def run_exp8(api_key, K, model, tracker=None):
@@ -287,7 +287,8 @@ def main():
     parser.add_argument("--all", action="store_true", help="Tüm orijinal deneyleri çalıştır (1-4)")
     parser.add_argument("--exp", type=int, choices=[1, 2, 3, 4, 5, 6, 7, 8])
     parser.add_argument("--K", type=int, default=None)
-    parser.add_argument("--model", default="claude-sonnet-4-20250514")
+    parser.add_argument("--model", default="claude-sonnet-4-20250514",
+                        help="Model: claude-sonnet-4-20250514, gpt-4o, gemini-2.5-flash")
     parser.add_argument("--estimate", action="store_true")
     parser.add_argument("--revision", action="store_true", help="Sadece revision deneylerini çalıştır (5-8)")
     args = parser.parse_args()
@@ -336,7 +337,12 @@ def main():
         try:
             key_claude = get_api_key("anthropic")
             key_openai = get_api_key("openai")
-            run_exp7(key_claude, key_openai, K=args.K or 20, tracker=tracker)
+            try:
+                key_gemini = get_api_key("google")
+            except EnvironmentError:
+                key_gemini = None
+                print("GEMINI_API_KEY bulunamadı — Gemini kolu atlanacak.")
+            run_exp7(key_claude, key_openai, K=args.K or 20, key_gemini=key_gemini, tracker=tracker)
         except EnvironmentError as e:
             print(f"EXP-7 atlaniyor (her iki key gerekli): {e}")
     if args.revision or args.exp == 8:

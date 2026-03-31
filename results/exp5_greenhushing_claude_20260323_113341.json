@@ -1,0 +1,2476 @@
+{
+  "variants": {
+    "A_disclose": {
+      "experiment_label": "exp5_A_disclose",
+      "K": 1,
+      "n_personas": 8,
+      "temperature_mode": "stratified",
+      "model": "claude-sonnet-4-20250514",
+      "sessions": [
+        {
+          "session_id": "exp5_A_disclose_run_0",
+          "n_personas": 8,
+          "model": "claude-sonnet-4-20250514",
+          "signal_state_provided": true,
+          "temperatures": [
+            0.6,
+            0.6571428571428571,
+            0.7142857142857143,
+            0.7714285714285714,
+            0.8285714285714285,
+            0.8857142857142857,
+            0.9428571428571428,
+            1.0
+          ],
+          "initial_responses": [
+            {
+              "interpretation": "MeridianFinance is presenting a competent ESG progress update with specific metrics and third-party validation. The communication appears professionally structured but lacks the granular detail needed for thorough institutional analysis.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "No baseline disclosure for the 30% carbon intensity reduction",
+                "40% sustainable AUM figure needs breakdown by strategy and definition",
+                "Missing forward-looking targets and timelines",
+                "No discussion of potential stranded assets or transition risks",
+                "Lack of detail on voting records and engagement activities"
+              ],
+              "positive_aspects": [
+                "TCFD alignment demonstrates regulatory awareness",
+                "CDP A-rating provides third-party validation",
+                "Specific percentage metrics rather than vague commitments",
+                "Transparency emphasis aligns with fiduciary expectations",
+                "Substantial portion of AUM in sustainable products shows client demand response"
+              ],
+              "missing_information": [
+                "Detailed methodology for carbon intensity calculations",
+                "Performance comparison of sustainable vs traditional products",
+                "Specific sector exclusions or engagement policies",
+                "Timeline for remaining 60% of AUM transition plans",
+                "Executive compensation linkage to ESG metrics"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "metrics_validation",
+                "fiduciary_alignment",
+                "transparency_gaps",
+                "competitive_positioning",
+                "risk_assessment"
+              ],
+              "persona_id": "S2_P1",
+              "persona_label": "Institutional Investor",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance is presenting a competent ESG progress update with specific metrics and third-party validation. The communication appears professionally structured but lacks the granular detail needed for thorough institutional analysis.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"No baseline disclosure for the 30% carbon intensity reduction\", \"40% sustainable AUM figure needs breakdown by strategy and definition\", \"Missing forward-looking targets and timelines\", \"No discussion of potential stranded assets or transition risks\", \"Lack of detail on voting records and engagement activities\"],\n  \"positive_aspects\": [\"TCFD alignment demonstrates regulatory awareness\", \"CDP A-rating provides third-party validation\", \"Specific percentage metrics rather than vague commitments\", \"Transparency emphasis aligns with fiduciary expectations\", \"Substantial portion of AUM in sustainable products shows client demand response\"],\n  \"missing_information\": [\"Detailed methodology for carbon intensity calculations\", \"Performance comparison of sustainable vs traditional products\", \"Specific sector exclusions or engagement policies\", \"Timeline for remaining 60% of AUM transition plans\", \"Executive compensation linkage to ESG metrics\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"metrics_validation\", \"fiduciary_alignment\", \"transparency_gaps\", \"competitive_positioning\", \"risk_assessment\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.6
+            },
+            {
+              "interpretation": "MeridianFinance is presenting a fairly standard ESG progress update with some quantified metrics and third-party validation. The communication hits expected disclosure points but lacks depth on methodology and forward-looking commitments.",
+              "sentiment": 4,
+              "credibility": 4,
+              "concerns": [
+                "No baseline year methodology details for carbon intensity reduction",
+                "Unclear what constitutes 'sustainable investment products' - definitions matter",
+                "A-rating from CDP alone insufficient without sector context",
+                "Missing Scope 3 emissions discussion for financial services",
+                "No mention of exclusion policies or engagement strategies"
+              ],
+              "positive_aspects": [
+                "TCFD alignment shows regulatory awareness",
+                "Quantified 30% reduction provides measurable baseline",
+                "40% AUM in sustainable products indicates scale",
+                "Transparency commitment and public reporting"
+              ],
+              "missing_information": [
+                "Detailed methodology for carbon intensity calculations",
+                "Scope 1, 2, 3 emissions breakdown",
+                "Definition and criteria for sustainable investment classification",
+                "Forward-looking targets beyond current achievements",
+                "Engagement and voting records on climate resolutions",
+                "Third-party assurance details"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "methodology_gaps",
+                "standard_disclosure",
+                "verification_needed",
+                "baseline_unclear",
+                "sector_context"
+              ],
+              "persona_id": "S2_P2",
+              "persona_label": "ESG Analyst",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance is presenting a fairly standard ESG progress update with some quantified metrics and third-party validation. The communication hits expected disclosure points but lacks depth on methodology and forward-looking commitments.\",\n  \"sentiment\": 4,\n  \"credibility\": 4,\n  \"concerns\": [\"No baseline year methodology details for carbon intensity reduction\", \"Unclear what constitutes 'sustainable investment products' - definitions matter\", \"A-rating from CDP alone insufficient without sector context\", \"Missing Scope 3 emissions discussion for financial services\", \"No mention of exclusion policies or engagement strategies\"],\n  \"positive_aspects\": [\"TCFD alignment shows regulatory awareness\", \"Quantified 30% reduction provides measurable baseline\", \"40% AUM in sustainable products indicates scale\", \"Transparency commitment and public reporting\"],\n  \"missing_information\": [\"Detailed methodology for carbon intensity calculations\", \"Scope 1, 2, 3 emissions breakdown\", \"Definition and criteria for sustainable investment classification\", \"Forward-looking targets beyond current achievements\", \"Engagement and voting records on climate resolutions\", \"Third-party assurance details\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"methodology_gaps\", \"standard_disclosure\", \"verification_needed\", \"baseline_unclear\", \"sector_context\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.6571428571428571
+            },
+            {
+              "interpretation": "MeridianFinance is presenting standard ESG metrics and third-party validations in what appears to be a carefully crafted communication designed to demonstrate progress. The emphasis on transparency and stakeholder trust suggests they're aware of growing scrutiny in this space, but the announcement lacks specificity about methodology and future commitments.",
+              "sentiment": 4,
+              "credibility": 4,
+              "concerns": [
+                "No baseline data or absolute emissions figures provided",
+                "Portfolio carbon intensity reduction could reflect asset allocation changes rather than actual decarbonization",
+                "40% sustainable AUM figure needs context - what qualifies as 'sustainable'?",
+                "Timing coincides with increased greenwashing scrutiny",
+                "No mention of engagement with high-emission portfolio companies"
+              ],
+              "positive_aspects": [
+                "TCFD alignment shows regulatory compliance",
+                "CDP A-rating from recognized third party",
+                "Quantified metrics rather than vague commitments",
+                "Proactive disclosure approach"
+              ],
+              "missing_information": [
+                "Absolute portfolio emissions data",
+                "Definition of sustainable investment criteria",
+                "Specific decarbonization strategies beyond divestment",
+                "Timeline for further reductions",
+                "Details on portfolio company engagement",
+                "Comparison with industry benchmarks"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "metrics-scrutiny",
+                "transparency-claims",
+                "greenwashing-potential",
+                "third-party-validation",
+                "baseline-questions"
+              ],
+              "persona_id": "S2_P3",
+              "persona_label": "Financial Journalist",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance is presenting standard ESG metrics and third-party validations in what appears to be a carefully crafted communication designed to demonstrate progress. The emphasis on transparency and stakeholder trust suggests they're aware of growing scrutiny in this space, but the announcement lacks specificity about methodology and future commitments.\",\n  \"sentiment\": 4,\n  \"credibility\": 4,\n  \"concerns\": [\"No baseline data or absolute emissions figures provided\", \"Portfolio carbon intensity reduction could reflect asset allocation changes rather than actual decarbonization\", \"40% sustainable AUM figure needs context - what qualifies as 'sustainable'?\", \"Timing coincides with increased greenwashing scrutiny\", \"No mention of engagement with high-emission portfolio companies\"],\n  \"positive_aspects\": [\"TCFD alignment shows regulatory compliance\", \"CDP A-rating from recognized third party\", \"Quantified metrics rather than vague commitments\", \"Proactive disclosure approach\"],\n  \"missing_information\": [\"Absolute portfolio emissions data\", \"Definition of sustainable investment criteria\", \"Specific decarbonization strategies beyond divestment\", \"Timeline for further reductions\", \"Details on portfolio company engagement\", \"Comparison with industry benchmarks\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"metrics-scrutiny\", \"transparency-claims\", \"greenwashing-potential\", \"third-party-validation\", \"baseline-questions\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.7142857142857143
+            },
+            {
+              "interpretation": "MeridianFinance is touting their ESG achievements with some solid-sounding metrics, but given all the greenwashing talk lately, I'm skeptical about whether these numbers actually mean anything meaningful. The timing feels convenient with everyone pushing ESG narratives right now.",
+              "sentiment": 3,
+              "credibility": 3,
+              "concerns": [
+                "30% reduction sounds good but what's the baseline - were they just really bad before?",
+                "40% of AUM in 'sustainable' products could mean anything depending on how they define sustainable",
+                "A-rating from CDP - never heard of them, could be pay-to-play",
+                "No mention of actual financial performance of these ESG investments",
+                "Feels like corporate PR speak designed to attract ESG-focused money"
+              ],
+              "positive_aspects": [
+                "At least they're providing specific numbers instead of vague commitments",
+                "TCFD alignment suggests some legitimate framework",
+                "Making full report available shows some transparency"
+              ],
+              "missing_information": [
+                "What's the actual performance of their ESG vs traditional portfolios",
+                "Independent verification of these claims",
+                "Comparison to industry benchmarks",
+                "Details on what qualifies as 'sustainable investment products'",
+                "Fee structures for ESG vs regular products"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "greenwashing_suspicion",
+                "metrics_skepticism",
+                "performance_questions",
+                "transparency_attempt",
+                "marketing_driven"
+              ],
+              "persona_id": "S2_P4",
+              "persona_label": "Retail Investor",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance is touting their ESG achievements with some solid-sounding metrics, but given all the greenwashing talk lately, I'm skeptical about whether these numbers actually mean anything meaningful. The timing feels convenient with everyone pushing ESG narratives right now.\",\n  \"sentiment\": 3,\n  \"credibility\": 3,\n  \"concerns\": [\"30% reduction sounds good but what's the baseline - were they just really bad before?\", \"40% of AUM in 'sustainable' products could mean anything depending on how they define sustainable\", \"A-rating from CDP - never heard of them, could be pay-to-play\", \"No mention of actual financial performance of these ESG investments\", \"Feels like corporate PR speak designed to attract ESG-focused money\"],\n  \"positive_aspects\": [\"At least they're providing specific numbers instead of vague commitments\", \"TCFD alignment suggests some legitimate framework\", \"Making full report available shows some transparency\"],\n  \"missing_information\": [\"What's the actual performance of their ESG vs traditional portfolios\", \"Independent verification of these claims\", \"Comparison to industry benchmarks\", \"Details on what qualifies as 'sustainable investment products'\", \"Fee structures for ESG vs regular products\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"greenwashing_suspicion\", \"metrics_skepticism\", \"performance_questions\", \"transparency_attempt\", \"marketing_driven\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.7714285714285714
+            },
+            {
+              "interpretation": "MeridianFinance is presenting standard ESG metrics and third-party validations in their progress report. The announcement emphasizes transparency and stakeholder trust, which aligns with regulatory expectations for financial institutions.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Need verification of 30% carbon intensity reduction methodology",
+                "40% AUM in sustainable products requires definition scrutiny",
+                "TCFD alignment claims need regulatory validation",
+                "Missing baseline data and sector-specific benchmarks"
+              ],
+              "positive_aspects": [
+                "TCFD-aligned disclosure demonstrates regulatory compliance awareness",
+                "CDP A-rating provides third-party validation",
+                "Quantified metrics rather than vague commitments",
+                "Direct link to full report enables verification"
+              ],
+              "missing_information": [
+                "Detailed methodology for carbon intensity calculations",
+                "Definition of 'sustainable investment products'",
+                "Sector-relative performance benchmarks",
+                "Forward-looking targets and timelines",
+                "Independent assurance statements"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "disclosure_compliance",
+                "metric_verification",
+                "regulatory_alignment",
+                "transparency_assessment",
+                "benchmark_analysis"
+              ],
+              "persona_id": "S2_P5",
+              "persona_label": "Financial Regulator",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance is presenting standard ESG metrics and third-party validations in their progress report. The announcement emphasizes transparency and stakeholder trust, which aligns with regulatory expectations for financial institutions.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"Need verification of 30% carbon intensity reduction methodology\", \"40% AUM in sustainable products requires definition scrutiny\", \"TCFD alignment claims need regulatory validation\", \"Missing baseline data and sector-specific benchmarks\"],\n  \"positive_aspects\": [\"TCFD-aligned disclosure demonstrates regulatory compliance awareness\", \"CDP A-rating provides third-party validation\", \"Quantified metrics rather than vague commitments\", \"Direct link to full report enables verification\"],\n  \"missing_information\": [\"Detailed methodology for carbon intensity calculations\", \"Definition of 'sustainable investment products'\", \"Sector-relative performance benchmarks\", \"Forward-looking targets and timelines\", \"Independent assurance statements\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"disclosure_compliance\", \"metric_verification\", \"regulatory_alignment\", \"transparency_assessment\", \"benchmark_analysis\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.8285714285714285
+            },
+            {
+              "interpretation": "MeridianFinance is presenting a well-structured ESG update with concrete metrics and third-party validation. The communication appears professionally crafted but follows a fairly standard template that most financial firms are using these days.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Portfolio carbon intensity reduction may not reflect absolute emissions",
+                "40% sustainable AUM could include products with varying ESG rigor",
+                "No mention of Scope 3 financed emissions methodology",
+                "Timeline for net-zero commitment unclear",
+                "Risk of greenwashing given industry scrutiny"
+              ],
+              "positive_aspects": [
+                "TCFD alignment shows regulatory compliance",
+                "CDP A-rating provides third-party validation",
+                "Quantified metrics rather than vague commitments",
+                "Transparency emphasis aligns with stakeholder expectations",
+                "Multi-year tracking shows consistency"
+              ],
+              "missing_information": [
+                "Absolute carbon footprint data",
+                "Specific sustainable investment criteria",
+                "Forward-looking targets and timelines",
+                "Scope 3 financed emissions disclosure",
+                "Independent assurance verification",
+                "Comparison to industry benchmarks"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "metrics_validation",
+                "greenwashing_risk",
+                "industry_benchmarking",
+                "transparency_gaps",
+                "regulatory_compliance"
+              ],
+              "persona_id": "S2_P6",
+              "persona_label": "Company CSO",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance is presenting a well-structured ESG update with concrete metrics and third-party validation. The communication appears professionally crafted but follows a fairly standard template that most financial firms are using these days.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"Portfolio carbon intensity reduction may not reflect absolute emissions\", \"40% sustainable AUM could include products with varying ESG rigor\", \"No mention of Scope 3 financed emissions methodology\", \"Timeline for net-zero commitment unclear\", \"Risk of greenwashing given industry scrutiny\"],\n  \"positive_aspects\": [\"TCFD alignment shows regulatory compliance\", \"CDP A-rating provides third-party validation\", \"Quantified metrics rather than vague commitments\", \"Transparency emphasis aligns with stakeholder expectations\", \"Multi-year tracking shows consistency\"],\n  \"missing_information\": [\"Absolute carbon footprint data\", \"Specific sustainable investment criteria\", \"Forward-looking targets and timelines\", \"Scope 3 financed emissions disclosure\", \"Independent assurance verification\", \"Comparison to industry benchmarks\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"metrics_validation\", \"greenwashing_risk\", \"industry_benchmarking\", \"transparency_gaps\", \"regulatory_compliance\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.8857142857142857
+            },
+            {
+              "interpretation": "MeridianFinance is positioning itself as an ESG leader with concrete metrics and third-party validation. The announcement emphasizes transparency and industry leadership, suggesting they're trying to differentiate from competitors while potentially preempting greenwashing criticisms.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "30% reduction baseline unclear - could be cherry-picked starting point",
+                "40% AUM in sustainable products lacks definition of 'sustainable'",
+                "No mention of absolute emissions or scope 3 tracking",
+                "TCFD alignment claim needs verification against actual disclosure quality"
+              ],
+              "positive_aspects": [
+                "Third-party CDP A-rating provides external validation",
+                "Specific percentage metrics rather than vague commitments",
+                "Proactive transparency approach",
+                "TCFD alignment shows regulatory awareness"
+              ],
+              "missing_information": [
+                "Baseline year methodology for carbon intensity reduction",
+                "Definition and criteria for 'sustainable investment products'",
+                "Comparison to industry benchmarks",
+                "Details on scope 3 emissions coverage",
+                "Timeline for future targets"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "competitive_benchmarking",
+                "metrics_verification",
+                "greenwashing_assessment",
+                "market_positioning",
+                "regulatory_compliance"
+              ],
+              "persona_id": "S2_P7",
+              "persona_label": "Competitor Analyst",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance is positioning itself as an ESG leader with concrete metrics and third-party validation. The announcement emphasizes transparency and industry leadership, suggesting they're trying to differentiate from competitors while potentially preempting greenwashing criticisms.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"30% reduction baseline unclear - could be cherry-picked starting point\", \"40% AUM in sustainable products lacks definition of 'sustainable'\", \"No mention of absolute emissions or scope 3 tracking\", \"TCFD alignment claim needs verification against actual disclosure quality\"],\n  \"positive_aspects\": [\"Third-party CDP A-rating provides external validation\", \"Specific percentage metrics rather than vague commitments\", \"Proactive transparency approach\", \"TCFD alignment shows regulatory awareness\"],\n  \"missing_information\": [\"Baseline year methodology for carbon intensity reduction\", \"Definition and criteria for 'sustainable investment products'\", \"Comparison to industry benchmarks\", \"Details on scope 3 emissions coverage\", \"Timeline for future targets\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"competitive_benchmarking\", \"metrics_verification\", \"greenwashing_assessment\", \"market_positioning\", \"regulatory_compliance\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.9428571428571428
+            },
+            {
+              "interpretation": "This appears to be a fairly standard ESG progress report announcement hitting the usual metrics - carbon intensity reduction, disclosure frameworks, and sustainable product growth. While the numbers sound impressive, the communication lacks the depth and methodological transparency I'd expect for meaningful assessment.",
+              "sentiment": 3,
+              "credibility": 3,
+              "concerns": [
+                "No baseline methodology disclosed for carbon intensity calculations",
+                "Unclear what constitutes 'sustainable investment products' - potential greenwashing",
+                "A-rating from CDP without context of peer comparison",
+                "No mention of Scope 3 emissions or financed emissions methodology",
+                "Vague language around 'industry-wide improvement' claims"
+              ],
+              "positive_aspects": [
+                "TCFD alignment suggests some structural approach to climate risk",
+                "Transparency commitment and public reporting",
+                "Quantified metrics rather than just qualitative claims",
+                "Substantial portion of AUM in sustainable products"
+              ],
+              "missing_information": [
+                "Detailed methodology for carbon intensity calculations",
+                "Definition and criteria for sustainable investment classification",
+                "Absolute emissions data alongside intensity metrics",
+                "Third-party verification of reported metrics",
+                "Comparison with science-based targets",
+                "Timeline and interim targets for future reductions"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "methodological_transparency",
+                "greenwashing_risk",
+                "data_verification",
+                "systemic_impact",
+                "industry_standards"
+              ],
+              "persona_id": "S2_P8",
+              "persona_label": "Sustainability Academic",
+              "_raw": "{\n  \"interpretation\": \"This appears to be a fairly standard ESG progress report announcement hitting the usual metrics - carbon intensity reduction, disclosure frameworks, and sustainable product growth. While the numbers sound impressive, the communication lacks the depth and methodological transparency I'd expect for meaningful assessment.\",\n  \"sentiment\": 3,\n  \"credibility\": 3,\n  \"concerns\": [\"No baseline methodology disclosed for carbon intensity calculations\", \"Unclear what constitutes 'sustainable investment products' - potential greenwashing\", \"A-rating from CDP without context of peer comparison\", \"No mention of Scope 3 emissions or financed emissions methodology\", \"Vague language around 'industry-wide improvement' claims\"],\n  \"positive_aspects\": [\"TCFD alignment suggests some structural approach to climate risk\", \"Transparency commitment and public reporting\", \"Quantified metrics rather than just qualitative claims\", \"Substantial portion of AUM in sustainable products\"],\n  \"missing_information\": [\"Detailed methodology for carbon intensity calculations\", \"Definition and criteria for sustainable investment classification\", \"Absolute emissions data alongside intensity metrics\", \"Third-party verification of reported metrics\", \"Comparison with science-based targets\", \"Timeline and interim targets for future reductions\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"methodological_transparency\", \"greenwashing_risk\", \"data_verification\", \"systemic_impact\", \"industry_standards\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 1.0
+            }
+          ],
+          "followup_responses": [
+            {
+              "followup_response": "The primary risk I see is regulatory exposure - with SEC climate disclosure rules still evolving, MeridianFinance could face compliance costs or methodology challenges that impact returns. However, the 40% sustainable AUM positioning creates significant opportunity if institutional mandates continue shifting toward ESG integration. The CDP A-rating and TCFD alignment suggest they're ahead of the curve on risk management frameworks, which could attract capital from pension funds and sovereign wealth funds with fiduciary ESG requirements. My main concern is whether their carbon intensity reduction methodology is robust enough to withstand scrutiny from activist shareholders.",
+              "sentiment_shift": 6,
+              "new_themes": [
+                "regulatory_compliance",
+                "institutional_capital_flows"
+              ],
+              "persona_id": "S2_P1"
+            },
+            {
+              "followup_response": "The main risk I see is definitional ambiguity around their 'sustainable investment products' - without clear taxonomies, this could invite greenwashing scrutiny, especially given the current regulatory focus on Article 8/9 classifications in Europe. The 30% carbon intensity reduction is promising but lacks crucial methodology details about scope 3 emissions and financed emissions calculations. Opportunity-wise, their TCFD alignment and CDP A-rating suggest they're building solid disclosure infrastructure, which positions them well for incoming CSRD requirements and could attract ESG-focused institutional capital.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "regulatory_compliance",
+                "greenwashing_risk",
+                "institutional_capital"
+              ],
+              "persona_id": "S2_P2"
+            },
+            {
+              "followup_response": "The biggest risk I see is that 'portfolio carbon intensity' is a malleable metric - they could achieve that 30% reduction simply by shifting investments to different sectors rather than actually driving decarbonization. Without absolute emissions data or details on their engagement strategy with portfolio companies, this looks like potential metric manipulation. However, the opportunity is significant if they can demonstrate genuine impact - sustainable investment demand is surging and early movers with credible track records will capture disproportionate flows. The real test will be whether their methodology stands up to scrutiny when investors start digging into the details.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "metric_manipulation",
+                "investment_flows",
+                "methodology_scrutiny"
+              ],
+              "persona_id": "S2_P3"
+            },
+            {
+              "followup_response": "Honestly, I'm torn on this. On the upside, if they're actually delivering real ESG results and not just greenwashing, they could capture more institutional money and millennial investors who care about this stuff. But the risk is huge - with all these ESG watchdogs like ShareAction calling out BS, if their numbers don't hold up to scrutiny, they could face serious backlash and regulatory issues. Plus, what happens when the ESG bubble pops or regulations change? 40% of their AUM tied to 'sustainable' products could become a liability if that market tanks or gets redefined.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "regulatory_risk",
+                "market_volatility",
+                "institutional_capital"
+              ],
+              "persona_id": "S2_P4"
+            },
+            {
+              "followup_response": "From a regulatory perspective, I see both compliance opportunities and enforcement risks. The TCFD alignment and CDP rating demonstrate serious engagement with established frameworks, which reduces regulatory scrutiny risk. However, the 30% carbon intensity reduction claim requires robust methodology verification - we've seen firms use questionable baseline adjustments or portfolio reshuffling to achieve impressive-sounding numbers. The 40% sustainable AUM figure is particularly concerning without clear definitional boundaries, given the ongoing regulatory work on sustainable finance taxonomy. This could expose them to greenwashing allegations if their classification methodology doesn't align with emerging EU standards.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "methodology_verification",
+                "taxonomy_alignment",
+                "enforcement_risk"
+              ],
+              "persona_id": "S2_P5"
+            },
+            {
+              "followup_response": "The main risk I see is the 'intensity-based' carbon reduction metric - this allows for absolute emissions growth if their AUM expands significantly, which could invite scrutiny from groups like ShareAction. The opportunity lies in their TCFD alignment and CDP A-rating, which provides solid defensive positioning against greenwashing accusations. However, the '40% sustainable AUM' figure needs careful definition - if it includes broad ESG integration rather than impact-focused strategies, it could become a reputational liability. From a competitive standpoint, they're keeping pace but not differentiating meaningfully from peers like BlackRock.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "intensity_vs_absolute_metrics",
+                "defensive_positioning",
+                "competitive_parity"
+              ],
+              "persona_id": "S2_P6"
+            },
+            {
+              "followup_response": "The transparency angle is smart positioning given current greenwashing scrutiny, but MeridianFinance is exposing themselves to deeper scrutiny of their methodology and definitions. The 40% AUM figure could backfire if competitors or activists dig into what they're classifying as 'sustainable' - we've seen this blow up for other firms. However, if their metrics hold up to examination, they're creating a competitive moat while their peers are still catching up on disclosure quality. The CDP A-rating gives them third-party credibility, but they need to be prepared for more aggressive ESG oversight going forward.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "regulatory_risk",
+                "competitive_moat",
+                "methodology_scrutiny"
+              ],
+              "persona_id": "S2_P7"
+            },
+            {
+              "followup_response": "The primary risk I see is reputational damage if these metrics don't withstand scrutiny - without transparent methodologies, they're vulnerable to greenwashing accusations that are increasingly common in finance. The 40% AUM figure particularly concerns me as 'sustainable' definitions vary wildly across the industry. However, there's a significant opportunity here if they can demonstrate genuine additionality in their investments rather than just ESG screening. The real test will be whether their portfolio companies show measurable sustainability improvements beyond what market forces would drive anyway. Their strategy could differentiate them if they move beyond compliance metrics to actual impact measurement.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "reputational_risk",
+                "additionality_question",
+                "impact_vs_compliance"
+              ],
+              "persona_id": "S2_P8"
+            }
+          ],
+          "all_themes": [
+            "metrics_validation",
+            "fiduciary_alignment",
+            "transparency_gaps",
+            "competitive_positioning",
+            "risk_assessment",
+            "methodology_gaps",
+            "standard_disclosure",
+            "verification_needed",
+            "baseline_unclear",
+            "sector_context",
+            "metrics-scrutiny",
+            "transparency-claims",
+            "greenwashing-potential",
+            "third-party-validation",
+            "baseline-questions",
+            "greenwashing_suspicion",
+            "metrics_skepticism",
+            "performance_questions",
+            "transparency_attempt",
+            "marketing_driven",
+            "disclosure_compliance",
+            "metric_verification",
+            "regulatory_alignment",
+            "transparency_assessment",
+            "benchmark_analysis",
+            "metrics_validation",
+            "greenwashing_risk",
+            "industry_benchmarking",
+            "transparency_gaps",
+            "regulatory_compliance",
+            "competitive_benchmarking",
+            "metrics_verification",
+            "greenwashing_assessment",
+            "market_positioning",
+            "regulatory_compliance",
+            "methodological_transparency",
+            "greenwashing_risk",
+            "data_verification",
+            "systemic_impact",
+            "industry_standards",
+            "regulatory_compliance",
+            "institutional_capital_flows",
+            "regulatory_compliance",
+            "greenwashing_risk",
+            "institutional_capital",
+            "metric_manipulation",
+            "investment_flows",
+            "methodology_scrutiny",
+            "regulatory_risk",
+            "market_volatility",
+            "institutional_capital",
+            "methodology_verification",
+            "taxonomy_alignment",
+            "enforcement_risk",
+            "intensity_vs_absolute_metrics",
+            "defensive_positioning",
+            "competitive_parity",
+            "regulatory_risk",
+            "competitive_moat",
+            "methodology_scrutiny",
+            "reputational_risk",
+            "additionality_question",
+            "impact_vs_compliance"
+          ],
+          "sentiment_scores": [
+            5,
+            4,
+            4,
+            3,
+            5,
+            5,
+            5,
+            3
+          ],
+          "credibility_scores": [
+            5,
+            4,
+            4,
+            3,
+            5,
+            5,
+            5,
+            3
+          ],
+          "theme_list": [
+            "metrics_validation",
+            "fiduciary_alignment",
+            "transparency_gaps",
+            "competitive_positioning",
+            "risk_assessment",
+            "methodology_gaps",
+            "standard_disclosure",
+            "verification_needed",
+            "baseline_unclear",
+            "sector_context",
+            "metrics-scrutiny",
+            "transparency-claims",
+            "greenwashing-potential",
+            "third-party-validation",
+            "baseline-questions",
+            "greenwashing_suspicion",
+            "metrics_skepticism",
+            "performance_questions",
+            "transparency_attempt",
+            "marketing_driven",
+            "disclosure_compliance",
+            "metric_verification",
+            "regulatory_alignment",
+            "transparency_assessment",
+            "benchmark_analysis",
+            "greenwashing_risk",
+            "industry_benchmarking",
+            "regulatory_compliance",
+            "competitive_benchmarking",
+            "metrics_verification",
+            "greenwashing_assessment",
+            "market_positioning",
+            "methodological_transparency",
+            "data_verification",
+            "systemic_impact",
+            "industry_standards",
+            "institutional_capital_flows",
+            "institutional_capital",
+            "metric_manipulation",
+            "investment_flows",
+            "methodology_scrutiny",
+            "regulatory_risk",
+            "market_volatility",
+            "methodology_verification",
+            "taxonomy_alignment",
+            "enforcement_risk",
+            "intensity_vs_absolute_metrics",
+            "defensive_positioning",
+            "competitive_parity",
+            "competitive_moat",
+            "reputational_risk",
+            "additionality_question",
+            "impact_vs_compliance"
+          ],
+          "mean_sentiment": 4.25,
+          "mean_credibility": 4.25
+        }
+      ]
+    },
+    "B_silent": {
+      "experiment_label": "exp5_B_silent",
+      "K": 1,
+      "n_personas": 8,
+      "temperature_mode": "stratified",
+      "model": "claude-sonnet-4-20250514",
+      "sessions": [
+        {
+          "session_id": "exp5_B_silent_run_0",
+          "n_personas": 8,
+          "model": "claude-sonnet-4-20250514",
+          "signal_state_provided": true,
+          "temperatures": [
+            0.6,
+            0.6571428571428571,
+            0.7142857142857143,
+            0.7714285714285714,
+            0.8285714285714285,
+            0.8857142857142857,
+            0.9428571428571428,
+            1.0
+          ],
+          "initial_responses": [
+            {
+              "interpretation": "MeridianFinance appears to be deliberately reducing ESG communications, possibly in response to regulatory scrutiny or greenwashing concerns. This 'greenhushing' strategy contrasts sharply with competitors like AtlasCapital who are maintaining transparent reporting, creating a competitive disadvantage and raising questions about their actual ESG commitment versus mere compliance avoidance.",
+              "sentiment": 3,
+              "credibility": 6,
+              "concerns": [
+                "Lack of transparency suggests potential ESG underperformance",
+                "Rising investor inquiries indicate unmet fiduciary expectations",
+                "Competitive disadvantage in ESG-conscious institutional market",
+                "Possible regulatory compliance issues driving silence",
+                "Risk of being perceived as laggard in sustainable investing transition"
+              ],
+              "positive_aspects": [
+                "May indicate focus on substance over marketing",
+                "Could be avoiding greenwashing accusations through conservative approach"
+              ],
+              "missing_information": [
+                "Actual ESG performance metrics and portfolio composition",
+                "Regulatory filing details on ESG integration",
+                "Client retention and flow data",
+                "Management's explicit rationale for communication strategy",
+                "Peer comparison of actual ESG outcomes versus reporting"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "transparency_deficit",
+                "competitive_positioning",
+                "fiduciary_risk",
+                "regulatory_implications",
+                "performance_uncertainty"
+              ],
+              "persona_id": "S2_P1",
+              "persona_label": "Institutional Investor",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance appears to be deliberately reducing ESG communications, possibly in response to regulatory scrutiny or greenwashing concerns. This 'greenhushing' strategy contrasts sharply with competitors like AtlasCapital who are maintaining transparent reporting, creating a competitive disadvantage and raising questions about their actual ESG commitment versus mere compliance avoidance.\",\n  \"sentiment\": 3,\n  \"credibility\": 6,\n  \"concerns\": [\"Lack of transparency suggests potential ESG underperformance\", \"Rising investor inquiries indicate unmet fiduciary expectations\", \"Competitive disadvantage in ESG-conscious institutional market\", \"Possible regulatory compliance issues driving silence\", \"Risk of being perceived as laggard in sustainable investing transition\"],\n  \"positive_aspects\": [\"May indicate focus on substance over marketing\", \"Could be avoiding greenwashing accusations through conservative approach\"],\n  \"missing_information\": [\"Actual ESG performance metrics and portfolio composition\", \"Regulatory filing details on ESG integration\", \"Client retention and flow data\", \"Management's explicit rationale for communication strategy\", \"Peer comparison of actual ESG outcomes versus reporting\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"transparency_deficit\", \"competitive_positioning\", \"fiduciary_risk\", \"regulatory_implications\", \"performance_uncertainty\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.6
+            },
+            {
+              "interpretation": "MeridianFinance appears to be engaging in 'greenhushing' - deliberately reducing ESG communications despite growing investor demand for transparency. This silence contrasts sharply with competitor AtlasCapital's comprehensive reporting and suggests either poor ESG performance they want to hide or a strategic retreat from ESG commitments amid political backlash.",
+              "sentiment": 2,
+              "credibility": 6,
+              "concerns": [
+                "Lack of transparency suggests poor ESG performance",
+                "Potential greenwashing reversal or ESG commitment abandonment",
+                "Ignoring fiduciary duty to inform investors about material ESG risks",
+                "May indicate weak internal ESG data collection and governance",
+                "Competitive disadvantage as peers advance ESG integration"
+              ],
+              "positive_aspects": [
+                "Avoiding superficial ESG marketing without substance",
+                "Possibly focusing resources on actual implementation rather than communications"
+              ],
+              "missing_information": [
+                "Actual ESG performance metrics and portfolio carbon intensity",
+                "Internal ESG governance structure and policies",
+                "Client/investor feedback on ESG integration",
+                "Comparative analysis with industry ESG benchmarks",
+                "Management's explicit rationale for communication strategy"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "transparency_deficit",
+                "greenhushing_trend",
+                "investor_demand_mismatch",
+                "competitive_disadvantage",
+                "governance_concerns"
+              ],
+              "persona_id": "S2_P2",
+              "persona_label": "ESG Analyst",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance appears to be engaging in 'greenhushing' - deliberately reducing ESG communications despite growing investor demand for transparency. This silence contrasts sharply with competitor AtlasCapital's comprehensive reporting and suggests either poor ESG performance they want to hide or a strategic retreat from ESG commitments amid political backlash.\",\n  \"sentiment\": 2,\n  \"credibility\": 6,\n  \"concerns\": [\"Lack of transparency suggests poor ESG performance\", \"Potential greenwashing reversal or ESG commitment abandonment\", \"Ignoring fiduciary duty to inform investors about material ESG risks\", \"May indicate weak internal ESG data collection and governance\", \"Competitive disadvantage as peers advance ESG integration\"],\n  \"positive_aspects\": [\"Avoiding superficial ESG marketing without substance\", \"Possibly focusing resources on actual implementation rather than communications\"],\n  \"missing_information\": [\"Actual ESG performance metrics and portfolio carbon intensity\", \"Internal ESG governance structure and policies\", \"Client/investor feedback on ESG integration\", \"Comparative analysis with industry ESG benchmarks\", \"Management's explicit rationale for communication strategy\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"transparency_deficit\", \"greenhushing_trend\", \"investor_demand_mismatch\", \"competitive_disadvantage\", \"governance_concerns\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.6571428571428571
+            },
+            {
+              "interpretation": "MeridianFinance appears to be deliberately avoiding ESG communications despite growing investor interest and competitive pressure. This could indicate either genuine greenhushing concerns or potential weakness in their actual ESG positioning that they're reluctant to expose.",
+              "sentiment": 3,
+              "credibility": 6,
+              "concerns": [
+                "Lack of transparency raises red flags about actual ESG performance",
+                "Radio silence suggests potential greenwashing avoidance but also accountability avoidance",
+                "45% increase in investor inquiries indicates market pressure they're ignoring",
+                "May be hiding poor ESG metrics or lack of genuine commitment"
+              ],
+              "positive_aspects": [
+                "At least they're not making potentially misleading claims",
+                "Could indicate thoughtful approach rather than rushed greenwashing"
+              ],
+              "missing_information": [
+                "Details about MeridianFinance's actual ESG practices and portfolio composition",
+                "Specific reasons for their communication strategy",
+                "Comparative ESG performance metrics vs competitors",
+                "Internal ESG policies and governance structures",
+                "Timeline for any planned ESG disclosures"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "transparency_deficit",
+                "competitive_disadvantage",
+                "investor_pressure",
+                "greenhushing_trend",
+                "accountability_gap"
+              ],
+              "persona_id": "S2_P3",
+              "persona_label": "Financial Journalist",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance appears to be deliberately avoiding ESG communications despite growing investor interest and competitive pressure. This could indicate either genuine greenhushing concerns or potential weakness in their actual ESG positioning that they're reluctant to expose.\",\n  \"sentiment\": 3,\n  \"credibility\": 6,\n  \"concerns\": [\"Lack of transparency raises red flags about actual ESG performance\", \"Radio silence suggests potential greenwashing avoidance but also accountability avoidance\", \"45% increase in investor inquiries indicates market pressure they're ignoring\", \"May be hiding poor ESG metrics or lack of genuine commitment\"],\n  \"positive_aspects\": [\"At least they're not making potentially misleading claims\", \"Could indicate thoughtful approach rather than rushed greenwashing\"],\n  \"missing_information\": [\"Details about MeridianFinance's actual ESG practices and portfolio composition\", \"Specific reasons for their communication strategy\", \"Comparative ESG performance metrics vs competitors\", \"Internal ESG policies and governance structures\", \"Timeline for any planned ESG disclosures\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"transparency_deficit\", \"competitive_disadvantage\", \"investor_pressure\", \"greenhushing_trend\", \"accountability_gap\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.7142857142857143
+            },
+            {
+              "interpretation": "MeridianFinance is going radio silent on ESG while competitors are being transparent, which feels sketchy. Either they're doing nothing worth reporting or they're trying to avoid scrutiny - neither option looks good for shareholders like me.",
+              "sentiment": 2,
+              "credibility": 6,
+              "concerns": [
+                "Lack of transparency compared to competitors",
+                "Possible greenwashing avoidance strategy",
+                "Rising investor inquiries suggest underlying issues",
+                "Could signal poor ESG performance",
+                "Potential regulatory or reputational risks being hidden"
+              ],
+              "positive_aspects": [
+                "At least they're not making empty promises like some companies",
+                "Might be focusing on actual results rather than PR"
+              ],
+              "missing_information": [
+                "What specific ESG initiatives they actually have",
+                "Why they've gone silent for two quarters",
+                "How their ESG performance actually compares to AtlasCapital",
+                "Whether this silence is temporary or permanent strategy",
+                "Impact on their fund performance and client retention"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "transparency_deficit",
+                "competitive_disadvantage",
+                "investor_concern",
+                "greenhushing_trend",
+                "portfolio_risk"
+              ],
+              "persona_id": "S2_P4",
+              "persona_label": "Retail Investor",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance is going radio silent on ESG while competitors are being transparent, which feels sketchy. Either they're doing nothing worth reporting or they're trying to avoid scrutiny - neither option looks good for shareholders like me.\",\n  \"sentiment\": 2,\n  \"credibility\": 6,\n  \"concerns\": [\"Lack of transparency compared to competitors\", \"Possible greenwashing avoidance strategy\", \"Rising investor inquiries suggest underlying issues\", \"Could signal poor ESG performance\", \"Potential regulatory or reputational risks being hidden\"],\n  \"positive_aspects\": [\"At least they're not making empty promises like some companies\", \"Might be focusing on actual results rather than PR\"],\n  \"missing_information\": [\"What specific ESG initiatives they actually have\", \"Why they've gone silent for two quarters\", \"How their ESG performance actually compares to AtlasCapital\", \"Whether this silence is temporary or permanent strategy\", \"Impact on their fund performance and client retention\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"transparency_deficit\", \"competitive_disadvantage\", \"investor_concern\", \"greenhushing_trend\", \"portfolio_risk\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.7714285714285714
+            },
+            {
+              "interpretation": "MeridianFinance's silence on ESG activities for two consecutive quarters suggests either a lack of substantive ESG progress to report or a strategic shift away from public ESG communications amid the 'greenhushing' trend. The 45% increase in investor inquiries indicates stakeholder demand for transparency that the firm is not meeting.",
+              "sentiment": 2,
+              "credibility": 6,
+              "concerns": [
+                "Potential non-compliance with ESG disclosure requirements",
+                "Lack of transparency undermining investor confidence",
+                "Possible attempt to avoid scrutiny of weak ESG performance",
+                "Failure to meet stakeholder information needs",
+                "Risk of regulatory attention due to disclosure gaps"
+              ],
+              "positive_aspects": [
+                "May indicate focus on substance over marketing",
+                "Could be avoiding greenwashing by not making unsubstantiated claims"
+              ],
+              "missing_information": [
+                "Mandatory ESG disclosure filings status",
+                "Specific regulatory requirements applicable to MeridianFinance",
+                "Client and investor communication on ESG matters",
+                "Internal ESG policies and implementation progress",
+                "Comparison with regulatory minimum disclosure standards"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "disclosure_gaps",
+                "regulatory_compliance",
+                "transparency_deficit",
+                "stakeholder_pressure",
+                "greenhushing_trend"
+              ],
+              "persona_id": "S2_P5",
+              "persona_label": "Financial Regulator",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance's silence on ESG activities for two consecutive quarters suggests either a lack of substantive ESG progress to report or a strategic shift away from public ESG communications amid the 'greenhushing' trend. The 45% increase in investor inquiries indicates stakeholder demand for transparency that the firm is not meeting.\",\n  \"sentiment\": 2,\n  \"credibility\": 6,\n  \"concerns\": [\"Potential non-compliance with ESG disclosure requirements\", \"Lack of transparency undermining investor confidence\", \"Possible attempt to avoid scrutiny of weak ESG performance\", \"Failure to meet stakeholder information needs\", \"Risk of regulatory attention due to disclosure gaps\"],\n  \"positive_aspects\": [\"May indicate focus on substance over marketing\", \"Could be avoiding greenwashing by not making unsubstantiated claims\"],\n  \"missing_information\": [\"Mandatory ESG disclosure filings status\", \"Specific regulatory requirements applicable to MeridianFinance\", \"Client and investor communication on ESG matters\", \"Internal ESG policies and implementation progress\", \"Comparison with regulatory minimum disclosure standards\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"disclosure_gaps\", \"regulatory_compliance\", \"transparency_deficit\", \"stakeholder_pressure\", \"greenhushing_trend\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.8285714285714285
+            },
+            {
+              "interpretation": "MeridianFinance appears to be engaging in 'greenhushing' - deliberately reducing ESG communications despite rising investor interest. This silence, contrasted with competitor transparency, suggests either weak ESG performance they're trying to hide or a strategic retreat from public commitments due to regulatory/reputational risks.",
+              "sentiment": 2,
+              "credibility": 6,
+              "concerns": [
+                "Potential greenwashing avoidance creating transparency gaps",
+                "Investor confidence erosion from lack of disclosure",
+                "Competitive disadvantage as ESG becomes table stakes",
+                "Regulatory scrutiny risk from non-disclosure",
+                "Market perception of ESG commitment weakness"
+              ],
+              "positive_aspects": [
+                "Avoiding overpromising on undeliverable commitments",
+                "Potentially focusing resources on actual performance rather than reporting"
+              ],
+              "missing_information": [
+                "Actual ESG performance metrics vs. reporting gaps",
+                "Internal ESG strategy and resource allocation",
+                "Regulatory compliance status",
+                "Investor relations strategy rationale",
+                "Board-level ESG governance structure"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "greenhushing_risk",
+                "transparency_deficit",
+                "competitive_disadvantage",
+                "investor_relations_failure",
+                "reputational_vulnerability"
+              ],
+              "persona_id": "S2_P6",
+              "persona_label": "Company CSO",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance appears to be engaging in 'greenhushing' - deliberately reducing ESG communications despite rising investor interest. This silence, contrasted with competitor transparency, suggests either weak ESG performance they're trying to hide or a strategic retreat from public commitments due to regulatory/reputational risks.\",\n  \"sentiment\": 2,\n  \"credibility\": 6,\n  \"concerns\": [\"Potential greenwashing avoidance creating transparency gaps\", \"Investor confidence erosion from lack of disclosure\", \"Competitive disadvantage as ESG becomes table stakes\", \"Regulatory scrutiny risk from non-disclosure\", \"Market perception of ESG commitment weakness\"],\n  \"positive_aspects\": [\"Avoiding overpromising on undeliverable commitments\", \"Potentially focusing resources on actual performance rather than reporting\"],\n  \"missing_information\": [\"Actual ESG performance metrics vs. reporting gaps\", \"Internal ESG strategy and resource allocation\", \"Regulatory compliance status\", \"Investor relations strategy rationale\", \"Board-level ESG governance structure\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"greenhushing_risk\", \"transparency_deficit\", \"competitive_disadvantage\", \"investor_relations_failure\", \"reputational_vulnerability\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.8857142857142857
+            },
+            {
+              "interpretation": "MeridianFinance appears to be deliberately staying quiet on ESG while competitors like AtlasCapital are being more transparent. This could be strategic positioning to avoid scrutiny or indicate they don't have compelling ESG progress to report.",
+              "sentiment": 3,
+              "credibility": 6,
+              "concerns": [
+                "Competitive disadvantage if ESG becomes client differentiator",
+                "Potential regulatory scrutiny from greenhushing trend",
+                "Client attrition risk given 45% increase in ESG inquiries",
+                "May signal weak ESG performance or strategy"
+              ],
+              "positive_aspects": [
+                "Avoiding greenwashing accusations",
+                "Could be focusing resources on actual implementation rather than reporting",
+                "May be waiting for more substantial achievements before communicating"
+              ],
+              "missing_information": [
+                "MeridianFinance's actual ESG performance metrics",
+                "Client retention data during this silent period",
+                "Internal ESG strategy and timeline",
+                "Regulatory pressure on asset managers in their jurisdiction",
+                "Competitor performance impact from ESG reporting"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "competitive_disadvantage",
+                "strategic_silence",
+                "market_positioning",
+                "client_pressure",
+                "regulatory_risk"
+              ],
+              "persona_id": "S2_P7",
+              "persona_label": "Competitor Analyst",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance appears to be deliberately staying quiet on ESG while competitors like AtlasCapital are being more transparent. This could be strategic positioning to avoid scrutiny or indicate they don't have compelling ESG progress to report.\",\n  \"sentiment\": 3,\n  \"credibility\": 6,\n  \"concerns\": [\"Competitive disadvantage if ESG becomes client differentiator\", \"Potential regulatory scrutiny from greenhushing trend\", \"Client attrition risk given 45% increase in ESG inquiries\", \"May signal weak ESG performance or strategy\"],\n  \"positive_aspects\": [\"Avoiding greenwashing accusations\", \"Could be focusing resources on actual implementation rather than reporting\", \"May be waiting for more substantial achievements before communicating\"],\n  \"missing_information\": [\"MeridianFinance's actual ESG performance metrics\", \"Client retention data during this silent period\", \"Internal ESG strategy and timeline\", \"Regulatory pressure on asset managers in their jurisdiction\", \"Competitor performance impact from ESG reporting\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"competitive_disadvantage\", \"strategic_silence\", \"market_positioning\", \"client_pressure\", \"regulatory_risk\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.9428571428571428
+            },
+            {
+              "interpretation": "MeridianFinance's sustained silence on ESG activities, contrasted with competitor transparency, suggests either strategic 'greenhushing' to avoid scrutiny or potential lack of substantive sustainability initiatives. The 45% increase in investor inquiries indicates market demand for transparency that the firm is not meeting.",
+              "sentiment": 2,
+              "credibility": 6,
+              "concerns": [
+                "Possible greenwashing avoidance through silence rather than genuine commitment",
+                "Lack of accountability and transparency expected from financial institutions",
+                "May indicate weak ESG integration compared to peers",
+                "Investor demand being ignored suggests poor stakeholder engagement",
+                "Potential regulatory compliance issues if ESG disclosure becomes mandatory"
+              ],
+              "positive_aspects": [
+                "Could represent authentic approach - avoiding empty promises",
+                "May be focusing on implementation rather than communication"
+              ],
+              "missing_information": [
+                "Actual ESG practices and policies in place",
+                "Reasons for communication strategy",
+                "Comparative performance metrics vs. disclosed competitors",
+                "Timeline for future ESG reporting",
+                "Internal ESG governance structures"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "transparency_deficit",
+                "strategic_silence",
+                "market_accountability",
+                "greenwashing_avoidance",
+                "stakeholder_pressure"
+              ],
+              "persona_id": "S2_P8",
+              "persona_label": "Sustainability Academic",
+              "_raw": "{\n  \"interpretation\": \"MeridianFinance's sustained silence on ESG activities, contrasted with competitor transparency, suggests either strategic 'greenhushing' to avoid scrutiny or potential lack of substantive sustainability initiatives. The 45% increase in investor inquiries indicates market demand for transparency that the firm is not meeting.\",\n  \"sentiment\": 2,\n  \"credibility\": 6,\n  \"concerns\": [\"Possible greenwashing avoidance through silence rather than genuine commitment\", \"Lack of accountability and transparency expected from financial institutions\", \"May indicate weak ESG integration compared to peers\", \"Investor demand being ignored suggests poor stakeholder engagement\", \"Potential regulatory compliance issues if ESG disclosure becomes mandatory\"],\n  \"positive_aspects\": [\"Could represent authentic approach - avoiding empty promises\", \"May be focusing on implementation rather than communication\"],\n  \"missing_information\": [\"Actual ESG practices and policies in place\", \"Reasons for communication strategy\", \"Comparative performance metrics vs. disclosed competitors\", \"Timeline for future ESG reporting\", \"Internal ESG governance structures\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"transparency_deficit\", \"strategic_silence\", \"market_accountability\", \"greenwashing_avoidance\", \"stakeholder_pressure\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 1.0
+            }
+          ],
+          "followup_responses": [
+            {
+              "followup_response": "The risks here significantly outweigh any potential benefits. From a fiduciary standpoint, MeridianFinance's silence creates information asymmetry that institutional clients like us can't tolerate - we need transparent ESG metrics for our own reporting and risk assessment. While they might be avoiding greenwashing accusations short-term, this strategy could backfire spectacularly if they're hiding material ESG risks or underperformance. The 45% increase in investor inquiries suggests growing client dissatisfaction, which could translate to asset outflows. However, if they're genuinely working on substantive ESG improvements behind the scenes, this quiet period could position them for a more credible future announcement - but that's a high-risk bet in today's transparency-demanding market.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "information_asymmetry",
+                "client_retention_risk",
+                "regulatory_avoidance_strategy"
+              ],
+              "persona_id": "S2_P1"
+            },
+            {
+              "followup_response": "MeridianFinance faces significant regulatory and reputational risks with this greenhushing approach. EU SFDR and upcoming CSRD requirements will force disclosure regardless, so silence now just creates a larger compliance gap later. The 45% increase in investor inquiries suggests material financial risk - institutional investors are increasingly mandating ESG transparency for allocation decisions. However, if they're genuinely improving ESG practices quietly, they could potentially avoid the greenwashing accusations plaguing more vocal competitors, though this seems unlikely given the sustained silence.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "regulatory_compliance_risk",
+                "institutional_investor_pressure",
+                "strategic_positioning"
+              ],
+              "persona_id": "S2_P2"
+            },
+            {
+              "followup_response": "The risks are significant - MeridianFinance could face regulatory scrutiny as ESG disclosure requirements tighten, and they're clearly losing competitive ground to firms like AtlasCapital who are being transparent. That 45% spike in investor inquiries suggests real market pressure that silence won't resolve. However, there's a tactical opportunity here if they're genuinely building substance behind the scenes - they could avoid the greenwashing backlash we're seeing hit other firms and emerge with credible, auditable progress rather than flashy marketing. The danger is that continued silence gets interpreted as having nothing meaningful to report, which could trigger divestment from ESG-focused institutional investors.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "regulatory_risk",
+                "competitive_disadvantage",
+                "tactical_positioning"
+              ],
+              "persona_id": "S2_P3"
+            },
+            {
+              "followup_response": "The risk here is huge - if they're staying quiet because they have nothing good to report, that's a red flag for long-term performance in a market that's increasingly ESG-focused. But honestly, part of me wonders if they're just avoiding the greenwashing trap that's catching so many companies lately. Maybe they're being smart by not making promises they can't keep? Still, the lack of transparency is concerning when I'm trying to evaluate my holdings. If institutional investors start pulling out due to ESG concerns, that could tank the stock price even if their actual business fundamentals are solid.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "institutional_investor_flight_risk",
+                "greenwashing_avoidance_strategy"
+              ],
+              "persona_id": "S2_P4"
+            },
+            {
+              "followup_response": "From a regulatory perspective, MeridianFinance's silence presents significant compliance risks, particularly if they're subject to SFDR or other ESG disclosure mandates that require periodic reporting. The 45% increase in investor inquiries suggests potential market conduct issues if they're not adequately responding to legitimate information requests. However, this 'greenhushing' approach could be strategically sound if it helps them avoid making commitments they cannot substantiate - we've seen too many firms face enforcement action for overstating their ESG capabilities. The key risk is that silence may be interpreted as having something to hide, which could trigger more intensive regulatory scrutiny than transparent, measured disclosure would.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "regulatory_compliance_risk",
+                "market_conduct_concerns",
+                "strategic_disclosure_management"
+              ],
+              "persona_id": "S2_P5"
+            },
+            {
+              "followup_response": "The risks are significant - MeridianFinance is creating an information vacuum that investors and stakeholders will fill with worst-case assumptions. While avoiding greenwashing accusations might seem prudent, complete silence signals they have something to hide or lack meaningful progress to report. The 45% increase in investor inquiries shows this strategy is backfiring, potentially leading to capital flight to more transparent competitors like AtlasCapital. However, there's an opportunity here if they're using this quiet period to develop genuinely substantive ESG initiatives rather than marketing fluff - they could emerge with a more credible, action-based approach that differentiates them from peers focused on disclosure over performance.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "information_vacuum_risk",
+                "competitive_disadvantage",
+                "investor_flight_potential"
+              ],
+              "persona_id": "S2_P6"
+            },
+            {
+              "followup_response": "The risks are significant - MeridianFinance could lose institutional clients who increasingly require ESG documentation for their own reporting. They're also vulnerable if regulators crack down on greenhushing as a form of non-disclosure. However, there's an opportunity here if they're genuinely building substantive ESG capabilities behind the scenes while competitors make premature announcements. The 45% increase in investor inquiries suggests market demand that could translate to competitive advantage if they eventually deliver comprehensive results. But staying silent much longer becomes a liability in this environment.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "regulatory_risk",
+                "client_retention_risk",
+                "stealth_strategy_opportunity"
+              ],
+              "persona_id": "S2_P7"
+            },
+            {
+              "followup_response": "MeridianFinance faces significant reputational and regulatory risks by maintaining ESG silence while investor demand clearly increases. This 'greenhushing' strategy may temporarily avoid greenwashing accusations, but creates a transparency deficit that sophisticated institutional investors will penalize through capital allocation decisions. The opportunity cost is substantial - they're ceding competitive advantage to firms like AtlasCapital that demonstrate measurable sustainability progress. However, there's a strategic opportunity here: if they're genuinely developing robust ESG frameworks behind the scenes, they could emerge with more credible, evidence-based sustainability reporting that stands out against superficial competitor announcements.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "regulatory_risk",
+                "competitive_disadvantage",
+                "capital_allocation_consequences"
+              ],
+              "persona_id": "S2_P8"
+            }
+          ],
+          "all_themes": [
+            "transparency_deficit",
+            "competitive_positioning",
+            "fiduciary_risk",
+            "regulatory_implications",
+            "performance_uncertainty",
+            "transparency_deficit",
+            "greenhushing_trend",
+            "investor_demand_mismatch",
+            "competitive_disadvantage",
+            "governance_concerns",
+            "transparency_deficit",
+            "competitive_disadvantage",
+            "investor_pressure",
+            "greenhushing_trend",
+            "accountability_gap",
+            "transparency_deficit",
+            "competitive_disadvantage",
+            "investor_concern",
+            "greenhushing_trend",
+            "portfolio_risk",
+            "disclosure_gaps",
+            "regulatory_compliance",
+            "transparency_deficit",
+            "stakeholder_pressure",
+            "greenhushing_trend",
+            "greenhushing_risk",
+            "transparency_deficit",
+            "competitive_disadvantage",
+            "investor_relations_failure",
+            "reputational_vulnerability",
+            "competitive_disadvantage",
+            "strategic_silence",
+            "market_positioning",
+            "client_pressure",
+            "regulatory_risk",
+            "transparency_deficit",
+            "strategic_silence",
+            "market_accountability",
+            "greenwashing_avoidance",
+            "stakeholder_pressure",
+            "information_asymmetry",
+            "client_retention_risk",
+            "regulatory_avoidance_strategy",
+            "regulatory_compliance_risk",
+            "institutional_investor_pressure",
+            "strategic_positioning",
+            "regulatory_risk",
+            "competitive_disadvantage",
+            "tactical_positioning",
+            "institutional_investor_flight_risk",
+            "greenwashing_avoidance_strategy",
+            "regulatory_compliance_risk",
+            "market_conduct_concerns",
+            "strategic_disclosure_management",
+            "information_vacuum_risk",
+            "competitive_disadvantage",
+            "investor_flight_potential",
+            "regulatory_risk",
+            "client_retention_risk",
+            "stealth_strategy_opportunity",
+            "regulatory_risk",
+            "competitive_disadvantage",
+            "capital_allocation_consequences"
+          ],
+          "sentiment_scores": [
+            3,
+            2,
+            3,
+            2,
+            2,
+            2,
+            3,
+            2
+          ],
+          "credibility_scores": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "theme_list": [
+            "transparency_deficit",
+            "competitive_positioning",
+            "fiduciary_risk",
+            "regulatory_implications",
+            "performance_uncertainty",
+            "greenhushing_trend",
+            "investor_demand_mismatch",
+            "competitive_disadvantage",
+            "governance_concerns",
+            "investor_pressure",
+            "accountability_gap",
+            "investor_concern",
+            "portfolio_risk",
+            "disclosure_gaps",
+            "regulatory_compliance",
+            "stakeholder_pressure",
+            "greenhushing_risk",
+            "investor_relations_failure",
+            "reputational_vulnerability",
+            "strategic_silence",
+            "market_positioning",
+            "client_pressure",
+            "regulatory_risk",
+            "market_accountability",
+            "greenwashing_avoidance",
+            "information_asymmetry",
+            "client_retention_risk",
+            "regulatory_avoidance_strategy",
+            "regulatory_compliance_risk",
+            "institutional_investor_pressure",
+            "strategic_positioning",
+            "tactical_positioning",
+            "institutional_investor_flight_risk",
+            "greenwashing_avoidance_strategy",
+            "market_conduct_concerns",
+            "strategic_disclosure_management",
+            "information_vacuum_risk",
+            "investor_flight_potential",
+            "stealth_strategy_opportunity",
+            "capital_allocation_consequences"
+          ],
+          "mean_sentiment": 2.375,
+          "mean_credibility": 6.0
+        }
+      ]
+    }
+  },
+  "reports": {
+    "A_disclose": {
+      "experiment": "exp5_A_disclose",
+      "K": 1,
+      "n_personas": 8,
+      "model": "claude-sonnet-4-20250514",
+      "theme_stability": {
+        "themes": {
+          "metrics_validation": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "baseline_unclear": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "metrics_skepticism": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "transparency-claims": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "metric_manipulation": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "enforcement_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "competitive_moat": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "methodology_gaps": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_alignment": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "methodology_scrutiny": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing_assessment": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "performance_questions": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "reputational_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "sector_context": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "defensive_positioning": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "disclosure_compliance": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing-potential": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "transparency_assessment": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "institutional_capital_flows": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "institutional_capital": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "marketing_driven": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "baseline-questions": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "competitive_positioning": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "competitive_benchmarking": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "fiduciary_alignment": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "methodological_transparency": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_compliance": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "metric_verification": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "methodology_verification": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "metrics-scrutiny": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "verification_needed": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "metrics_verification": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "industry_benchmarking": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "data_verification": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "transparency_attempt": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "investment_flows": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "market_positioning": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "standard_disclosure": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "competitive_parity": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "additionality_question": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "taxonomy_alignment": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "intensity_vs_absolute_metrics": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "benchmark_analysis": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "risk_assessment": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "transparency_gaps": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "impact_vs_compliance": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "industry_standards": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing_suspicion": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "third-party-validation": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "systemic_impact": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "market_volatility": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          }
+        },
+        "total_unique_themes": 53,
+        "n_stable": 53,
+        "n_unstable": 0,
+        "stability_ratio": 1.0,
+        "K": 1
+      },
+      "variance_collapse": {
+        "per_run_mean_similarity": [
+          0.17480871744874626
+        ],
+        "overall_mean": 0.17480871744874626,
+        "overall_std": 0.0,
+        "delta_threshold": 0.85,
+        "n_flagged": 0,
+        "flagged_run_ids": [],
+        "collapse_detected": false
+      },
+      "sentiment": {
+        "overall": {
+          "mean": 4.25,
+          "std": 0.82915619758885,
+          "median": 4.5,
+          "skewness": -0.49338220021815865,
+          "kurtosis": -1.371900826446281,
+          "n": 8
+        },
+        "per_run": [
+          {
+            "mean": 4.25,
+            "std": 0.82915619758885,
+            "median": 4.5,
+            "min": 3,
+            "max": 5
+          }
+        ],
+        "run_mean_std": 0.0,
+        "distribution": {
+          "5": 4,
+          "4": 2,
+          "3": 2
+        }
+      },
+      "credibility": {
+        "mean": 4.25,
+        "std": 0.82915619758885,
+        "median": 4.5,
+        "distribution": {
+          "5": 4,
+          "4": 2,
+          "3": 2
+        },
+        "n": 8
+      },
+      "persona_consistency": {
+        "per_persona": {
+          "S2_P1": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P2": {
+            "sentiment_mean": 4.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P3": {
+            "sentiment_mean": 4.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P4": {
+            "sentiment_mean": 3.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P5": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P6": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P7": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P8": {
+            "sentiment_mean": 3.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          }
+        },
+        "mean_sentiment_std": 0.0,
+        "max_sentiment_std": 0.0
+      }
+    },
+    "B_silent": {
+      "experiment": "exp5_B_silent",
+      "K": 1,
+      "n_personas": 8,
+      "model": "claude-sonnet-4-20250514",
+      "theme_stability": {
+        "themes": {
+          "greenwashing_avoidance": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "reputational_vulnerability": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_implications": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "capital_allocation_consequences": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "strategic_disclosure_management": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "competitive_disadvantage": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "strategic_silence": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "strategic_positioning": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "greenhushing_trend": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "investor_relations_failure": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "disclosure_gaps": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "tactical_positioning": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "institutional_investor_flight_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "stakeholder_pressure": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "transparency_deficit": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_avoidance_strategy": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "stealth_strategy_opportunity": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "greenhushing_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "competitive_positioning": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "information_vacuum_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "information_asymmetry": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_compliance": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "client_pressure": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "market_accountability": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "accountability_gap": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "client_retention_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "governance_concerns": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "market_positioning": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "performance_uncertainty": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "institutional_investor_pressure": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "market_conduct_concerns": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "investor_demand_mismatch": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing_avoidance_strategy": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "investor_flight_potential": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "fiduciary_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "investor_pressure": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "portfolio_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_compliance_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_risk": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          },
+          "investor_concern": {
+            "frequency_per_run": [
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 1
+          }
+        },
+        "total_unique_themes": 40,
+        "n_stable": 40,
+        "n_unstable": 0,
+        "stability_ratio": 1.0,
+        "K": 1
+      },
+      "variance_collapse": {
+        "per_run_mean_similarity": [
+          0.285622623789191
+        ],
+        "overall_mean": 0.285622623789191,
+        "overall_std": 0.0,
+        "delta_threshold": 0.85,
+        "n_flagged": 0,
+        "flagged_run_ids": [],
+        "collapse_detected": false
+      },
+      "sentiment": {
+        "overall": {
+          "mean": 2.375,
+          "std": 0.4841229182759271,
+          "median": 2.0,
+          "skewness": 0.5163977794943223,
+          "kurtosis": -1.7333333333333334,
+          "n": 8
+        },
+        "per_run": [
+          {
+            "mean": 2.375,
+            "std": 0.4841229182759271,
+            "median": 2.0,
+            "min": 2,
+            "max": 3
+          }
+        ],
+        "run_mean_std": 0.0,
+        "distribution": {
+          "3": 3,
+          "2": 5
+        }
+      },
+      "credibility": {
+        "mean": 6.0,
+        "std": 0.0,
+        "median": 6.0,
+        "distribution": {
+          "6": 8
+        },
+        "n": 8
+      },
+      "persona_consistency": {
+        "per_persona": {
+          "S2_P1": {
+            "sentiment_mean": 3.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P2": {
+            "sentiment_mean": 2.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P3": {
+            "sentiment_mean": 3.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P4": {
+            "sentiment_mean": 2.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P5": {
+            "sentiment_mean": 2.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P6": {
+            "sentiment_mean": 2.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P7": {
+            "sentiment_mean": 3.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "S2_P8": {
+            "sentiment_mean": 2.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 1,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          }
+        },
+        "mean_sentiment_std": 0.0,
+        "max_sentiment_std": 0.0
+      }
+    }
+  },
+  "comparison": {
+    "condition_a_themes": [
+      "additionality_question",
+      "baseline-questions",
+      "baseline_unclear",
+      "benchmark_analysis",
+      "competitive_benchmarking",
+      "competitive_moat",
+      "competitive_parity",
+      "competitive_positioning",
+      "data_verification",
+      "defensive_positioning",
+      "disclosure_compliance",
+      "enforcement_risk",
+      "fiduciary_alignment",
+      "greenwashing-potential",
+      "greenwashing_assessment",
+      "greenwashing_risk",
+      "greenwashing_suspicion",
+      "impact_vs_compliance",
+      "industry_benchmarking",
+      "industry_standards",
+      "institutional_capital",
+      "institutional_capital_flows",
+      "intensity_vs_absolute_metrics",
+      "investment_flows",
+      "market_positioning",
+      "market_volatility",
+      "marketing_driven",
+      "methodological_transparency",
+      "methodology_gaps",
+      "methodology_scrutiny",
+      "methodology_verification",
+      "metric_manipulation",
+      "metric_verification",
+      "metrics-scrutiny",
+      "metrics_skepticism",
+      "metrics_validation",
+      "metrics_verification",
+      "performance_questions",
+      "regulatory_alignment",
+      "regulatory_compliance",
+      "regulatory_risk",
+      "reputational_risk",
+      "risk_assessment",
+      "sector_context",
+      "standard_disclosure",
+      "systemic_impact",
+      "taxonomy_alignment",
+      "third-party-validation",
+      "transparency-claims",
+      "transparency_assessment",
+      "transparency_attempt",
+      "transparency_gaps",
+      "verification_needed"
+    ],
+    "condition_b_themes": [
+      "accountability_gap",
+      "capital_allocation_consequences",
+      "client_pressure",
+      "client_retention_risk",
+      "competitive_disadvantage",
+      "competitive_positioning",
+      "disclosure_gaps",
+      "fiduciary_risk",
+      "governance_concerns",
+      "greenhushing_risk",
+      "greenhushing_trend",
+      "greenwashing_avoidance",
+      "greenwashing_avoidance_strategy",
+      "information_asymmetry",
+      "information_vacuum_risk",
+      "institutional_investor_flight_risk",
+      "institutional_investor_pressure",
+      "investor_concern",
+      "investor_demand_mismatch",
+      "investor_flight_potential",
+      "investor_pressure",
+      "investor_relations_failure",
+      "market_accountability",
+      "market_conduct_concerns",
+      "market_positioning",
+      "performance_uncertainty",
+      "portfolio_risk",
+      "regulatory_avoidance_strategy",
+      "regulatory_compliance",
+      "regulatory_compliance_risk",
+      "regulatory_implications",
+      "regulatory_risk",
+      "reputational_vulnerability",
+      "stakeholder_pressure",
+      "stealth_strategy_opportunity",
+      "strategic_disclosure_management",
+      "strategic_positioning",
+      "strategic_silence",
+      "tactical_positioning",
+      "transparency_deficit"
+    ],
+    "n_themes_a": 53,
+    "n_themes_b": 40,
+    "shared_themes": [
+      "competitive_positioning",
+      "market_positioning",
+      "regulatory_compliance",
+      "regulatory_risk"
+    ],
+    "unique_to_a": [
+      "additionality_question",
+      "baseline-questions",
+      "baseline_unclear",
+      "benchmark_analysis",
+      "competitive_benchmarking",
+      "competitive_moat",
+      "competitive_parity",
+      "data_verification",
+      "defensive_positioning",
+      "disclosure_compliance",
+      "enforcement_risk",
+      "fiduciary_alignment",
+      "greenwashing-potential",
+      "greenwashing_assessment",
+      "greenwashing_risk",
+      "greenwashing_suspicion",
+      "impact_vs_compliance",
+      "industry_benchmarking",
+      "industry_standards",
+      "institutional_capital",
+      "institutional_capital_flows",
+      "intensity_vs_absolute_metrics",
+      "investment_flows",
+      "market_volatility",
+      "marketing_driven",
+      "methodological_transparency",
+      "methodology_gaps",
+      "methodology_scrutiny",
+      "methodology_verification",
+      "metric_manipulation",
+      "metric_verification",
+      "metrics-scrutiny",
+      "metrics_skepticism",
+      "metrics_validation",
+      "metrics_verification",
+      "performance_questions",
+      "regulatory_alignment",
+      "reputational_risk",
+      "risk_assessment",
+      "sector_context",
+      "standard_disclosure",
+      "systemic_impact",
+      "taxonomy_alignment",
+      "third-party-validation",
+      "transparency-claims",
+      "transparency_assessment",
+      "transparency_attempt",
+      "transparency_gaps",
+      "verification_needed"
+    ],
+    "unique_to_b": [
+      "accountability_gap",
+      "capital_allocation_consequences",
+      "client_pressure",
+      "client_retention_risk",
+      "competitive_disadvantage",
+      "disclosure_gaps",
+      "fiduciary_risk",
+      "governance_concerns",
+      "greenhushing_risk",
+      "greenhushing_trend",
+      "greenwashing_avoidance",
+      "greenwashing_avoidance_strategy",
+      "information_asymmetry",
+      "information_vacuum_risk",
+      "institutional_investor_flight_risk",
+      "institutional_investor_pressure",
+      "investor_concern",
+      "investor_demand_mismatch",
+      "investor_flight_potential",
+      "investor_pressure",
+      "investor_relations_failure",
+      "market_accountability",
+      "market_conduct_concerns",
+      "performance_uncertainty",
+      "portfolio_risk",
+      "regulatory_avoidance_strategy",
+      "regulatory_compliance_risk",
+      "regulatory_implications",
+      "reputational_vulnerability",
+      "stakeholder_pressure",
+      "stealth_strategy_opportunity",
+      "strategic_disclosure_management",
+      "strategic_positioning",
+      "strategic_silence",
+      "tactical_positioning",
+      "transparency_deficit"
+    ],
+    "jaccard_index": 0.0449438202247191
+  },
+  "model": "claude-sonnet-4-20250514"
+}

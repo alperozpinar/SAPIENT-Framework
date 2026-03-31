@@ -12,6 +12,7 @@ from typing import Optional
 
 import anthropic
 import openai
+import google.generativeai as genai
 
 
 PROVIDER_MAP = {
@@ -19,6 +20,7 @@ PROVIDER_MAP = {
     "gpt-4o": "openai",
     "gpt-4o-2024-11-20": "openai",
     "gpt-4o-mini": "openai",
+    "gemini-2.5-flash": "google",
 }
 
 PRICING = {  # (input_per_M_tokens, output_per_M_tokens)
@@ -26,6 +28,7 @@ PRICING = {  # (input_per_M_tokens, output_per_M_tokens)
     "gpt-4o":                   (2.50, 10.00),
     "gpt-4o-2024-11-20":        (2.50, 10.00),
     "gpt-4o-mini":              (0.15,  0.60),
+    "gemini-2.5-flash":         (0.15,  0.60),
 }
 
 MAX_RETRIES = 5
@@ -57,6 +60,14 @@ def _is_retryable(exc: Exception) -> bool:
         return True
     if isinstance(exc, (ConnectionError, TimeoutError)):
         return True
+    # Google Gemini retryable errors
+    try:
+        from google.api_core import exceptions as google_exc
+        if isinstance(exc, (google_exc.ResourceExhausted, google_exc.InternalServerError,
+                            google_exc.ServiceUnavailable, google_exc.TooManyRequests)):
+            return True
+    except ImportError:
+        pass
     return False
 
 
@@ -139,6 +150,40 @@ def chat(
                 input_tokens = response.usage.prompt_tokens
                 output_tokens = response.usage.completion_tokens
 
+            elif provider == "google":
+                genai.configure(api_key=api_key)
+                # Gemini 2.5 models use thinking tokens from max_output_tokens budget,
+                # so we need a higher limit to leave room for the actual response.
+                gemini_max = max(max_tokens * 10, 8192)
+                gmodel = genai.GenerativeModel(
+                    model_name=model,
+                    system_instruction=system_prompt,
+                )
+                if messages is not None:
+                    # Multi-turn: convert messages to Gemini format
+                    gemini_contents = []
+                    for msg in messages:
+                        role = "model" if msg["role"] == "assistant" else "user"
+                        gemini_contents.append({"role": role, "parts": [{"text": msg["content"]}]})
+                    response = gmodel.generate_content(
+                        gemini_contents,
+                        generation_config=genai.GenerationConfig(
+                            temperature=temperature,
+                            max_output_tokens=gemini_max,
+                        ),
+                    )
+                else:
+                    response = gmodel.generate_content(
+                        user_message,
+                        generation_config=genai.GenerationConfig(
+                            temperature=temperature,
+                            max_output_tokens=gemini_max,
+                        ),
+                    )
+                content = response.text
+                input_tokens = response.usage_metadata.prompt_token_count
+                output_tokens = response.usage_metadata.candidates_token_count
+
             elapsed_ms = (time.perf_counter() - start) * 1000
 
             return LLMResponse(
@@ -214,6 +259,37 @@ async def achat(
                 content = response.choices[0].message.content
                 input_tokens = response.usage.prompt_tokens
                 output_tokens = response.usage.completion_tokens
+
+            elif provider == "google":
+                genai.configure(api_key=api_key)
+                gemini_max = max(max_tokens * 10, 8192)
+                gmodel = genai.GenerativeModel(
+                    model_name=model,
+                    system_instruction=system_prompt,
+                )
+                if messages is not None:
+                    gemini_contents = []
+                    for msg in messages:
+                        role = "model" if msg["role"] == "assistant" else "user"
+                        gemini_contents.append({"role": role, "parts": [{"text": msg["content"]}]})
+                    response = await gmodel.generate_content_async(
+                        gemini_contents,
+                        generation_config=genai.GenerationConfig(
+                            temperature=temperature,
+                            max_output_tokens=gemini_max,
+                        ),
+                    )
+                else:
+                    response = await gmodel.generate_content_async(
+                        user_message,
+                        generation_config=genai.GenerationConfig(
+                            temperature=temperature,
+                            max_output_tokens=gemini_max,
+                        ),
+                    )
+                content = response.text
+                input_tokens = response.usage_metadata.prompt_token_count
+                output_tokens = response.usage_metadata.candidates_token_count
 
             elapsed_ms = (time.perf_counter() - start) * 1000
 

@@ -1,0 +1,3940 @@
+{
+  "results": {
+    "claude": {
+      "experiment_label": "exp7_claude",
+      "K": 2,
+      "n_personas": 8,
+      "temperature_mode": "stratified",
+      "model": "claude-sonnet-4-20250514",
+      "sessions": [
+        {
+          "session_id": "exp7_claude_run_0",
+          "n_personas": 8,
+          "model": "claude-sonnet-4-20250514",
+          "signal_state_provided": true,
+          "temperatures": [
+            0.6,
+            0.6571428571428571,
+            0.7142857142857143,
+            0.7714285714285714,
+            0.8285714285714285,
+            0.8857142857142857,
+            0.9428571428571428,
+            1.0
+          ],
+          "initial_responses": [
+            {
+              "interpretation": "GlobalChem is trying to get ahead of the recent supply chain scandal by announcing ambitious targets and immediate actions. This feels like damage control disguised as genuine commitment, though some elements are more concrete than typical corporate greenwashing.",
+              "sentiment": 3,
+              "credibility": 3,
+              "concerns": [
+                "Net-zero by 2040 is convenient timing after bad press",
+                "No details on what 'independent' advisory board actually means",
+                "$500M sounds big but no context for their revenue scale",
+                "Quarterly reporting only starts in 2025 - why the delay?",
+                "Supply chain audit could be whitewashed depending on who conducts it",
+                "Scope 3 emissions are notoriously hard to verify and manipulate"
+              ],
+              "positive_aspects": [
+                "At least they acknowledged the supply chain problems directly",
+                "Six-month timeline for audit is relatively fast",
+                "Committing to Scope 3 reporting is better than most",
+                "Financial commitment shows some skin in the game"
+              ],
+              "missing_information": [
+                "Who exactly is on this 'independent' advisory board",
+                "What specific supply chain violations were found",
+                "Baseline emissions data to judge progress against",
+                "Details on supplier transition fund criteria",
+                "Third-party verification process for emissions reporting"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "damage_control",
+                "greenwashing_potential",
+                "accountability_gaps",
+                "supply_chain_scandal",
+                "verification_needed"
+              ],
+              "persona_id": "P1",
+              "persona_label": "Environmental Activist",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is trying to get ahead of the recent supply chain scandal by announcing ambitious targets and immediate actions. This feels like damage control disguised as genuine commitment, though some elements are more concrete than typical corporate greenwashing.\",\n  \"sentiment\": 3,\n  \"credibility\": 3,\n  \"concerns\": [\"Net-zero by 2040 is convenient timing after bad press\", \"No details on what 'independent' advisory board actually means\", \"$500M sounds big but no context for their revenue scale\", \"Quarterly reporting only starts in 2025 - why the delay?\", \"Supply chain audit could be whitewashed depending on who conducts it\", \"Scope 3 emissions are notoriously hard to verify and manipulate\"],\n  \"positive_aspects\": [\"At least they acknowledged the supply chain problems directly\", \"Six-month timeline for audit is relatively fast\", \"Committing to Scope 3 reporting is better than most\", \"Financial commitment shows some skin in the game\"],\n  \"missing_information\": [\"Who exactly is on this 'independent' advisory board\", \"What specific supply chain violations were found\", \"Baseline emissions data to judge progress against\", \"Details on supplier transition fund criteria\", \"Third-party verification process for emissions reporting\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"damage_control\", \"greenwashing_potential\", \"accountability_gaps\", \"supply_chain_scandal\", \"verification_needed\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.6
+            },
+            {
+              "interpretation": "GlobalChem is responding to recent negative reporting with a comprehensive sustainability plan that includes specific timelines and financial commitments. The announcement acknowledges past failures while establishing measurable accountability mechanisms.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "2040 target is aggressive but lacks interim milestones to track progress",
+                "No details on how the $500M supplier fund will be allocated or governed",
+                "Independent advisory board composition and authority undefined",
+                "Scope 3 emissions reporting timeline delayed until 2025 creates accountability gap",
+                "No mention of third-party verification for emissions data"
+              ],
+              "positive_aspects": [
+                "Direct acknowledgment of supply chain oversight failures shows transparency",
+                "Substantial financial commitment of $500M demonstrates seriousness",
+                "Independent audit within 6 months provides near-term accountability",
+                "Quarterly public reporting creates ongoing transparency obligations",
+                "Independent advisory board structure could provide external oversight"
+              ],
+              "missing_information": [
+                "Baseline emissions data and reduction methodology",
+                "Advisory board member qualifications and selection criteria",
+                "Specific supplier transition criteria and compliance requirements",
+                "Third-party verification protocols for emissions reporting",
+                "Interim targets and milestones between now and 2040"
+              ],
+              "likely_action": "investigate further before making investment decisions",
+              "key_themes": [
+                "accountability mechanisms",
+                "financial commitment",
+                "transparency gaps",
+                "compliance risk",
+                "verification needs"
+              ],
+              "persona_id": "P2",
+              "persona_label": "ESG Fund Manager",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is responding to recent negative reporting with a comprehensive sustainability plan that includes specific timelines and financial commitments. The announcement acknowledges past failures while establishing measurable accountability mechanisms.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\n    \"2040 target is aggressive but lacks interim milestones to track progress\",\n    \"No details on how the $500M supplier fund will be allocated or governed\",\n    \"Independent advisory board composition and authority undefined\",\n    \"Scope 3 emissions reporting timeline delayed until 2025 creates accountability gap\",\n    \"No mention of third-party verification for emissions data\"\n  ],\n  \"positive_aspects\": [\n    \"Direct acknowledgment of supply chain oversight failures shows transparency\",\n    \"Substantial financial commitment of $500M demonstrates seriousness\",\n    \"Independent audit within 6 months provides near-term accountability\",\n    \"Quarterly public reporting creates ongoing transparency obligations\",\n    \"Independent advisory board structure could provide external oversight\"\n  ],\n  \"missing_information\": [\n    \"Baseline emissions data and reduction methodology\",\n    \"Advisory board member qualifications and selection criteria\",\n    \"Specific supplier transition criteria and compliance requirements\",\n    \"Third-party verification protocols for emissions reporting\",\n    \"Interim targets and milestones between now and 2040\"\n  ],\n  \"likely_action\": \"investigate further before making investment decisions\",\n  \"key_themes\": [\"accountability mechanisms\", \"financial commitment\", \"transparency gaps\", \"compliance risk\", \"verification needs\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.6571428571428571
+            },
+            {
+              "interpretation": "GlobalChem is responding to recent criticism about supply chain issues by making a net-zero commitment with some concrete steps. They're acknowledging past problems and trying to show they're taking action with audits, funding, and regular reporting.",
+              "sentiment": 5,
+              "credibility": 4,
+              "concerns": [
+                "Net-zero by 2040 sounds ambitious but maybe unrealistic",
+                "Will they actually follow through or is this just PR damage control?",
+                "How do we know the independent board will really hold them accountable?",
+                "What happens if they miss their targets?"
+              ],
+              "positive_aspects": [
+                "They admitted there were problems instead of denying everything",
+                "The 6-month timeline for the audit seems reasonable",
+                "$500M is real money being committed",
+                "Quarterly reporting means we can track their progress"
+              ],
+              "missing_information": [
+                "What specific violations were found in their supply chain?",
+                "Who exactly is on this independent advisory board?",
+                "How will they measure progress toward net-zero?",
+                "What penalties exist if they don't meet commitments?"
+              ],
+              "likely_action": "wait and see",
+              "key_themes": [
+                "damage control",
+                "cautious optimism",
+                "accountability questions",
+                "prove it",
+                "transparency"
+              ],
+              "persona_id": "P3",
+              "persona_label": "Retail Consumer",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is responding to recent criticism about supply chain issues by making a net-zero commitment with some concrete steps. They're acknowledging past problems and trying to show they're taking action with audits, funding, and regular reporting.\",\n  \"sentiment\": 5,\n  \"credibility\": 4,\n  \"concerns\": [\"Net-zero by 2040 sounds ambitious but maybe unrealistic\", \"Will they actually follow through or is this just PR damage control?\", \"How do we know the independent board will really hold them accountable?\", \"What happens if they miss their targets?\"],\n  \"positive_aspects\": [\"They admitted there were problems instead of denying everything\", \"The 6-month timeline for the audit seems reasonable\", \"$500M is real money being committed\", \"Quarterly reporting means we can track their progress\"],\n  \"missing_information\": [\"What specific violations were found in their supply chain?\", \"Who exactly is on this independent advisory board?\", \"How will they measure progress toward net-zero?\", \"What penalties exist if they don't meet commitments?\"],\n  \"likely_action\": \"wait and see\",\n  \"key_themes\": [\"damage control\", \"cautious optimism\", \"accountability questions\", \"prove it\", \"transparency\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.7142857142857143
+            },
+            {
+              "interpretation": "GlobalChem appears to be responding defensively to recent negative reporting, particularly around supply chain issues. The announcement combines acknowledgment of problems with ambitious targets and concrete near-term actions, which could be genuine reform or sophisticated damage control.",
+              "sentiment": 3,
+              "credibility": 4,
+              "concerns": [
+                "2040 target is aggressive but lacks interim milestones",
+                "No mention of specific supply chain violations that triggered this",
+                "$500M fund sounds substantial but no details on allocation criteria",
+                "Independent board composition and selection process unclear",
+                "Scope 3 reporting is notoriously difficult to verify"
+              ],
+              "positive_aspects": [
+                "Direct acknowledgment of industry footprint and recent reporting",
+                "Specific timeline commitments rather than vague promises",
+                "Quarterly public reporting creates accountability pressure",
+                "Independent audit within 6 months is measurable"
+              ],
+              "missing_information": [
+                "Details about the supply chain violations referenced",
+                "Composition and credentials of sustainability advisory board",
+                "Baseline emissions data for measuring progress",
+                "How the $500M fund will be distributed and monitored",
+                "Integration with existing operations and potential job impacts"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "damage_control",
+                "accountability_mechanisms",
+                "supply_chain_transparency",
+                "ambitious_timeline",
+                "verification_challenges"
+              ],
+              "persona_id": "P4",
+              "persona_label": "Industry Journalist",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem appears to be responding defensively to recent negative reporting, particularly around supply chain issues. The announcement combines acknowledgment of problems with ambitious targets and concrete near-term actions, which could be genuine reform or sophisticated damage control.\",\n  \"sentiment\": 3,\n  \"credibility\": 4,\n  \"concerns\": [\"2040 target is aggressive but lacks interim milestones\", \"No mention of specific supply chain violations that triggered this\", \"$500M fund sounds substantial but no details on allocation criteria\", \"Independent board composition and selection process unclear\", \"Scope 3 reporting is notoriously difficult to verify\"],\n  \"positive_aspects\": [\"Direct acknowledgment of industry footprint and recent reporting\", \"Specific timeline commitments rather than vague promises\", \"Quarterly public reporting creates accountability pressure\", \"Independent audit within 6 months is measurable\"],\n  \"missing_information\": [\"Details about the supply chain violations referenced\", \"Composition and credentials of sustainability advisory board\", \"Baseline emissions data for measuring progress\", \"How the $500M fund will be distributed and monitored\", \"Integration with existing operations and potential job impacts\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"damage_control\", \"accountability_mechanisms\", \"supply_chain_transparency\", \"ambitious_timeline\", \"verification_challenges\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.7714285714285714
+            },
+            {
+              "interpretation": "GlobalChem appears to be responding directly to recent supply chain violations reporting with concrete commitments and accountability mechanisms. This announcement combines acknowledgment of past deficiencies with specific, time-bound remedial actions and transparency measures.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Six-month audit timeline may be insufficient for comprehensive supply chain review",
+                "No specified penalties or enforcement mechanisms if targets are missed",
+                "Independent advisory board composition and authority unclear",
+                "Scope 3 emissions measurement methodology not defined",
+                "$500M fund allocation criteria and governance structure unspecified"
+              ],
+              "positive_aspects": [
+                "Direct acknowledgment of supply chain oversight gaps",
+                "Specific timeline commitments with quarterly reporting",
+                "Independent third-party oversight structure",
+                "Substantial financial commitment for supplier transitions",
+                "Inclusion of Scope 3 emissions in reporting framework"
+              ],
+              "missing_information": [
+                "Detailed audit methodology and scope parameters",
+                "Advisory board member qualifications and selection criteria",
+                "Specific interim milestones and penalties for non-compliance",
+                "Baseline emissions data and measurement protocols",
+                "Supply chain audit firm credentials and independence verification"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "regulatory_compliance",
+                "accountability_mechanisms",
+                "transparency_commitments",
+                "supply_chain_governance",
+                "enforcement_gaps"
+              ],
+              "persona_id": "P5",
+              "persona_label": "Regulatory Observer",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem appears to be responding directly to recent supply chain violations reporting with concrete commitments and accountability mechanisms. This announcement combines acknowledgment of past deficiencies with specific, time-bound remedial actions and transparency measures.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"Six-month audit timeline may be insufficient for comprehensive supply chain review\", \"No specified penalties or enforcement mechanisms if targets are missed\", \"Independent advisory board composition and authority unclear\", \"Scope 3 emissions measurement methodology not defined\", \"$500M fund allocation criteria and governance structure unspecified\"],\n  \"positive_aspects\": [\"Direct acknowledgment of supply chain oversight gaps\", \"Specific timeline commitments with quarterly reporting\", \"Independent third-party oversight structure\", \"Substantial financial commitment for supplier transitions\", \"Inclusion of Scope 3 emissions in reporting framework\"],\n  \"missing_information\": [\"Detailed audit methodology and scope parameters\", \"Advisory board member qualifications and selection criteria\", \"Specific interim milestones and penalties for non-compliance\", \"Baseline emissions data and measurement protocols\", \"Supply chain audit firm credentials and independence verification\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"regulatory_compliance\", \"accountability_mechanisms\", \"transparency_commitments\", \"supply_chain_governance\", \"enforcement_gaps\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.8285714285714285
+            },
+            {
+              "interpretation": "GlobalChem is responding to recent criticism about supply chain issues with a comprehensive sustainability plan. They're acknowledging past problems while committing to aggressive targets and transparency measures.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Net-zero by 2040 might be overly ambitious given current industry standards",
+                "Wondering if this is reactive rather than proactive leadership",
+                "Quarterly reporting could become performative if not truly independent",
+                "Scope 3 emissions are notoriously hard to track accurately"
+              ],
+              "positive_aspects": [
+                "Acknowledging past mistakes shows honesty",
+                "$500M supplier fund demonstrates real financial commitment",
+                "Independent audit and advisory board add credibility",
+                "Quarterly reporting creates accountability",
+                "Addressing supply chain issues directly"
+              ],
+              "missing_information": [
+                "Specific interim milestones and targets",
+                "Details about the independent advisory board composition",
+                "How this affects current operations and potential layoffs",
+                "Timeline for the supplier transition fund deployment",
+                "Baseline emissions data for comparison"
+              ],
+              "likely_action": "share with colleagues and monitor quarterly reports",
+              "key_themes": [
+                "cautious optimism",
+                "accountability focus",
+                "transparency appreciation",
+                "implementation concerns",
+                "job security questions"
+              ],
+              "persona_id": "P6",
+              "persona_label": "Company Employee",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is responding to recent criticism about supply chain issues with a comprehensive sustainability plan. They're acknowledging past problems while committing to aggressive targets and transparency measures.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"Net-zero by 2040 might be overly ambitious given current industry standards\", \"Wondering if this is reactive rather than proactive leadership\", \"Quarterly reporting could become performative if not truly independent\", \"Scope 3 emissions are notoriously hard to track accurately\"],\n  \"positive_aspects\": [\"Acknowledging past mistakes shows honesty\", \"$500M supplier fund demonstrates real financial commitment\", \"Independent audit and advisory board add credibility\", \"Quarterly reporting creates accountability\", \"Addressing supply chain issues directly\"],\n  \"missing_information\": [\"Specific interim milestones and targets\", \"Details about the independent advisory board composition\", \"How this affects current operations and potential layoffs\", \"Timeline for the supplier transition fund deployment\", \"Baseline emissions data for comparison\"],\n  \"likely_action\": \"share with colleagues and monitor quarterly reports\",\n  \"key_themes\": [\"cautious optimism\", \"accountability focus\", \"transparency appreciation\", \"implementation concerns\", \"job security questions\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.8857142857142857
+            },
+            {
+              "interpretation": "GlobalChem is making a reactive announcement in response to recent negative reporting, attempting to regain credibility through concrete commitments and external accountability measures. This appears to be damage control with some potentially substantive backing.",
+              "sentiment": 4,
+              "credibility": 5,
+              "concerns": [
+                "Timeline seems aggressive for genuine transformation",
+                "Supply chain audit could be performative if auditor lacks independence",
+                "$500M fund size unclear relative to actual transition costs",
+                "Net-zero by 2040 may be marketing versus operational reality",
+                "Advisory board composition and authority undefined"
+              ],
+              "positive_aspects": [
+                "Acknowledges past failures directly",
+                "Commits to Scope 3 reporting which competitors often avoid",
+                "Independent audit shows willingness to expose problems",
+                "Quarterly reporting creates ongoing accountability pressure",
+                "Financial commitment demonstrates resource allocation"
+              ],
+              "missing_information": [
+                "Specific auditor selection criteria and independence guarantees",
+                "Advisory board composition and decision-making authority",
+                "Detailed breakdown of $500M fund allocation",
+                "Baseline emissions data for target credibility",
+                "Interim milestones and consequences for missing targets"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "damage_control",
+                "market_positioning",
+                "competitive_differentiation",
+                "accountability_mechanisms",
+                "credibility_rebuilding"
+              ],
+              "persona_id": "P7",
+              "persona_label": "Competitor Strategy Analyst",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is making a reactive announcement in response to recent negative reporting, attempting to regain credibility through concrete commitments and external accountability measures. This appears to be damage control with some potentially substantive backing.\",\n  \"sentiment\": 4,\n  \"credibility\": 5,\n  \"concerns\": [\"Timeline seems aggressive for genuine transformation\", \"Supply chain audit could be performative if auditor lacks independence\", \"$500M fund size unclear relative to actual transition costs\", \"Net-zero by 2040 may be marketing versus operational reality\", \"Advisory board composition and authority undefined\"],\n  \"positive_aspects\": [\"Acknowledges past failures directly\", \"Commits to Scope 3 reporting which competitors often avoid\", \"Independent audit shows willingness to expose problems\", \"Quarterly reporting creates ongoing accountability pressure\", \"Financial commitment demonstrates resource allocation\"],\n  \"missing_information\": [\"Specific auditor selection criteria and independence guarantees\", \"Advisory board composition and decision-making authority\", \"Detailed breakdown of $500M fund allocation\", \"Baseline emissions data for target credibility\", \"Interim milestones and consequences for missing targets\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"damage_control\", \"market_positioning\", \"competitive_differentiation\", \"accountability_mechanisms\", \"credibility_rebuilding\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.9428571428571428
+            },
+            {
+              "interpretation": "GlobalChem appears to be responding defensively to recent supply chain violations reporting, but their announcement includes some substantive commitments. The timing suggests damage control rather than proactive leadership, though the specific measures outlined show potential for meaningful accountability.",
+              "sentiment": 4,
+              "credibility": 4,
+              "concerns": [
+                "Net-zero by 2040 timeline lacks interim science-based targets",
+                "No mention of absolute emissions reduction versus carbon offsets",
+                "Supply chain audit independence unclear - who selects the auditor?",
+                "Scope 3 reporting timeline delayed until 2025",
+                "$500M fund allocation methodology unspecified",
+                "Advisory board composition and authority not detailed"
+              ],
+              "positive_aspects": [
+                "Acknowledges past failures openly",
+                "Commits to quarterly public reporting",
+                "Independent oversight mechanism proposed",
+                "Significant financial commitment to supplier transitions",
+                "Addresses supply chain issues directly",
+                "Timeline for audit is reasonably ambitious"
+              ],
+              "missing_information": [
+                "Science-based interim targets aligned with 1.5°C pathway",
+                "Specific methodology for emissions accounting",
+                "Advisory board member credentials and selection process",
+                "Detailed breakdown of $500M fund usage",
+                "Baseline emissions data and reduction versus offset strategy",
+                "Third-party verification protocols"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "reactive_transparency",
+                "accountability_mechanisms",
+                "supply_chain_focus",
+                "timing_skepticism",
+                "verification_needed"
+              ],
+              "persona_id": "P8",
+              "persona_label": "Sustainability Academic",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem appears to be responding defensively to recent supply chain violations reporting, but their announcement includes some substantive commitments. The timing suggests damage control rather than proactive leadership, though the specific measures outlined show potential for meaningful accountability.\",\n  \"sentiment\": 4,\n  \"credibility\": 4,\n  \"concerns\": [\"Net-zero by 2040 timeline lacks interim science-based targets\", \"No mention of absolute emissions reduction versus carbon offsets\", \"Supply chain audit independence unclear - who selects the auditor?\", \"Scope 3 reporting timeline delayed until 2025\", \"$500M fund allocation methodology unspecified\", \"Advisory board composition and authority not detailed\"],\n  \"positive_aspects\": [\"Acknowledges past failures openly\", \"Commits to quarterly public reporting\", \"Independent oversight mechanism proposed\", \"Significant financial commitment to supplier transitions\", \"Addresses supply chain issues directly\", \"Timeline for audit is reasonably ambitious\"],\n  \"missing_information\": [\"Science-based interim targets aligned with 1.5°C pathway\", \"Specific methodology for emissions accounting\", \"Advisory board member credentials and selection process\", \"Detailed breakdown of $500M fund usage\", \"Baseline emissions data and reduction versus offset strategy\", \"Third-party verification protocols\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"reactive_transparency\", \"accountability_mechanisms\", \"supply_chain_focus\", \"timing_skepticism\", \"verification_needed\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 1.0
+            }
+          ],
+          "followup_responses": [
+            {
+              "followup_response": "Where are the specific interim targets and milestones? A 2040 net-zero pledge means nothing without binding 2025, 2030 commitments. I need to see who exactly is on this 'independent' advisory board - if it's packed with industry insiders, it's meaningless. What's their definition of net-zero? Are they planning massive carbon offsets or actual emissions reduction? And crucially, what are the financial penalties if they miss these targets? Without consequences, this is just more corporate theater.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "interim_targets_missing",
+                "accountability_mechanisms",
+                "offset_concerns"
+              ],
+              "persona_id": "P1"
+            },
+            {
+              "followup_response": "I need to see interim milestones between now and 2040 - without 2025, 2030, and 2035 targets, this feels like kicking accountability down the road. The $500M supplier fund needs governance details: who controls allocation decisions, what criteria determine eligibility, and how will ROI be measured? Most critically, I want specifics on the independent advisory board - who are these people, what's their track record, and do they have binding authority or just advisory input? Finally, baseline emissions data is essential - we can't evaluate progress without knowing their current Scope 3 footprint, which is typically the largest component for chemical companies.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "interim_milestones",
+                "fund_governance",
+                "baseline_data"
+              ],
+              "persona_id": "P2"
+            },
+            {
+              "followup_response": "I'd want to see more specifics about how they plan to actually reach net-zero by 2040 - like what technologies they'll use or which operations they'll change first. The $500M sounds like a lot, but I have no idea if that's actually enough for what they need to do. Also, who exactly is on this independent advisory board? Are they real experts or just people who will rubber-stamp whatever GlobalChem wants to do? And honestly, I'd want to see some interim targets along the way so we can tell if they're actually making progress or just kicking the can down the road.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "accountability_skepticism",
+                "interim_milestones"
+              ],
+              "persona_id": "P3"
+            },
+            {
+              "followup_response": "Several critical details are missing that would help assess credibility. First, no specifics about the supply chain violations mentioned - what exactly happened and how widespread were they? Second, the $500M fund sounds substantial but there's no breakdown of how it will be allocated or what percentage of their annual revenue this represents. Third, while they mention an independent advisory board, who are these people and what authority do they actually have? Finally, the 2040 target lacks interim milestones - without 2025, 2030 benchmarks, this could easily become another distant promise that gets quietly abandoned.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "transparency_gaps",
+                "accountability_mechanisms"
+              ],
+              "persona_id": "P4"
+            },
+            {
+              "followup_response": "I need to see the specific methodology and scope for the independent supply chain audit, including which facilities and suppliers will be covered and what standards will be applied. The announcement lacks details on the governance structure and qualifications of the independent sustainability advisory board, as well as their enforcement authority. Most critically, there are no specified consequences or remediation requirements if compliance gaps are identified during the audit, and no binding commitments beyond the voluntary quarterly reporting schedule.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "audit_methodology",
+                "governance_structure",
+                "enforcement_mechanisms"
+              ],
+              "persona_id": "P5"
+            },
+            {
+              "followup_response": "I'd want to see more specifics about how this affects our workforce - are there plans for retraining or new green jobs? The $500M fund sounds substantial, but I'm curious about the timeline for deployment and whether it might impact our competitiveness against companies like BASF and Dow who seem further ahead. Also, what exactly will this independent advisory board look like and do they have real authority to push back on management decisions? As someone who gets most updates through internal channels, I hope they'll be transparent with employees about progress and any operational changes this might require.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "workforce_impact",
+                "competitive_positioning",
+                "governance_structure"
+              ],
+              "persona_id": "P6"
+            },
+            {
+              "followup_response": "I need to see the baseline emissions data and specific reduction pathways - without current Scope 3 numbers, the 2040 target is meaningless. The composition and selection criteria for this 'independent' sustainability board is crucial, as is the identity of the supply chain auditor. Most critically, I want to understand their competitive positioning strategy here - are they trying to get ahead of regulatory requirements or respond to market pressure? The $500M fund sounds substantial, but I need the allocation methodology and success metrics.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "baseline_transparency",
+                "competitive_timing"
+              ],
+              "persona_id": "P7"
+            },
+            {
+              "followup_response": "Critical gaps include baseline emissions data and methodology for measuring Scope 3 emissions, which are notoriously difficult to track accurately in chemical supply chains. I need to see science-based interim targets aligned with 1.5°C pathways, not just an end-date goal. The announcement lacks specifics on the advisory board's composition and independence criteria—will it include supply chain and environmental justice experts? Most importantly, there's no clarity on their offset strategy versus absolute emissions reductions, which is fundamental to evaluating the credibility of any net-zero claim.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "methodology_transparency",
+                "advisory_board_composition",
+                "offset_versus_reduction"
+              ],
+              "persona_id": "P8"
+            }
+          ],
+          "all_themes": [
+            "damage_control",
+            "greenwashing_potential",
+            "accountability_gaps",
+            "supply_chain_scandal",
+            "verification_needed",
+            "accountability mechanisms",
+            "financial commitment",
+            "transparency gaps",
+            "compliance risk",
+            "verification needs",
+            "damage control",
+            "cautious optimism",
+            "accountability questions",
+            "prove it",
+            "transparency",
+            "damage_control",
+            "accountability_mechanisms",
+            "supply_chain_transparency",
+            "ambitious_timeline",
+            "verification_challenges",
+            "regulatory_compliance",
+            "accountability_mechanisms",
+            "transparency_commitments",
+            "supply_chain_governance",
+            "enforcement_gaps",
+            "cautious optimism",
+            "accountability focus",
+            "transparency appreciation",
+            "implementation concerns",
+            "job security questions",
+            "damage_control",
+            "market_positioning",
+            "competitive_differentiation",
+            "accountability_mechanisms",
+            "credibility_rebuilding",
+            "reactive_transparency",
+            "accountability_mechanisms",
+            "supply_chain_focus",
+            "timing_skepticism",
+            "verification_needed",
+            "interim_targets_missing",
+            "accountability_mechanisms",
+            "offset_concerns",
+            "interim_milestones",
+            "fund_governance",
+            "baseline_data",
+            "accountability_skepticism",
+            "interim_milestones",
+            "transparency_gaps",
+            "accountability_mechanisms",
+            "audit_methodology",
+            "governance_structure",
+            "enforcement_mechanisms",
+            "workforce_impact",
+            "competitive_positioning",
+            "governance_structure",
+            "baseline_transparency",
+            "competitive_timing",
+            "methodology_transparency",
+            "advisory_board_composition",
+            "offset_versus_reduction"
+          ],
+          "sentiment_scores": [
+            3,
+            5,
+            5,
+            3,
+            5,
+            5,
+            4,
+            4
+          ],
+          "credibility_scores": [
+            3,
+            5,
+            4,
+            4,
+            5,
+            5,
+            5,
+            4
+          ],
+          "theme_list": [
+            "damage_control",
+            "greenwashing_potential",
+            "accountability_gaps",
+            "supply_chain_scandal",
+            "verification_needed",
+            "accountability mechanisms",
+            "financial commitment",
+            "transparency gaps",
+            "compliance risk",
+            "verification needs",
+            "damage control",
+            "cautious optimism",
+            "accountability questions",
+            "prove it",
+            "transparency",
+            "accountability_mechanisms",
+            "supply_chain_transparency",
+            "ambitious_timeline",
+            "verification_challenges",
+            "regulatory_compliance",
+            "transparency_commitments",
+            "supply_chain_governance",
+            "enforcement_gaps",
+            "accountability focus",
+            "transparency appreciation",
+            "implementation concerns",
+            "job security questions",
+            "market_positioning",
+            "competitive_differentiation",
+            "credibility_rebuilding",
+            "reactive_transparency",
+            "supply_chain_focus",
+            "timing_skepticism",
+            "interim_targets_missing",
+            "offset_concerns",
+            "interim_milestones",
+            "fund_governance",
+            "baseline_data",
+            "accountability_skepticism",
+            "transparency_gaps",
+            "audit_methodology",
+            "governance_structure",
+            "enforcement_mechanisms",
+            "workforce_impact",
+            "competitive_positioning",
+            "baseline_transparency",
+            "competitive_timing",
+            "methodology_transparency",
+            "advisory_board_composition",
+            "offset_versus_reduction"
+          ],
+          "mean_sentiment": 4.25,
+          "mean_credibility": 4.375
+        },
+        {
+          "session_id": "exp7_claude_run_1",
+          "n_personas": 8,
+          "model": "claude-sonnet-4-20250514",
+          "signal_state_provided": true,
+          "temperatures": [
+            0.6,
+            0.6571428571428571,
+            0.7142857142857143,
+            0.7714285714285714,
+            0.8285714285714285,
+            0.8857142857142857,
+            0.9428571428571428,
+            1.0
+          ],
+          "initial_responses": [
+            {
+              "interpretation": "GlobalChem is responding to recent investigative reporting with what appears to be a comprehensive sustainability plan. While they acknowledge past failures in supply chain oversight, I'm skeptical this isn't just damage control with fancy packaging.",
+              "sentiment": 3,
+              "credibility": 3,
+              "concerns": [
+                "Timeline conveniently after current leadership likely retires",
+                "No binding penalties if they miss targets",
+                "Independent board could be industry-friendly appointees",
+                "$500M sounds big but what percentage of revenue is that?",
+                "Scope 3 emissions are notoriously hard to verify",
+                "Chemical industry has history of broken environmental promises"
+              ],
+              "positive_aspects": [
+                "Acknowledging past supply chain failures publicly",
+                "Quarterly reporting creates some accountability pressure",
+                "Including Scope 3 emissions shows broader responsibility",
+                "Independent audit within 6 months is relatively quick"
+              ],
+              "missing_information": [
+                "Who exactly is on this 'independent' advisory board",
+                "Specific interim targets and milestones",
+                "What happens if they miss the 2040 target",
+                "Details on supplier transition fund criteria",
+                "Third-party verification of emissions data",
+                "Executive compensation tied to these goals"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "damage_control",
+                "greenwashing_potential",
+                "accountability_gaps",
+                "verify_independence",
+                "track_progress"
+              ],
+              "persona_id": "P1",
+              "persona_label": "Environmental Activist",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is responding to recent investigative reporting with what appears to be a comprehensive sustainability plan. While they acknowledge past failures in supply chain oversight, I'm skeptical this isn't just damage control with fancy packaging.\",\n  \"sentiment\": 3,\n  \"credibility\": 3,\n  \"concerns\": [\"Timeline conveniently after current leadership likely retires\", \"No binding penalties if they miss targets\", \"Independent board could be industry-friendly appointees\", \"$500M sounds big but what percentage of revenue is that?\", \"Scope 3 emissions are notoriously hard to verify\", \"Chemical industry has history of broken environmental promises\"],\n  \"positive_aspects\": [\"Acknowledging past supply chain failures publicly\", \"Quarterly reporting creates some accountability pressure\", \"Including Scope 3 emissions shows broader responsibility\", \"Independent audit within 6 months is relatively quick\"],\n  \"missing_information\": [\"Who exactly is on this 'independent' advisory board\", \"Specific interim targets and milestones\", \"What happens if they miss the 2040 target\", \"Details on supplier transition fund criteria\", \"Third-party verification of emissions data\", \"Executive compensation tied to these goals\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"damage_control\", \"greenwashing_potential\", \"accountability_gaps\", \"verify_independence\", \"track_progress\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.6
+            },
+            {
+              "interpretation": "GlobalChem is attempting to get ahead of negative press coverage with a comprehensive response that addresses supply chain issues while making ambitious climate commitments. The timing suggests this is reactive rather than proactive leadership.",
+              "sentiment": 4,
+              "credibility": 4,
+              "concerns": [
+                "Net-zero by 2040 is aggressive for chemicals sector - feasibility unclear",
+                "Supply chain violations suggest weak governance systems",
+                "$500M fund size needs context relative to total procurement spend",
+                "Independent board composition and mandate not specified",
+                "Scope 3 reporting timeline too delayed given urgency"
+              ],
+              "positive_aspects": [
+                "Acknowledges specific supply chain problems directly",
+                "Independent audit with 6-month timeline shows urgency",
+                "Financial commitment demonstrates seriousness",
+                "Quarterly reporting frequency is appropriately transparent",
+                "Independent oversight board adds accountability layer"
+              ],
+              "missing_information": [
+                "Detailed decarbonization pathway and interim targets",
+                "Board member credentials and selection criteria",
+                "Baseline emissions data and reduction methodology",
+                "Supplier transition fund allocation criteria",
+                "Third-party verification standards for reporting"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "reactive_response",
+                "governance_gaps",
+                "ambitious_targets",
+                "transparency_commitment",
+                "compliance_risk"
+              ],
+              "persona_id": "P2",
+              "persona_label": "ESG Fund Manager",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is attempting to get ahead of negative press coverage with a comprehensive response that addresses supply chain issues while making ambitious climate commitments. The timing suggests this is reactive rather than proactive leadership.\",\n  \"sentiment\": 4,\n  \"credibility\": 4,\n  \"concerns\": [\"Net-zero by 2040 is aggressive for chemicals sector - feasibility unclear\", \"Supply chain violations suggest weak governance systems\", \"$500M fund size needs context relative to total procurement spend\", \"Independent board composition and mandate not specified\", \"Scope 3 reporting timeline too delayed given urgency\"],\n  \"positive_aspects\": [\"Acknowledges specific supply chain problems directly\", \"Independent audit with 6-month timeline shows urgency\", \"Financial commitment demonstrates seriousness\", \"Quarterly reporting frequency is appropriately transparent\", \"Independent oversight board adds accountability layer\"],\n  \"missing_information\": [\"Detailed decarbonization pathway and interim targets\", \"Board member credentials and selection criteria\", \"Baseline emissions data and reduction methodology\", \"Supplier transition fund allocation criteria\", \"Third-party verification standards for reporting\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"reactive_response\", \"governance_gaps\", \"ambitious_targets\", \"transparency_commitment\", \"compliance_risk\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.6571428571428571
+            },
+            {
+              "interpretation": "GlobalChem is responding to recent criticism about supply chain issues by making a net-zero commitment with some concrete steps. They're acknowledging problems and putting forward specific actions with timelines and money behind them.",
+              "sentiment": 4,
+              "credibility": 4,
+              "concerns": [
+                "Net-zero by 2040 seems ambitious but vague without more details on how they'll get there",
+                "Will the independent board actually have real power to hold them accountable or is it just for show?",
+                "How do I know the $500M fund will be used effectively and not just thrown around?",
+                "What happens if they miss their targets - are there any real consequences?"
+              ],
+              "positive_aspects": [
+                "They're admitting there are problems instead of denying everything",
+                "The 6-month audit timeline is pretty specific and soon",
+                "Putting actual money ($500M) behind it shows some commitment",
+                "Quarterly reporting sounds like regular accountability"
+              ],
+              "missing_information": [
+                "What specific technologies or methods will they use to reach net-zero?",
+                "Who exactly is on this independent advisory board?",
+                "What were the specific supply chain violations mentioned?",
+                "How does this compare to what their competitors are doing?"
+              ],
+              "likely_action": "wait and see",
+              "key_themes": [
+                "cautious optimism",
+                "accountability questions",
+                "concrete actions",
+                "transparency concerns",
+                "industry pressure"
+              ],
+              "persona_id": "P3",
+              "persona_label": "Retail Consumer",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is responding to recent criticism about supply chain issues by making a net-zero commitment with some concrete steps. They're acknowledging problems and putting forward specific actions with timelines and money behind them.\",\n  \"sentiment\": 4,\n  \"credibility\": 4,\n  \"concerns\": [\"Net-zero by 2040 seems ambitious but vague without more details on how they'll get there\", \"Will the independent board actually have real power to hold them accountable or is it just for show?\", \"How do I know the $500M fund will be used effectively and not just thrown around?\", \"What happens if they miss their targets - are there any real consequences?\"],\n  \"positive_aspects\": [\"They're admitting there are problems instead of denying everything\", \"The 6-month audit timeline is pretty specific and soon\", \"Putting actual money ($500M) behind it shows some commitment\", \"Quarterly reporting sounds like regular accountability\"],\n  \"missing_information\": [\"What specific technologies or methods will they use to reach net-zero?\", \"Who exactly is on this independent advisory board?\", \"What were the specific supply chain violations mentioned?\", \"How does this compare to what their competitors are doing?\"],\n  \"likely_action\": \"wait and see\",\n  \"key_themes\": [\"cautious optimism\", \"accountability questions\", \"concrete actions\", \"transparency concerns\", \"industry pressure\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.7142857142857143
+            },
+            {
+              "interpretation": "GlobalChem appears to be responding directly to recent investigative reporting about supply chain issues, which suggests this isn't purely proactive but reactive damage control. The announcement combines acknowledgment of problems with concrete commitments, though the timing feels convenient.",
+              "sentiment": 4,
+              "credibility": 4,
+              "concerns": [
+                "2040 target is ambitious but lacks interim milestones",
+                "Independent board composition and powers unclear",
+                "$500M fund could be spread thin across complex supply chains",
+                "Quarterly reporting delay until 2025 allows time for preparation",
+                "No mention of enforcement mechanisms for supplier compliance"
+              ],
+              "positive_aspects": [
+                "Direct acknowledgment of supply chain gaps shows transparency",
+                "Independent audit with 6-month timeline is concrete and verifiable",
+                "Financial commitment of $500M demonstrates resource allocation",
+                "Scope 3 emissions inclusion shows comprehensive approach",
+                "External accountability board suggests genuine oversight intent"
+              ],
+              "missing_information": [
+                "Who comprises the independent sustainability board",
+                "Specific interim targets between now and 2040",
+                "Details on supplier transition fund allocation criteria",
+                "Baseline emissions data for measuring progress",
+                "Enforcement consequences for non-compliant suppliers",
+                "Third-party verification of audit methodology"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "reactive_transparency",
+                "accountability_mechanisms",
+                "supply_chain_focus",
+                "verification_needed",
+                "timing_suspicious"
+              ],
+              "persona_id": "P4",
+              "persona_label": "Industry Journalist",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem appears to be responding directly to recent investigative reporting about supply chain issues, which suggests this isn't purely proactive but reactive damage control. The announcement combines acknowledgment of problems with concrete commitments, though the timing feels convenient.\",\n  \"sentiment\": 4,\n  \"credibility\": 4,\n  \"concerns\": [\"2040 target is ambitious but lacks interim milestones\", \"Independent board composition and powers unclear\", \"$500M fund could be spread thin across complex supply chains\", \"Quarterly reporting delay until 2025 allows time for preparation\", \"No mention of enforcement mechanisms for supplier compliance\"],\n  \"positive_aspects\": [\"Direct acknowledgment of supply chain gaps shows transparency\", \"Independent audit with 6-month timeline is concrete and verifiable\", \"Financial commitment of $500M demonstrates resource allocation\", \"Scope 3 emissions inclusion shows comprehensive approach\", \"External accountability board suggests genuine oversight intent\"],\n  \"missing_information\": [\"Who comprises the independent sustainability board\", \"Specific interim targets between now and 2040\", \"Details on supplier transition fund allocation criteria\", \"Baseline emissions data for measuring progress\", \"Enforcement consequences for non-compliant suppliers\", \"Third-party verification of audit methodology\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"reactive_transparency\", \"accountability_mechanisms\", \"supply_chain_focus\", \"verification_needed\", \"timing_suspicious\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.7714285714285714
+            },
+            {
+              "interpretation": "GlobalChem is responding to recent supply chain violation reports with a comprehensive sustainability commitment that includes concrete timelines and accountability mechanisms. The announcement acknowledges past failures while establishing measurable targets and oversight structures.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Need to verify independence of advisory board members",
+                "Supply chain audit scope and methodology undefined",
+                "$500M fund allocation criteria not specified",
+                "No interim milestones between now and 2040",
+                "Quarterly reporting format and verification standards unclear"
+              ],
+              "positive_aspects": [
+                "Acknowledges recent reporting gaps directly",
+                "Specific 6-month audit timeline",
+                "Substantial financial commitment",
+                "Scope 3 emissions inclusion shows comprehensive approach",
+                "Independent advisory board for accountability"
+              ],
+              "missing_information": [
+                "Advisory board composition and selection criteria",
+                "Audit firm identity and methodology",
+                "Baseline emissions data for target setting",
+                "Supplier transition fund eligibility requirements",
+                "Verification standards for quarterly reports",
+                "Interim reduction targets"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "regulatory_compliance",
+                "accountability_mechanisms",
+                "supply_chain_oversight",
+                "verification_standards",
+                "implementation_gaps"
+              ],
+              "persona_id": "P5",
+              "persona_label": "Regulatory Observer",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is responding to recent supply chain violation reports with a comprehensive sustainability commitment that includes concrete timelines and accountability mechanisms. The announcement acknowledges past failures while establishing measurable targets and oversight structures.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"Need to verify independence of advisory board members\", \"Supply chain audit scope and methodology undefined\", \"$500M fund allocation criteria not specified\", \"No interim milestones between now and 2040\", \"Quarterly reporting format and verification standards unclear\"],\n  \"positive_aspects\": [\"Acknowledges recent reporting gaps directly\", \"Specific 6-month audit timeline\", \"Substantial financial commitment\", \"Scope 3 emissions inclusion shows comprehensive approach\", \"Independent advisory board for accountability\"],\n  \"missing_information\": [\"Advisory board composition and selection criteria\", \"Audit firm identity and methodology\", \"Baseline emissions data for target setting\", \"Supplier transition fund eligibility requirements\", \"Verification standards for quarterly reports\", \"Interim reduction targets\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"regulatory_compliance\", \"accountability_mechanisms\", \"supply_chain_oversight\", \"verification_standards\", \"implementation_gaps\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.8285714285714285
+            },
+            {
+              "interpretation": "GlobalChem is responding to recent criticism about supply chain issues by making a net-zero commitment with some concrete near-term actions. They're acknowledging past problems while trying to demonstrate they're taking accountability seriously with independent oversight.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "2040 timeline might be too ambitious and could lead to corner-cutting",
+                "Past supply chain failures raise questions about execution capability",
+                "$500M sounds significant but unclear if it's adequate for real transformation",
+                "Independent board composition and authority not specified"
+              ],
+              "positive_aspects": [
+                "Acknowledging past mistakes shows some transparency",
+                "Independent audit within 6 months is concrete and measurable",
+                "Quarterly public reporting creates ongoing accountability",
+                "Engaging external oversight board shows willingness to be held accountable"
+              ],
+              "missing_information": [
+                "Details on who will be on the advisory board and their authority",
+                "Breakdown of how the $500M will be allocated",
+                "Specific interim targets between now and 2040",
+                "Definition of what constitutes 'net-zero' for their operations"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "cautious_optimism",
+                "accountability_measures",
+                "execution_concerns",
+                "transparency_improvement",
+                "industry_pressure"
+              ],
+              "persona_id": "P6",
+              "persona_label": "Company Employee",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is responding to recent criticism about supply chain issues by making a net-zero commitment with some concrete near-term actions. They're acknowledging past problems while trying to demonstrate they're taking accountability seriously with independent oversight.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"2040 timeline might be too ambitious and could lead to corner-cutting\", \"Past supply chain failures raise questions about execution capability\", \"$500M sounds significant but unclear if it's adequate for real transformation\", \"Independent board composition and authority not specified\"],\n  \"positive_aspects\": [\"Acknowledging past mistakes shows some transparency\", \"Independent audit within 6 months is concrete and measurable\", \"Quarterly public reporting creates ongoing accountability\", \"Engaging external oversight board shows willingness to be held accountable\"],\n  \"missing_information\": [\"Details on who will be on the advisory board and their authority\", \"Breakdown of how the $500M will be allocated\", \"Specific interim targets between now and 2040\", \"Definition of what constitutes 'net-zero' for their operations\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"cautious_optimism\", \"accountability_measures\", \"execution_concerns\", \"transparency_improvement\", \"industry_pressure\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.8857142857142857
+            },
+            {
+              "interpretation": "GlobalChem is making a defensive move in response to recent supply chain violations reporting, positioning themselves ahead of competitors with an aggressive 2040 timeline. The announcement combines damage control with competitive differentiation through specific commitments and third-party oversight.",
+              "sentiment": 4,
+              "credibility": 5,
+              "concerns": [
+                "2040 timeline may be overly ambitious for competitive advantage rather than feasibility",
+                "Supply chain audit timeline of 6 months seems rushed for comprehensive assessment",
+                "No baseline emissions data provided to evaluate progress",
+                "Quarterly reporting timeline allows for potential gaming of metrics"
+              ],
+              "positive_aspects": [
+                "Independent advisory board adds external accountability",
+                "$500M fund shows substantial financial commitment",
+                "Acknowledges existing gaps rather than deflecting",
+                "Scope 3 inclusion demonstrates comprehensive approach",
+                "Proactive timing relative to recent investigative report"
+              ],
+              "missing_information": [
+                "Current emissions baseline and reduction pathway methodology",
+                "Advisory board composition and independence criteria",
+                "Specific supplier transition requirements and timelines",
+                "Penalty mechanisms for missing targets",
+                "Integration with existing competitor initiatives like BASF's roadmap"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "competitive_positioning",
+                "damage_control",
+                "accountability_mechanisms",
+                "timeline_feasibility",
+                "market_differentiation"
+              ],
+              "persona_id": "P7",
+              "persona_label": "Competitor Strategy Analyst",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem is making a defensive move in response to recent supply chain violations reporting, positioning themselves ahead of competitors with an aggressive 2040 timeline. The announcement combines damage control with competitive differentiation through specific commitments and third-party oversight.\",\n  \"sentiment\": 4,\n  \"credibility\": 5,\n  \"concerns\": [\"2040 timeline may be overly ambitious for competitive advantage rather than feasibility\", \"Supply chain audit timeline of 6 months seems rushed for comprehensive assessment\", \"No baseline emissions data provided to evaluate progress\", \"Quarterly reporting timeline allows for potential gaming of metrics\"],\n  \"positive_aspects\": [\"Independent advisory board adds external accountability\", \"$500M fund shows substantial financial commitment\", \"Acknowledges existing gaps rather than deflecting\", \"Scope 3 inclusion demonstrates comprehensive approach\", \"Proactive timing relative to recent investigative report\"],\n  \"missing_information\": [\"Current emissions baseline and reduction pathway methodology\", \"Advisory board composition and independence criteria\", \"Specific supplier transition requirements and timelines\", \"Penalty mechanisms for missing targets\", \"Integration with existing competitor initiatives like BASF's roadmap\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"competitive_positioning\", \"damage_control\", \"accountability_mechanisms\", \"timeline_feasibility\", \"market_differentiation\"]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 0.9428571428571428
+            },
+            {
+              "interpretation": "This appears to be a reactive announcement following negative reporting about supply chain issues. While it includes some concrete measures, the credibility depends heavily on implementation details that aren't provided.",
+              "sentiment": 3,
+              "credibility": 4,
+              "concerns": [
+                "Net-zero by 2040 is ambitious but lacks interim science-based targets aligned with 1.5°C pathway",
+                "No details on methodology for Scope 3 emissions accounting, which is typically the largest component",
+                "Independent advisory board composition and mandate are unspecified",
+                "Supplier transition fund allocation criteria and oversight mechanisms unclear",
+                "Timeline seems reactive to recent negative coverage rather than proactive sustainability planning"
+              ],
+              "positive_aspects": [
+                "Acknowledgment of industry-wide environmental impact shows some transparency",
+                "Commitment to independent supply chain audit within specific timeframe",
+                "Quarterly public reporting on all emission scopes demonstrates accountability intention",
+                "Substantial financial commitment ($500M) suggests seriousness of intent"
+              ],
+              "missing_information": [
+                "Science-based interim targets and decarbonization pathway details",
+                "Scope 3 emissions baseline and calculation methodology",
+                "Independent advisory board composition and credentials",
+                "Third-party verification processes for emissions reporting",
+                "Specific supply chain audit criteria and remediation protocols"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "reactive_transparency",
+                "implementation_gaps",
+                "accountability_potential",
+                "scientific_rigor_needed"
+              ],
+              "persona_id": "P8",
+              "persona_label": "Sustainability Academic",
+              "_raw": "{\n  \"interpretation\": \"This appears to be a reactive announcement following negative reporting about supply chain issues. While it includes some concrete measures, the credibility depends heavily on implementation details that aren't provided.\",\n  \"sentiment\": 3,\n  \"credibility\": 4,\n  \"concerns\": [\n    \"Net-zero by 2040 is ambitious but lacks interim science-based targets aligned with 1.5°C pathway\",\n    \"No details on methodology for Scope 3 emissions accounting, which is typically the largest component\",\n    \"Independent advisory board composition and mandate are unspecified\",\n    \"Supplier transition fund allocation criteria and oversight mechanisms unclear\",\n    \"Timeline seems reactive to recent negative coverage rather than proactive sustainability planning\"\n  ],\n  \"positive_aspects\": [\n    \"Acknowledgment of industry-wide environmental impact shows some transparency\",\n    \"Commitment to independent supply chain audit within specific timeframe\",\n    \"Quarterly public reporting on all emission scopes demonstrates accountability intention\",\n    \"Substantial financial commitment ($500M) suggests seriousness of intent\"\n  ],\n  \"missing_information\": [\n    \"Science-based interim targets and decarbonization pathway details\",\n    \"Scope 3 emissions baseline and calculation methodology\",\n    \"Independent advisory board composition and credentials\",\n    \"Third-party verification processes for emissions reporting\",\n    \"Specific supply chain audit criteria and remediation protocols\"\n  ],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\n    \"reactive_transparency\",\n    \"implementation_gaps\",\n    \"accountability_potential\",\n    \"scientific_rigor_needed\"\n  ]\n}",
+              "_model": "claude-sonnet-4-20250514",
+              "_temperature": 1.0
+            }
+          ],
+          "followup_responses": [
+            {
+              "followup_response": "Where are the specific interim targets and binding commitments? I want to see exactly which chemicals they'll phase out, concrete timelines for high-emission processes, and what happens if they miss milestones - real financial penalties, not just 'accountability.' The $500M sounds impressive but how much of their actual procurement budget is that? Most importantly, who exactly is on this 'independent' advisory board - are they actually independent or just industry-friendly academics and consultants?",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "binding_commitments",
+                "interim_targets",
+                "advisory_board_composition"
+              ],
+              "persona_id": "P1"
+            },
+            {
+              "followup_response": "I need to see the baseline emissions data and specific interim targets - a 2040 net-zero pledge is meaningless without knowing current emissions intensity and credible milestones. The $500M supplier fund sounds substantial, but what's the total supplier transition cost and how does this compare to their capex budget? Most critically, I want details on the independent advisory board composition and their governance authority - can they actually enforce accountability or is this just window dressing? Finally, what are the specific KPIs and potential financial penalties tied to these commitments?",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "baseline_transparency",
+                "interim_targets",
+                "governance_authority"
+              ],
+              "persona_id": "P2"
+            },
+            {
+              "followup_response": "I'd want to see more specifics about how they plan to actually reach net-zero by 2040 - like what technologies they'll use or which operations they'll change first. The $500M fund sounds good, but I'd like to know how that money will be spent and whether it's enough to make a real difference. Also, who exactly is on this independent board and do they have the authority to actually force changes if GlobalChem isn't meeting targets? Without those details, it's hard to tell if this is a serious commitment or just good PR after getting caught.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "implementation_details",
+                "accountability_mechanisms"
+              ],
+              "persona_id": "P3"
+            },
+            {
+              "followup_response": "I need specifics on the independent advisory board - who's on it, what enforcement powers they have, and their reporting structure. The $500M supplier fund sounds substantial, but what are the eligibility criteria and timeline for disbursement? Most critically, what are the interim targets between now and 2040, and what happens if they miss them? The supply chain audit scope needs definition - which tiers of suppliers, what violations they're looking for, and whether results will be fully public.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "accountability_mechanisms",
+                "interim_milestones",
+                "audit_scope"
+              ],
+              "persona_id": "P4"
+            },
+            {
+              "followup_response": "I need to see the specific methodology and scope for the independent supply chain audit - which facilities, which standards, and who will conduct it. The composition and credentials of the sustainability advisory board must be disclosed to verify true independence. Most critically, I require detailed baseline emissions data and interim targets with specific reduction percentages for each scope, not just the 2040 endpoint. The $500M fund needs clearer allocation criteria and disbursement timelines to assess adequacy.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "baseline_data",
+                "interim_targets",
+                "fund_allocation"
+              ],
+              "persona_id": "P5"
+            },
+            {
+              "followup_response": "I'd want to see more specifics about how this affects our workforce - are there plans for retraining programs or potential job impacts as we transition operations? The $500M supplier fund sounds significant, but I'm curious about the criteria for which suppliers get support versus which might be dropped. Also, what does 'independent sustainability advisory board' actually mean - who's on it and what authority do they have? Given the recent supply chain issues, I'd also like transparency about what specific violations were found and how we're ensuring they don't happen again.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "workforce_transition",
+                "supplier_selection_criteria",
+                "governance_structure",
+                "violation_transparency"
+              ],
+              "persona_id": "P6"
+            },
+            {
+              "followup_response": "I need to see the baseline emissions data and specific reduction methodology - without current Scope 3 numbers, the 2040 target is just marketing. The $500M fund sounds substantial but I want the allocation breakdown and supplier selection criteria. Most critically, who's on this 'independent' advisory board and what enforcement mechanisms do they actually have? The quarterly reporting commitment is good, but I need to understand what verification standards they'll use and whether it includes supply chain transparency beyond just emissions.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "verification_standards",
+                "baseline_transparency",
+                "enforcement_mechanisms"
+              ],
+              "persona_id": "P7"
+            },
+            {
+              "followup_response": "The announcement lacks crucial scientific rigor - no interim targets aligned with IPCC pathways, no baseline emissions data, and no methodology for measuring Scope 3 emissions which are notoriously difficult in chemical supply chains. I'd need to see the composition and mandate of this 'independent advisory board' - are they qualified sustainability scientists or just another corporate governance exercise? Most critically, there's no detail on what 'supplier transition' actually means - are they divesting from high-carbon suppliers or genuinely supporting decarbonization? Without peer-reviewed lifecycle assessments and third-party verification protocols, this reads more like crisis management than genuine commitment.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "scientific_rigor",
+                "third_party_verification",
+                "crisis_management"
+              ],
+              "persona_id": "P8"
+            }
+          ],
+          "all_themes": [
+            "damage_control",
+            "greenwashing_potential",
+            "accountability_gaps",
+            "verify_independence",
+            "track_progress",
+            "reactive_response",
+            "governance_gaps",
+            "ambitious_targets",
+            "transparency_commitment",
+            "compliance_risk",
+            "cautious optimism",
+            "accountability questions",
+            "concrete actions",
+            "transparency concerns",
+            "industry pressure",
+            "reactive_transparency",
+            "accountability_mechanisms",
+            "supply_chain_focus",
+            "verification_needed",
+            "timing_suspicious",
+            "regulatory_compliance",
+            "accountability_mechanisms",
+            "supply_chain_oversight",
+            "verification_standards",
+            "implementation_gaps",
+            "cautious_optimism",
+            "accountability_measures",
+            "execution_concerns",
+            "transparency_improvement",
+            "industry_pressure",
+            "competitive_positioning",
+            "damage_control",
+            "accountability_mechanisms",
+            "timeline_feasibility",
+            "market_differentiation",
+            "reactive_transparency",
+            "implementation_gaps",
+            "accountability_potential",
+            "scientific_rigor_needed",
+            "binding_commitments",
+            "interim_targets",
+            "advisory_board_composition",
+            "baseline_transparency",
+            "interim_targets",
+            "governance_authority",
+            "implementation_details",
+            "accountability_mechanisms",
+            "accountability_mechanisms",
+            "interim_milestones",
+            "audit_scope",
+            "baseline_data",
+            "interim_targets",
+            "fund_allocation",
+            "workforce_transition",
+            "supplier_selection_criteria",
+            "governance_structure",
+            "violation_transparency",
+            "verification_standards",
+            "baseline_transparency",
+            "enforcement_mechanisms",
+            "scientific_rigor",
+            "third_party_verification",
+            "crisis_management"
+          ],
+          "sentiment_scores": [
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            4,
+            3
+          ],
+          "credibility_scores": [
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            4
+          ],
+          "theme_list": [
+            "damage_control",
+            "greenwashing_potential",
+            "accountability_gaps",
+            "verify_independence",
+            "track_progress",
+            "reactive_response",
+            "governance_gaps",
+            "ambitious_targets",
+            "transparency_commitment",
+            "compliance_risk",
+            "cautious optimism",
+            "accountability questions",
+            "concrete actions",
+            "transparency concerns",
+            "industry pressure",
+            "reactive_transparency",
+            "accountability_mechanisms",
+            "supply_chain_focus",
+            "verification_needed",
+            "timing_suspicious",
+            "regulatory_compliance",
+            "supply_chain_oversight",
+            "verification_standards",
+            "implementation_gaps",
+            "cautious_optimism",
+            "accountability_measures",
+            "execution_concerns",
+            "transparency_improvement",
+            "industry_pressure",
+            "competitive_positioning",
+            "timeline_feasibility",
+            "market_differentiation",
+            "accountability_potential",
+            "scientific_rigor_needed",
+            "binding_commitments",
+            "interim_targets",
+            "advisory_board_composition",
+            "baseline_transparency",
+            "governance_authority",
+            "implementation_details",
+            "interim_milestones",
+            "audit_scope",
+            "baseline_data",
+            "fund_allocation",
+            "workforce_transition",
+            "supplier_selection_criteria",
+            "governance_structure",
+            "violation_transparency",
+            "enforcement_mechanisms",
+            "scientific_rigor",
+            "third_party_verification",
+            "crisis_management"
+          ],
+          "mean_sentiment": 4.0,
+          "mean_credibility": 4.25
+        }
+      ]
+    },
+    "gpt4o": {
+      "experiment_label": "exp7_gpt4o",
+      "K": 2,
+      "n_personas": 8,
+      "temperature_mode": "stratified",
+      "model": "gpt-4o",
+      "sessions": [
+        {
+          "session_id": "exp7_gpt4o_run_0",
+          "n_personas": 8,
+          "model": "gpt-4o",
+          "signal_state_provided": true,
+          "temperatures": [
+            0.6,
+            0.6571428571428571,
+            0.7142857142857143,
+            0.7714285714285714,
+            0.8285714285714285,
+            0.8857142857142857,
+            0.9428571428571428,
+            1.0
+          ],
+          "initial_responses": [
+            {
+              "interpretation": "GlobalChem Corp is acknowledging its environmental impact and pledging net-zero by 2040. They plan to audit their supply chain and report emissions publicly. An advisory board is set to ensure accountability.",
+              "sentiment": 3,
+              "credibility": 3,
+              "concerns": [
+                "potential greenwashing",
+                "lack of immediate action",
+                "vague accountability measures",
+                "delayed public reporting"
+              ],
+              "positive_aspects": [
+                "recognition of environmental impact",
+                "independent audit commitment",
+                "supplier transition fund"
+              ],
+              "missing_information": [
+                "details on advisory board independence",
+                "specific supplier transition strategies",
+                "how they plan to achieve net-zero"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "greenwashing suspicion",
+                "accountability concerns",
+                "supply chain transparency"
+              ],
+              "persona_id": "P1",
+              "persona_label": "Environmental Activist",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp is acknowledging its environmental impact and pledging net-zero by 2040. They plan to audit their supply chain and report emissions publicly. An advisory board is set to ensure accountability.\",\n  \"sentiment\": 3,\n  \"credibility\": 3,\n  \"concerns\": [\"potential greenwashing\", \"lack of immediate action\", \"vague accountability measures\", \"delayed public reporting\"],\n  \"positive_aspects\": [\"recognition of environmental impact\", \"independent audit commitment\", \"supplier transition fund\"],\n  \"missing_information\": [\"details on advisory board independence\", \"specific supplier transition strategies\", \"how they plan to achieve net-zero\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"greenwashing suspicion\", \"accountability concerns\", \"supply chain transparency\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.6
+            },
+            {
+              "interpretation": "GlobalChem Corp's announcement acknowledges its environmental impact and outlines plans to mitigate it. The commitment to net-zero by 2040 and specific actions like supply chain audits seem promising but require further scrutiny.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "potential greenwashing",
+                "supply chain audit execution",
+                "effectiveness of $500M fund"
+              ],
+              "positive_aspects": [
+                "commitment to net-zero by 2040",
+                "quarterly emissions reporting",
+                "independent advisory board"
+              ],
+              "missing_information": [
+                "details on the audit process",
+                "criteria for supplier transition fund",
+                "specific advisory board members"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "supply chain oversight",
+                "net-zero commitment",
+                "transparency measures"
+              ],
+              "persona_id": "P2",
+              "persona_label": "ESG Fund Manager",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp's announcement acknowledges its environmental impact and outlines plans to mitigate it. The commitment to net-zero by 2040 and specific actions like supply chain audits seem promising but require further scrutiny.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"potential greenwashing\", \"supply chain audit execution\", \"effectiveness of $500M fund\"],\n  \"positive_aspects\": [\"commitment to net-zero by 2040\", \"quarterly emissions reporting\", \"independent advisory board\"],\n  \"missing_information\": [\"details on the audit process\", \"criteria for supplier transition fund\", \"specific advisory board members\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"supply chain oversight\", \"net-zero commitment\", \"transparency measures\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.6571428571428571
+            },
+            {
+              "interpretation": "GlobalChem Corp acknowledges their environmental impact and sets a net-zero target for 2040. They plan to audit their supply chain, create a transition fund, and report emissions publicly.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Potential greenwashing",
+                "Effectiveness of supplier transition fund",
+                "Past supply chain violations"
+              ],
+              "positive_aspects": [
+                "Engagement of independent advisory board",
+                "Commitment to transparency with public reporting",
+                "Financial commitment to supplier transition"
+              ],
+              "missing_information": [
+                "Details on how the supplier transition fund will be used",
+                "History of similar commitments and outcomes",
+                "Specifics on how they will address supply chain violations"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "Environmental accountability",
+                "Transparency commitment",
+                "Greenwashing skepticism"
+              ],
+              "persona_id": "P3",
+              "persona_label": "Retail Consumer",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp acknowledges their environmental impact and sets a net-zero target for 2040. They plan to audit their supply chain, create a transition fund, and report emissions publicly.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"Potential greenwashing\", \"Effectiveness of supplier transition fund\", \"Past supply chain violations\"],\n  \"positive_aspects\": [\"Engagement of independent advisory board\", \"Commitment to transparency with public reporting\", \"Financial commitment to supplier transition\"],\n  \"missing_information\": [\"Details on how the supplier transition fund will be used\", \"History of similar commitments and outcomes\", \"Specifics on how they will address supply chain violations\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"Environmental accountability\", \"Transparency commitment\", \"Greenwashing skepticism\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.7142857142857143
+            },
+            {
+              "interpretation": "GlobalChem Corp acknowledges its environmental impact and sets a net-zero target by 2040, with immediate steps including audits and public emissions reporting.",
+              "sentiment": 4,
+              "credibility": 4,
+              "concerns": [
+                "Potential for greenwashing",
+                "Details on advisory board selection",
+                "Actual impact of $500M fund"
+              ],
+              "positive_aspects": [
+                "Acknowledgment of supply chain issues",
+                "Commitment to independent audit",
+                "Quarterly emissions reporting"
+              ],
+              "missing_information": [
+                "Criteria for independent board selection",
+                "Specifics of how $500M fund will be allocated",
+                "Details of supply chain audit scope"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "Environmental accountability",
+                "Net-zero target scrutiny",
+                "Supply chain oversight"
+              ],
+              "persona_id": "P4",
+              "persona_label": "Industry Journalist",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp acknowledges its environmental impact and sets a net-zero target by 2040, with immediate steps including audits and public emissions reporting.\",\n  \"sentiment\": 4,\n  \"credibility\": 4,\n  \"concerns\": [\"Potential for greenwashing\", \"Details on advisory board selection\", \"Actual impact of $500M fund\"],\n  \"positive_aspects\": [\"Acknowledgment of supply chain issues\", \"Commitment to independent audit\", \"Quarterly emissions reporting\"],\n  \"missing_information\": [\"Criteria for independent board selection\", \"Specifics of how $500M fund will be allocated\", \"Details of supply chain audit scope\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"Environmental accountability\", \"Net-zero target scrutiny\", \"Supply chain oversight\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.7714285714285714
+            },
+            {
+              "interpretation": "GlobalChem Corp is acknowledging environmental challenges and striving for a net-zero target by 2040. They propose audits, a supplier fund, and emissions reporting to improve oversight and accountability.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Potential for greenwashing",
+                "Effectiveness of the advisory board",
+                "Timing of public emissions reporting"
+              ],
+              "positive_aspects": [
+                "Acknowledgment of supply chain gaps",
+                "Commitment to independent audits",
+                "Quarterly emissions reporting plan"
+              ],
+              "missing_information": [
+                "Details of the independent advisory board members",
+                "Initial baseline for emissions reporting",
+                "Specific criteria for supplier transition fund allocation"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "Supply chain oversight",
+                "Net-zero commitment",
+                "Corporate accountability"
+              ],
+              "persona_id": "P5",
+              "persona_label": "Regulatory Observer",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp is acknowledging environmental challenges and striving for a net-zero target by 2040. They propose audits, a supplier fund, and emissions reporting to improve oversight and accountability.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\n    \"Potential for greenwashing\",\n    \"Effectiveness of the advisory board\",\n    \"Timing of public emissions reporting\"\n  ],\n  \"positive_aspects\": [\n    \"Acknowledgment of supply chain gaps\",\n    \"Commitment to independent audits\",\n    \"Quarterly emissions reporting plan\"\n  ],\n  \"missing_information\": [\n    \"Details of the independent advisory board members\",\n    \"Initial baseline for emissions reporting\",\n    \"Specific criteria for supplier transition fund allocation\"\n  ],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\n    \"Supply chain oversight\",\n    \"Net-zero commitment\",\n    \"Corporate accountability\"\n  ]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.8285714285714285
+            },
+            {
+              "interpretation": "GlobalChem Corp is addressing its environmental impact by setting a net-zero 2040 target and taking immediate actions like supply chain audits and public emissions reporting. They have set up funds and engaged an independent board to increase accountability.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "potential greenwashing",
+                "follow-through on commitments",
+                "effectiveness of advisory board"
+              ],
+              "positive_aspects": [
+                "independent audit commitment",
+                "supplier transition fund",
+                "quarterly emissions reporting"
+              ],
+              "missing_information": [
+                "details on audit methodology",
+                "selection criteria for the advisory board",
+                "specific actions linked to the transition fund"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "supply chain oversight",
+                "net-zero target",
+                "accountability measures",
+                "greenwashing concerns"
+              ],
+              "persona_id": "P6",
+              "persona_label": "Company Employee",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp is addressing its environmental impact by setting a net-zero 2040 target and taking immediate actions like supply chain audits and public emissions reporting. They have set up funds and engaged an independent board to increase accountability.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"potential greenwashing\", \"follow-through on commitments\", \"effectiveness of advisory board\"],\n  \"positive_aspects\": [\"independent audit commitment\", \"supplier transition fund\", \"quarterly emissions reporting\"],\n  \"missing_information\": [\"details on audit methodology\", \"selection criteria for the advisory board\", \"specific actions linked to the transition fund\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"supply chain oversight\", \"net-zero target\", \"accountability measures\", \"greenwashing concerns\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.8857142857142857
+            },
+            {
+              "interpretation": "GlobalChem's announcement outlines steps towards a net-zero target by 2040. They plan an independent audit, supplier transition funding, and increased emissions transparency. An advisory board is intended for accountability.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Potential for greenwashing",
+                "Effectiveness of supplier transition fund",
+                "Clarity on advisory board's role"
+              ],
+              "positive_aspects": [
+                "Independent audit planned",
+                "Financial commitment to suppliers",
+                "Transparency in emissions reporting"
+              ],
+              "missing_information": [
+                "Details on audit methodology",
+                "Criteria for selecting advisory board members",
+                "Result metrics for transition fund"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "net-zero commitment",
+                "supply chain transparency",
+                "environmental accountability"
+              ],
+              "persona_id": "P7",
+              "persona_label": "Competitor Strategy Analyst",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem's announcement outlines steps towards a net-zero target by 2040. They plan an independent audit, supplier transition funding, and increased emissions transparency. An advisory board is intended for accountability.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"Potential for greenwashing\", \"Effectiveness of supplier transition fund\", \"Clarity on advisory board's role\"],\n  \"positive_aspects\": [\"Independent audit planned\", \"Financial commitment to suppliers\", \"Transparency in emissions reporting\"],\n  \"missing_information\": [\"Details on audit methodology\", \"Criteria for selecting advisory board members\", \"Result metrics for transition fund\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"net-zero commitment\", \"supply chain transparency\", \"environmental accountability\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.9428571428571428
+            },
+            {
+              "interpretation": "GlobalChem Corp aims to achieve net-zero emissions by 2040, addressing supply chain gaps and improving transparency through audits, funding, and reporting. They seek accountability through an independent board.",
+              "sentiment": 5,
+              "credibility": 4,
+              "concerns": [
+                "potential for greenwashing",
+                "effectiveness of independent advisory board",
+                "timeliness of reporting"
+              ],
+              "positive_aspects": [
+                "net-zero target by 2040",
+                "supplier transition fund",
+                "commitment to public reporting"
+              ],
+              "missing_information": [
+                "details of independent audit entity",
+                "criteria for supply chain audit",
+                "specific emissions reduction strategies"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "supply chain oversight",
+                "net-zero commitment",
+                "transparency and accountability"
+              ],
+              "persona_id": "P8",
+              "persona_label": "Sustainability Academic",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp aims to achieve net-zero emissions by 2040, addressing supply chain gaps and improving transparency through audits, funding, and reporting. They seek accountability through an independent board.\",\n  \"sentiment\": 5,\n  \"credibility\": 4,\n  \"concerns\": [\"potential for greenwashing\", \"effectiveness of independent advisory board\", \"timeliness of reporting\"],\n  \"positive_aspects\": [\"net-zero target by 2040\", \"supplier transition fund\", \"commitment to public reporting\"],\n  \"missing_information\": [\"details of independent audit entity\", \"criteria for supply chain audit\", \"specific emissions reduction strategies\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"supply chain oversight\", \"net-zero commitment\", \"transparency and accountability\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 1.0
+            }
+          ],
+          "followup_responses": [
+            {
+              "followup_response": "The announcement lacks specifics on how they plan to achieve net-zero by 2040. What concrete steps will they take to reduce emissions, and how will the $500M fund be used? Also, the timeline for the emissions reporting seems delayed—why not start sooner? Transparency about the independent advisory board's composition and their actual influence would help assess GlobalChem's commitment to this pledge.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "transparency",
+                "specificity",
+                "timeline_concerns"
+              ],
+              "persona_id": "P1"
+            },
+            {
+              "followup_response": "While GlobalChem's commitment to net-zero by 2040 and the outlined actions are commendable, I would need more details on the independent sustainability advisory board's composition and the criteria for selecting them. Additionally, clarity on the specific metrics that will be included in the quarterly emissions reports would be essential. It would also be beneficial to understand the allocation strategy of the $500M supplier transition fund to ensure it's used effectively.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "advisory_board_transparency",
+                "metrics_clarity",
+                "fund_allocation_strategy"
+              ],
+              "persona_id": "P2"
+            },
+            {
+              "followup_response": "I would like to see more details on how GlobalChem plans to achieve their net-zero target by 2040. Specifically, it would be helpful to know what specific steps they will take to reduce their emissions and how they will ensure the effectiveness of the supplier transition fund. Additionally, clarity on who is on the independent sustainability advisory board and their qualifications would be important to understand how they will hold the company accountable.",
+              "sentiment_shift": 6,
+              "new_themes": [
+                "Specific plans",
+                "Accountability",
+                "Board qualifications"
+              ],
+              "persona_id": "P3"
+            },
+            {
+              "followup_response": "While the announcement outlines ambitious targets and measures, it lacks specific details on the composition and selection process of the independent sustainability advisory board. Knowing who sits on this board and how they were chosen would greatly impact the credibility of this initiative. Additionally, clarity on how the $500M fund will be allocated among suppliers is crucial to understand its potential impact. Lastly, more information on how they plan to implement and enforce the findings from the supply chain audit would be essential.",
+              "sentiment_shift": 3,
+              "new_themes": [
+                "advisory_board_composition",
+                "fund_allocation_details",
+                "audit_implementation_strategy"
+              ],
+              "persona_id": "P4"
+            },
+            {
+              "followup_response": "To better assess the authenticity of GlobalChem Corp's commitments, I would need more details on the criteria and selection process for their independent sustainability advisory board. It would also be crucial to see how they plan to disclose the findings of the supply chain audit and what specific actions will be taken in response to those findings. Additionally, clarity on how the $500M supplier transition fund will be allocated and monitored would be essential to evaluate its potential effectiveness.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "transparency",
+                "accountability mechanisms"
+              ],
+              "persona_id": "P5"
+            },
+            {
+              "followup_response": "I would like to see more details on the independent supply chain audit's scope and the criteria used for selecting the sustainability advisory board. Additionally, information on how GlobalChem plans to support suppliers transitioning to more sustainable practices would be valuable. More specifics on the quarterly emissions reporting process and how the company plans to use this data to drive change would also be helpful.",
+              "sentiment_shift": 6,
+              "new_themes": [
+                "transparency",
+                "accountability"
+              ],
+              "persona_id": "P6"
+            },
+            {
+              "followup_response": "While the announcement covers some initial actions, more clarity on the specific metrics for success is needed. How will the $500M supplier transition fund be allocated and prioritized? Furthermore, details on the composition and qualification of the independent sustainability advisory board would offer insight into their ability to enforce accountability. Finally, knowing which specific areas of the supply chain are being prioritized for the audit would indicate how serious GlobalChem is about addressing the highlighted gaps.",
+              "sentiment_shift": 6,
+              "new_themes": [
+                "accountability",
+                "supply_chain_audit",
+                "fund_allocation"
+              ],
+              "persona_id": "P7"
+            },
+            {
+              "followup_response": "To fully assess the viability of GlobalChem Corp's announcement, I need more details on the criteria and independence of the advisory board, specifics on the scope and methodology of the supply chain audit, and how the $500M fund will be allocated and prioritized among suppliers. Additionally, more clarity on interim targets leading to 2040 and enforcement mechanisms for accountability would be valuable. These elements are crucial in discerning whether this is genuine commitment or potential greenwashing.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "transparency",
+                "commitment_to_change",
+                "accountability_measures"
+              ],
+              "persona_id": "P8"
+            }
+          ],
+          "all_themes": [
+            "greenwashing suspicion",
+            "accountability concerns",
+            "supply chain transparency",
+            "supply chain oversight",
+            "net-zero commitment",
+            "transparency measures",
+            "Environmental accountability",
+            "Transparency commitment",
+            "Greenwashing skepticism",
+            "Environmental accountability",
+            "Net-zero target scrutiny",
+            "Supply chain oversight",
+            "Supply chain oversight",
+            "Net-zero commitment",
+            "Corporate accountability",
+            "supply chain oversight",
+            "net-zero target",
+            "accountability measures",
+            "greenwashing concerns",
+            "net-zero commitment",
+            "supply chain transparency",
+            "environmental accountability",
+            "supply chain oversight",
+            "net-zero commitment",
+            "transparency and accountability",
+            "transparency",
+            "specificity",
+            "timeline_concerns",
+            "advisory_board_transparency",
+            "metrics_clarity",
+            "fund_allocation_strategy",
+            "Specific plans",
+            "Accountability",
+            "Board qualifications",
+            "advisory_board_composition",
+            "fund_allocation_details",
+            "audit_implementation_strategy",
+            "transparency",
+            "accountability mechanisms",
+            "transparency",
+            "accountability",
+            "accountability",
+            "supply_chain_audit",
+            "fund_allocation",
+            "transparency",
+            "commitment_to_change",
+            "accountability_measures"
+          ],
+          "sentiment_scores": [
+            3,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5
+          ],
+          "credibility_scores": [
+            3,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            4
+          ],
+          "theme_list": [
+            "greenwashing suspicion",
+            "accountability concerns",
+            "supply chain transparency",
+            "supply chain oversight",
+            "net-zero commitment",
+            "transparency measures",
+            "environmental accountability",
+            "transparency commitment",
+            "greenwashing skepticism",
+            "net-zero target scrutiny",
+            "corporate accountability",
+            "net-zero target",
+            "accountability measures",
+            "greenwashing concerns",
+            "transparency and accountability",
+            "transparency",
+            "specificity",
+            "timeline_concerns",
+            "advisory_board_transparency",
+            "metrics_clarity",
+            "fund_allocation_strategy",
+            "specific plans",
+            "accountability",
+            "board qualifications",
+            "advisory_board_composition",
+            "fund_allocation_details",
+            "audit_implementation_strategy",
+            "accountability mechanisms",
+            "supply_chain_audit",
+            "fund_allocation",
+            "commitment_to_change",
+            "accountability_measures"
+          ],
+          "mean_sentiment": 4.625,
+          "mean_credibility": 4.5
+        },
+        {
+          "session_id": "exp7_gpt4o_run_1",
+          "n_personas": 8,
+          "model": "gpt-4o",
+          "signal_state_provided": true,
+          "temperatures": [
+            0.6,
+            0.6571428571428571,
+            0.7142857142857143,
+            0.7714285714285714,
+            0.8285714285714285,
+            0.8857142857142857,
+            0.9428571428571428,
+            1.0
+          ],
+          "initial_responses": [
+            {
+              "interpretation": "GlobalChem's announcement acknowledges their environmental impact and sets a net-zero target by 2040. They propose immediate actions to address supply chain gaps and improve transparency.",
+              "sentiment": 3,
+              "credibility": 3,
+              "concerns": [
+                "Potential for greenwashing",
+                "Delayed action on reporting until 2025",
+                "Effectiveness of the independent advisory board"
+              ],
+              "positive_aspects": [
+                "Setting a 2040 net-zero target",
+                "Commitment to quarterly public emissions reporting"
+              ],
+              "missing_information": [
+                "Details on the independent advisory board members",
+                "Specific criteria for the supply chain audit",
+                "Metrics for evaluating the $500M supplier fund's impact"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "greenwashing risk",
+                "supply chain transparency",
+                "accountability mechanisms"
+              ],
+              "persona_id": "P1",
+              "persona_label": "Environmental Activist",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem's announcement acknowledges their environmental impact and sets a net-zero target by 2040. They propose immediate actions to address supply chain gaps and improve transparency.\",\n  \"sentiment\": 3,\n  \"credibility\": 3,\n  \"concerns\": [\n    \"Potential for greenwashing\",\n    \"Delayed action on reporting until 2025\",\n    \"Effectiveness of the independent advisory board\"\n  ],\n  \"positive_aspects\": [\n    \"Setting a 2040 net-zero target\",\n    \"Commitment to quarterly public emissions reporting\"\n  ],\n  \"missing_information\": [\n    \"Details on the independent advisory board members\",\n    \"Specific criteria for the supply chain audit\",\n    \"Metrics for evaluating the $500M supplier fund's impact\"\n  ],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"greenwashing risk\", \"supply chain transparency\", \"accountability mechanisms\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.6
+            },
+            {
+              "interpretation": "GlobalChem Corp acknowledges its environmental impact and commits to a net-zero target by 2040. They plan immediate actions including a supply chain audit, a supplier fund, and emissions reporting.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "Potential greenwashing",
+                "Effectiveness of the advisory board",
+                "Supply chain compliance history"
+              ],
+              "positive_aspects": [
+                "Independent supply chain audit",
+                "Quarterly emissions reporting",
+                "Supplier transition fund"
+              ],
+              "missing_information": [
+                "Details on advisory board members",
+                "Specific metrics for emissions reduction",
+                "Audit process transparency"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "supply chain oversight",
+                "emissions transparency",
+                "greenwashing risk"
+              ],
+              "persona_id": "P2",
+              "persona_label": "ESG Fund Manager",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp acknowledges its environmental impact and commits to a net-zero target by 2040. They plan immediate actions including a supply chain audit, a supplier fund, and emissions reporting.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"Potential greenwashing\", \"Effectiveness of the advisory board\", \"Supply chain compliance history\"],\n  \"positive_aspects\": [\"Independent supply chain audit\", \"Quarterly emissions reporting\", \"Supplier transition fund\"],\n  \"missing_information\": [\"Details on advisory board members\", \"Specific metrics for emissions reduction\", \"Audit process transparency\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"supply chain oversight\", \"emissions transparency\", \"greenwashing risk\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.6571428571428571
+            },
+            {
+              "interpretation": "GlobalChem's announcement addresses their environmental impact and outlines steps towards a net-zero target by 2040. They plan an audit, a transition fund, and emissions reporting to improve accountability.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "greenwashing potential",
+                "timeline for actual impact",
+                "effectiveness of supplier transition fund"
+              ],
+              "positive_aspects": [
+                "independent audit",
+                "public emissions reporting",
+                "sustainability advisory board"
+              ],
+              "missing_information": [
+                "specifics on how funds will be used",
+                "details about the advisory board's role",
+                "how they plan to address supply chain violations"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "environmental responsibility",
+                "corporate accountability",
+                "sustainability efforts skepticism"
+              ],
+              "persona_id": "P3",
+              "persona_label": "Retail Consumer",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem's announcement addresses their environmental impact and outlines steps towards a net-zero target by 2040. They plan an audit, a transition fund, and emissions reporting to improve accountability.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"greenwashing potential\", \"timeline for actual impact\", \"effectiveness of supplier transition fund\"],\n  \"positive_aspects\": [\"independent audit\", \"public emissions reporting\", \"sustainability advisory board\"],\n  \"missing_information\": [\"specifics on how funds will be used\", \"details about the advisory board's role\", \"how they plan to address supply chain violations\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"environmental responsibility\", \"corporate accountability\", \"sustainability efforts skepticism\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.7142857142857143
+            },
+            {
+              "interpretation": "GlobalChem Corp acknowledges its environmental impact and sets a net-zero target by 2040 with specific actions. They plan an independent audit, a transition fund, and regular emissions reporting.",
+              "sentiment": 5,
+              "credibility": 4,
+              "concerns": [
+                "Potential for greenwashing",
+                "Effectiveness of the sustainability advisory board",
+                "Actual impact of the transition fund"
+              ],
+              "positive_aspects": [
+                "Setting a net-zero target by 2040",
+                "Independent supply chain audit",
+                "Quarterly emissions reporting"
+              ],
+              "missing_information": [
+                "Details on the advisory board's power",
+                "Past environmental performance comparisons",
+                "Specifics on the supplier transition fund use"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "supply chain oversight",
+                "emissions reporting",
+                "net-zero ambition",
+                "audit credibility"
+              ],
+              "persona_id": "P4",
+              "persona_label": "Industry Journalist",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp acknowledges its environmental impact and sets a net-zero target by 2040 with specific actions. They plan an independent audit, a transition fund, and regular emissions reporting.\",\n  \"sentiment\": 5,\n  \"credibility\": 4,\n  \"concerns\": [\n    \"Potential for greenwashing\",\n    \"Effectiveness of the sustainability advisory board\",\n    \"Actual impact of the transition fund\"\n  ],\n  \"positive_aspects\": [\n    \"Setting a net-zero target by 2040\",\n    \"Independent supply chain audit\",\n    \"Quarterly emissions reporting\"\n  ],\n  \"missing_information\": [\n    \"Details on the advisory board's power\",\n    \"Past environmental performance comparisons\",\n    \"Specifics on the supplier transition fund use\"\n  ],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"supply chain oversight\", \"emissions reporting\", \"net-zero ambition\", \"audit credibility\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.7714285714285714
+            },
+            {
+              "interpretation": "GlobalChem Corp is acknowledging past environmental oversight issues and is pledging to improve. They propose a net-zero target by 2040 with immediate action plans involving audits and a supplier transition fund.",
+              "sentiment": 4,
+              "credibility": 5,
+              "concerns": [
+                "potential greenwashing",
+                "supply chain audit thoroughness",
+                "effectiveness of the supplier fund"
+              ],
+              "positive_aspects": [
+                "commitment to transparency through quarterly reports",
+                "independent advisory board engagement",
+                "ambitious 2040 net-zero target"
+              ],
+              "missing_information": [
+                "identity and credentials of the independent advisory board",
+                "specific metrics for measuring Scope 3 emissions",
+                "details on criteria for supplier fund allocation"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "supply chain oversight",
+                "net-zero target credibility",
+                "audit transparency"
+              ],
+              "persona_id": "P5",
+              "persona_label": "Regulatory Observer",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp is acknowledging past environmental oversight issues and is pledging to improve. They propose a net-zero target by 2040 with immediate action plans involving audits and a supplier transition fund.\",\n  \"sentiment\": 4,\n  \"credibility\": 5,\n  \"concerns\": [\"potential greenwashing\", \"supply chain audit thoroughness\", \"effectiveness of the supplier fund\"],\n  \"positive_aspects\": [\"commitment to transparency through quarterly reports\", \"independent advisory board engagement\", \"ambitious 2040 net-zero target\"],\n  \"missing_information\": [\"identity and credentials of the independent advisory board\", \"specific metrics for measuring Scope 3 emissions\", \"details on criteria for supplier fund allocation\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"supply chain oversight\", \"net-zero target credibility\", \"audit transparency\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.8285714285714285
+            },
+            {
+              "interpretation": "GlobalChem Corp is addressing its environmental impact with a net-zero target by 2040 and committing to supply chain audits and transparency. They are also setting up a significant fund to help suppliers transition.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "greenwashing potential",
+                "track record on previous promises",
+                "effectiveness of independent board"
+              ],
+              "positive_aspects": [
+                "specific actions planned",
+                "investment in supplier transition",
+                "commitment to transparency with quarterly reports"
+              ],
+              "missing_information": [
+                "details on the independent sustainability advisory board",
+                "historical emissions data",
+                "how $500M fund will be allocated"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "environmental impact",
+                "transparency commitment",
+                "potential greenwashing"
+              ],
+              "persona_id": "P6",
+              "persona_label": "Company Employee",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp is addressing its environmental impact with a net-zero target by 2040 and committing to supply chain audits and transparency. They are also setting up a significant fund to help suppliers transition.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"greenwashing potential\", \"track record on previous promises\", \"effectiveness of independent board\"],\n  \"positive_aspects\": [\"specific actions planned\", \"investment in supplier transition\", \"commitment to transparency with quarterly reports\"],\n  \"missing_information\": [\"details on the independent sustainability advisory board\", \"historical emissions data\", \"how $500M fund will be allocated\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"environmental impact\", \"transparency commitment\", \"potential greenwashing\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.8857142857142857
+            },
+            {
+              "interpretation": "GlobalChem acknowledges its environmental impact and commits to net-zero by 2040. They plan immediate measures including audits, funding, and reporting efforts.",
+              "sentiment": 4,
+              "credibility": 5,
+              "concerns": [
+                "potential greenwashing",
+                "supply chain audit transparency",
+                "implementation accountability"
+              ],
+              "positive_aspects": [
+                "independent advisory board",
+                "concrete interim steps",
+                "quarterly emission reporting"
+              ],
+              "missing_information": [
+                "timeline and benchmarks for $500M fund",
+                "details on advisory board members",
+                "historical context of past initiatives"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "supply chain oversight",
+                "accountability mechanisms",
+                "environmental targets"
+              ],
+              "persona_id": "P7",
+              "persona_label": "Competitor Strategy Analyst",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem acknowledges its environmental impact and commits to net-zero by 2040. They plan immediate measures including audits, funding, and reporting efforts.\",\n  \"sentiment\": 4,\n  \"credibility\": 5,\n  \"concerns\": [\"potential greenwashing\", \"supply chain audit transparency\", \"implementation accountability\"],\n  \"positive_aspects\": [\"independent advisory board\", \"concrete interim steps\", \"quarterly emission reporting\"],\n  \"missing_information\": [\"timeline and benchmarks for $500M fund\", \"details on advisory board members\", \"historical context of past initiatives\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"supply chain oversight\", \"accountability mechanisms\", \"environmental targets\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 0.9428571428571428
+            },
+            {
+              "interpretation": "GlobalChem Corp pledges to achieve net-zero by 2040, with a focus on addressing supply chain issues and transparent emission reporting. They plan to use independent audits and an advisory board to enhance accountability.",
+              "sentiment": 5,
+              "credibility": 5,
+              "concerns": [
+                "potential for greenwashing",
+                "need for independent verification of audit results",
+                "timeline for supplier transition fund usage"
+              ],
+              "positive_aspects": [
+                "commitment to independent supply chain audit",
+                "quarterly emissions reporting",
+                "establishment of an advisory board"
+              ],
+              "missing_information": [
+                "specific criteria for net-zero target achievement",
+                "details on advisory board members' qualifications",
+                "information on past supply chain issues"
+              ],
+              "likely_action": "investigate",
+              "key_themes": [
+                "accountability mechanisms",
+                "supply chain transparency",
+                "net-zero target credibility"
+              ],
+              "persona_id": "P8",
+              "persona_label": "Sustainability Academic",
+              "_raw": "{\n  \"interpretation\": \"GlobalChem Corp pledges to achieve net-zero by 2040, with a focus on addressing supply chain issues and transparent emission reporting. They plan to use independent audits and an advisory board to enhance accountability.\",\n  \"sentiment\": 5,\n  \"credibility\": 5,\n  \"concerns\": [\"potential for greenwashing\", \"need for independent verification of audit results\", \"timeline for supplier transition fund usage\"],\n  \"positive_aspects\": [\"commitment to independent supply chain audit\", \"quarterly emissions reporting\", \"establishment of an advisory board\"],\n  \"missing_information\": [\"specific criteria for net-zero target achievement\", \"details on advisory board members' qualifications\", \"information on past supply chain issues\"],\n  \"likely_action\": \"investigate\",\n  \"key_themes\": [\"accountability mechanisms\", \"supply chain transparency\", \"net-zero target credibility\"]\n}",
+              "_model": "gpt-4o",
+              "_temperature": 1.0
+            }
+          ],
+          "followup_responses": [
+            {
+              "followup_response": "I need more details on the independent supply chain audit. Who will conduct it, and will the results be made public? Also, information about the criteria for the $500M supplier transition fund is crucial. Are they prioritizing renewable energy and sustainable practices? Lastly, I'd like clarity on the role and powers of the independent sustainability advisory board. Without transparency, this could easily slip into greenwashing territory.",
+              "sentiment_shift": 2,
+              "new_themes": [
+                "audit_transparency",
+                "fund_criteria",
+                "board_role"
+              ],
+              "persona_id": "P1"
+            },
+            {
+              "followup_response": "I would like to see more details on the timeline and specific measures GlobalChem plans to implement to achieve net-zero by 2040. Clarity on the criteria and scope of the independent supply chain audit would be important, particularly how they plan to address any identified violations. Additionally, information on how they intend to use the $500M supplier transition fund effectively, and the credentials of the sustainability advisory board members, would provide more confidence in their commitment.",
+              "sentiment_shift": 5,
+              "new_themes": [
+                "Timeline specifics",
+                "Audit criteria",
+                "Fund utilization",
+                "Advisory board credentials"
+              ],
+              "persona_id": "P2"
+            },
+            {
+              "followup_response": "I would like to know more about how GlobalChem plans to achieve these targets and what specific actions they will take to reduce emissions. Details on how they will select the independent advisory board and the criteria for the supply chain audit would be helpful. Information on how the $500M supplier transition fund will be allocated and whether it includes support for smaller suppliers to transition to more sustainable practices would also be important.",
+              "sentiment_shift": 6,
+              "new_themes": [
+                "implementation_details",
+                "support_for_suppliers",
+                "advisory_board_selection"
+              ],
+              "persona_id": "P3"
+            },
+            {
+              "followup_response": "The announcement lacks specifics about the criteria and methodology for the independent supply chain audit. It would be helpful to know which third party is conducting it and how the $500M fund will be allocated. Additionally, details on how the sustainability advisory board was selected and what authority it holds would provide more clarity. Information on how they plan to achieve scope 3 emission reductions would also be crucial.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "audit_transparency",
+                "fund_allocation",
+                "advisory_board_composition"
+              ],
+              "persona_id": "P4"
+            },
+            {
+              "followup_response": "I would be interested in understanding the criteria GlobalChem will use for the independent supply chain audit and who specifically will conduct it, as external expertise and transparency are crucial. More details on the $500M supplier transition fund, such as how it will be allocated and the standards suppliers must meet, are also necessary. Additionally, clarity on what the quarterly public reporting will entail and how they will ensure accountability through the sustainability advisory board would be valuable.",
+              "sentiment_shift": 5,
+              "new_themes": [
+                "audit_details",
+                "fund_allocation",
+                "reporting_transparency"
+              ],
+              "persona_id": "P5"
+            },
+            {
+              "followup_response": "It would be helpful to see more detailed timelines for each step of the process, as well as specific metrics that will be used to assess progress. Information on how the $500M supplier transition fund will be allocated and managed would also provide clarity. Additionally, it would be beneficial to know who will be on the independent sustainability advisory board and what criteria they will use to evaluate the company's efforts.",
+              "sentiment_shift": 6,
+              "new_themes": [
+                "transparency",
+                "accountability"
+              ],
+              "persona_id": "P6"
+            },
+            {
+              "followup_response": "I would need more details on the specific criteria and methodologies that the independent sustainability advisory board will use to assess their progress. It would also be beneficial to have clarity on how the $500M supplier transition fund will be allocated and what kind of support it will specifically provide. Additionally, more information on the geographical reach of their supply chain audit and the key benchmarks for evaluating success would be crucial.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "accountability",
+                "financial allocation",
+                "geographical reach"
+              ],
+              "persona_id": "P7"
+            },
+            {
+              "followup_response": "I would like to see detailed information about the methodologies that will be employed for the independent supply chain audit. Additionally, clarity on the criteria for selecting the members of the independent sustainability advisory board would be important. Furthermore, understanding how the $500M supplier transition fund will be allocated and monitored is crucial for assessing its actual impact on achieving net-zero targets.",
+              "sentiment_shift": 4,
+              "new_themes": [
+                "audit methodology",
+                "advisory board selection",
+                "fund allocation monitoring"
+              ],
+              "persona_id": "P8"
+            }
+          ],
+          "all_themes": [
+            "greenwashing risk",
+            "supply chain transparency",
+            "accountability mechanisms",
+            "supply chain oversight",
+            "emissions transparency",
+            "greenwashing risk",
+            "environmental responsibility",
+            "corporate accountability",
+            "sustainability efforts skepticism",
+            "supply chain oversight",
+            "emissions reporting",
+            "net-zero ambition",
+            "audit credibility",
+            "supply chain oversight",
+            "net-zero target credibility",
+            "audit transparency",
+            "environmental impact",
+            "transparency commitment",
+            "potential greenwashing",
+            "supply chain oversight",
+            "accountability mechanisms",
+            "environmental targets",
+            "accountability mechanisms",
+            "supply chain transparency",
+            "net-zero target credibility",
+            "audit_transparency",
+            "fund_criteria",
+            "board_role",
+            "Timeline specifics",
+            "Audit criteria",
+            "Fund utilization",
+            "Advisory board credentials",
+            "implementation_details",
+            "support_for_suppliers",
+            "advisory_board_selection",
+            "audit_transparency",
+            "fund_allocation",
+            "advisory_board_composition",
+            "audit_details",
+            "fund_allocation",
+            "reporting_transparency",
+            "transparency",
+            "accountability",
+            "accountability",
+            "financial allocation",
+            "geographical reach",
+            "audit methodology",
+            "advisory board selection",
+            "fund allocation monitoring"
+          ],
+          "sentiment_scores": [
+            3,
+            5,
+            5,
+            5,
+            4,
+            5,
+            4,
+            5
+          ],
+          "credibility_scores": [
+            3,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5
+          ],
+          "theme_list": [
+            "greenwashing risk",
+            "supply chain transparency",
+            "accountability mechanisms",
+            "supply chain oversight",
+            "emissions transparency",
+            "environmental responsibility",
+            "corporate accountability",
+            "sustainability efforts skepticism",
+            "emissions reporting",
+            "net-zero ambition",
+            "audit credibility",
+            "net-zero target credibility",
+            "audit transparency",
+            "environmental impact",
+            "transparency commitment",
+            "potential greenwashing",
+            "environmental targets",
+            "audit_transparency",
+            "fund_criteria",
+            "board_role",
+            "timeline specifics",
+            "audit criteria",
+            "fund utilization",
+            "advisory board credentials",
+            "implementation_details",
+            "support_for_suppliers",
+            "advisory_board_selection",
+            "fund_allocation",
+            "advisory_board_composition",
+            "audit_details",
+            "reporting_transparency",
+            "transparency",
+            "accountability",
+            "financial allocation",
+            "geographical reach",
+            "audit methodology",
+            "advisory board selection",
+            "fund allocation monitoring"
+          ],
+          "mean_sentiment": 4.5,
+          "mean_credibility": 4.625
+        }
+      ]
+    }
+  },
+  "reports": {
+    "claude": {
+      "experiment": "exp7_claude",
+      "K": 2,
+      "n_personas": 8,
+      "model": "claude-sonnet-4-20250514",
+      "theme_stability": {
+        "themes": {
+          "transparency appreciation": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "timeline_feasibility": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "verification_standards": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability questions": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "competitive_differentiation": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency_gaps": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability_mechanisms": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "credibility_rebuilding": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "baseline_data": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "greenwashing_potential": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "competitive_positioning": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "governance_structure": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "supply_chain_transparency": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "governance_gaps": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "damage control": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "cautious optimism": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "crisis_management": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "workforce_impact": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "interim_milestones": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "methodology_transparency": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability_measures": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency_commitment": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "violation_transparency": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency_commitments": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "financial commitment": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "industry_pressure": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "fund_governance": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "implementation concerns": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "reactive_transparency": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "transparency concerns": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "reactive_response": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "regulatory_compliance": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "market_differentiation": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "prove it": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "industry pressure": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "baseline_transparency": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "compliance_risk": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "interim_targets": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "verification_needed": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "competitive_timing": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "market_positioning": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability_potential": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "scientific_rigor": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "verification needs": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability focus": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "damage_control": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "enforcement_gaps": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability mechanisms": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "binding_commitments": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "implementation_details": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency gaps": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "implementation_gaps": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "supply_chain_oversight": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "timing_skepticism": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "supply_chain_scandal": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "execution_concerns": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "scientific_rigor_needed": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "job security questions": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "workforce_transition": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "concrete actions": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "cautious_optimism": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "ambitious_targets": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "verification_challenges": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "track_progress": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency_improvement": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "compliance risk": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "enforcement_mechanisms": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "fund_allocation": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "interim_targets_missing": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability_gaps": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "timing_suspicious": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "governance_authority": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "audit_methodology": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "offset_versus_reduction": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "ambitious_timeline": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "audit_scope": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "supply_chain_governance": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "advisory_board_composition": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "verify_independence": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "third_party_verification": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "offset_concerns": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "supply_chain_focus": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "accountability_skepticism": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "supplier_selection_criteria": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          }
+        },
+        "total_unique_themes": 85,
+        "n_stable": 17,
+        "n_unstable": 68,
+        "stability_ratio": 0.2,
+        "K": 2
+      },
+      "variance_collapse": {
+        "per_run_mean_similarity": [
+          0.20095293966102762,
+          0.1611353306561513
+        ],
+        "overall_mean": 0.18104413515858947,
+        "overall_std": 0.019908804502438163,
+        "delta_threshold": 0.85,
+        "n_flagged": 0,
+        "flagged_run_ids": [],
+        "collapse_detected": false
+      },
+      "sentiment": {
+        "overall": {
+          "mean": 4.125,
+          "std": 0.7806247497997998,
+          "median": 4.0,
+          "skewness": -0.22171590526858218,
+          "kurtosis": -1.3293885601577908,
+          "n": 16
+        },
+        "per_run": [
+          {
+            "mean": 4.25,
+            "std": 0.82915619758885,
+            "median": 4.5,
+            "min": 3,
+            "max": 5
+          },
+          {
+            "mean": 4.0,
+            "std": 0.7071067811865476,
+            "median": 4.0,
+            "min": 3,
+            "max": 5
+          }
+        ],
+        "run_mean_std": 0.125,
+        "distribution": {
+          "3": 4,
+          "5": 6,
+          "4": 6
+        }
+      },
+      "credibility": {
+        "mean": 4.3125,
+        "std": 0.6817945071647321,
+        "median": 4.0,
+        "distribution": {
+          "3": 2,
+          "5": 7,
+          "4": 7
+        },
+        "n": 16
+      },
+      "persona_consistency": {
+        "per_persona": {
+          "P1": {
+            "sentiment_mean": 3.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P2": {
+            "sentiment_mean": 4.5,
+            "sentiment_std": 0.5,
+            "sentiment_range": 1,
+            "n_runs": 2,
+            "action_consistency": 0.5,
+            "most_common_action": "investigate further before making investment decisions"
+          },
+          "P3": {
+            "sentiment_mean": 4.5,
+            "sentiment_std": 0.5,
+            "sentiment_range": 1,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "wait and see"
+          },
+          "P4": {
+            "sentiment_mean": 3.5,
+            "sentiment_std": 0.5,
+            "sentiment_range": 1,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P5": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P6": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 0.5,
+            "most_common_action": "share with colleagues and monitor quarterly reports"
+          },
+          "P7": {
+            "sentiment_mean": 4.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P8": {
+            "sentiment_mean": 3.5,
+            "sentiment_std": 0.5,
+            "sentiment_range": 1,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          }
+        },
+        "mean_sentiment_std": 0.25,
+        "max_sentiment_std": 0.5
+      }
+    },
+    "gpt4o": {
+      "experiment": "exp7_gpt4o",
+      "K": 2,
+      "n_personas": 8,
+      "model": "gpt-4o",
+      "theme_stability": {
+        "themes": {
+          "net-zero commitment": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "supply chain transparency": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "supply chain oversight": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "net-zero ambition": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "reporting_transparency": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "advisory_board_selection": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability concerns": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "advisory_board_transparency": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "financial allocation": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "net-zero target scrutiny": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "supply_chain_audit": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing risk": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "environmental accountability": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "audit credibility": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "sustainability efforts skepticism": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "audit transparency": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "fund_allocation_strategy": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability mechanisms": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "emissions transparency": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "support_for_suppliers": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing concerns": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing skepticism": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "audit_details": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "greenwashing suspicion": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "fund_allocation": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "transparency commitment": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "timeline specifics": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "audit_transparency": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "advisory board selection": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "net-zero target credibility": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "fund_criteria": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability measures": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "board_role": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "advisory board credentials": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "fund allocation monitoring": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "specificity": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "audit criteria": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "implementation_details": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "timeline_concerns": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "fund utilization": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "audit methodology": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "environmental targets": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency and accountability": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "audit_implementation_strategy": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "commitment_to_change": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "board qualifications": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "specific plans": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "geographical reach": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "advisory_board_composition": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "emissions reporting": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency measures": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "net-zero target": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "potential greenwashing": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "metrics_clarity": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "accountability_measures": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "environmental responsibility": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "transparency": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "environmental impact": {
+            "frequency_per_run": [
+              0.0,
+              1.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          },
+          "corporate accountability": {
+            "frequency_per_run": [
+              1.0,
+              1.0
+            ],
+            "appearance_rate": 1.0,
+            "std": 0.0,
+            "cv": 0.0,
+            "stable": "True",
+            "appears_in_k_of_K": 2
+          },
+          "fund_allocation_details": {
+            "frequency_per_run": [
+              1.0,
+              0.0
+            ],
+            "appearance_rate": 0.5,
+            "std": 0.5,
+            "cv": 1.0,
+            "stable": "False",
+            "appears_in_k_of_K": 1
+          }
+        },
+        "total_unique_themes": 61,
+        "n_stable": 9,
+        "n_unstable": 52,
+        "stability_ratio": 0.14754098360655737,
+        "K": 2
+      },
+      "variance_collapse": {
+        "per_run_mean_similarity": [
+          0.27940936316888987,
+          0.3097090489959347
+        ],
+        "overall_mean": 0.29455920608241226,
+        "overall_std": 0.015149842913522421,
+        "delta_threshold": 0.85,
+        "n_flagged": 0,
+        "flagged_run_ids": [],
+        "collapse_detected": false
+      },
+      "sentiment": {
+        "overall": {
+          "mean": 4.5625,
+          "std": 0.7043392293490403,
+          "median": 5.0,
+          "skewness": -1.2954007625649409,
+          "kurtosis": 0.20596441192882375,
+          "n": 16
+        },
+        "per_run": [
+          {
+            "mean": 4.625,
+            "std": 0.6959705453537527,
+            "median": 5.0,
+            "min": 3,
+            "max": 5
+          },
+          {
+            "mean": 4.5,
+            "std": 0.7071067811865476,
+            "median": 5.0,
+            "min": 3,
+            "max": 5
+          }
+        ],
+        "run_mean_std": 0.0625,
+        "distribution": {
+          "3": 2,
+          "5": 11,
+          "4": 3
+        }
+      },
+      "credibility": {
+        "mean": 4.5625,
+        "std": 0.7043392293490403,
+        "median": 5.0,
+        "distribution": {
+          "3": 2,
+          "5": 11,
+          "4": 3
+        },
+        "n": 16
+      },
+      "persona_consistency": {
+        "per_persona": {
+          "P1": {
+            "sentiment_mean": 3.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P2": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P3": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P4": {
+            "sentiment_mean": 4.5,
+            "sentiment_std": 0.5,
+            "sentiment_range": 1,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P5": {
+            "sentiment_mean": 4.5,
+            "sentiment_std": 0.5,
+            "sentiment_range": 1,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P6": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P7": {
+            "sentiment_mean": 4.5,
+            "sentiment_std": 0.5,
+            "sentiment_range": 1,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          },
+          "P8": {
+            "sentiment_mean": 5.0,
+            "sentiment_std": 0.0,
+            "sentiment_range": 0,
+            "n_runs": 2,
+            "action_consistency": 1.0,
+            "most_common_action": "investigate"
+          }
+        },
+        "mean_sentiment_std": 0.1875,
+        "max_sentiment_std": 0.5
+      }
+    }
+  },
+  "comparison": {
+    "sentiment": {
+      "claude_mean": 4.125,
+      "claude_std": 0.7806247497997998,
+      "gpt4o_mean": 4.5625,
+      "gpt4o_std": 0.7043392293490403,
+      "t_statistic": -1.6116,
+      "p_value": 0.1175
+    },
+    "theme_overlap": {
+      "claude_unique_themes": 85,
+      "gpt4o_unique_themes": 61,
+      "shared_themes": 6,
+      "jaccard_index": 0.0429
+    },
+    "variance_collapse": {
+      "claude_mean_sim": 0.18104413515858947,
+      "gpt4o_mean_sim": 0.29455920608241226
+    },
+    "persona_correlation": {
+      "pearson_r": 0.6194,
+      "p_value": 0.1015,
+      "n_personas": 8
+    }
+  }
+}

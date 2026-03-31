@@ -1,0 +1,12 @@
+{
+  "usage": {
+    "total_calls": 48,
+    "total_input_tokens": 30567,
+    "total_output_tokens": 7594,
+    "total_cost_usd": 0.1524,
+    "mean_latency_ms": 3948.2,
+    "model": "gpt-4o",
+    "provider": "openai"
+  },
+  "elapsed_minutes": 0.6
+}

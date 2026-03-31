@@ -1,0 +1,1477 @@
+{
+  "A_targets": {
+    "experiment": "exp1_A_targets",
+    "K": 1,
+    "n_personas": 8,
+    "model": "gpt-4o",
+    "theme_stability": {
+      "themes": {
+        "supply chain reliability": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "investment in renewables": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply_chain_management": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "interim targets": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "ambitious target comparison": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply_chain_transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "ambitious goals": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "verification_process": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "renewable energy commitment": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "emissions_scope": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "need for transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "verification and accountability": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "verification_methodology": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "implementation_details": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "investment allocation": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "investment_details": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "compliance verification": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "sustainability ambition": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "transparency and verification": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "competitive differentiation": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "trust but verify": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "investment commitment": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain management": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "ambitious targets": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "investment scrutiny": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "green technology investment": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "third-party_verification": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "greenwashing risk": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "leadership in net-zero": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "skepticism about greenwashing": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "verification importance": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "environmental critiques": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "investment specifics": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "verification_criteria": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "timeline specificity": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        }
+      },
+      "total_unique_themes": 38,
+      "n_stable": 38,
+      "n_unstable": 0,
+      "stability_ratio": 1.0,
+      "K": 1
+    },
+    "variance_collapse": {
+      "per_run_mean_similarity": [
+        0.22519446698195764
+      ],
+      "overall_mean": 0.22519446698195764,
+      "overall_std": 0.0,
+      "delta_threshold": 0.85,
+      "n_flagged": 0,
+      "flagged_run_ids": [],
+      "collapse_detected": false
+    },
+    "sentiment": {
+      "overall": {
+        "mean": 4.625,
+        "std": 0.6959705453537527,
+        "median": 5.0,
+        "skewness": -1.5643042434590073,
+        "kurtosis": 0.8595213319458899,
+        "n": 8
+      },
+      "per_run": [
+        {
+          "mean": 4.625,
+          "std": 0.6959705453537527,
+          "median": 5.0,
+          "min": 3,
+          "max": 5
+        }
+      ],
+      "run_mean_std": 0.0,
+      "distribution": {
+        "3": 1,
+        "5": 6,
+        "4": 1
+      }
+    },
+    "credibility": {
+      "mean": 4.5,
+      "std": 0.7071067811865476,
+      "median": 5.0,
+      "distribution": {
+        "3": 1,
+        "5": 5,
+        "4": 2
+      },
+      "n": 8
+    },
+    "persona_consistency": {
+      "per_persona": {
+        "P1": {
+          "sentiment_mean": 3.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P2": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P3": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P4": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P5": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P6": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P7": {
+          "sentiment_mean": 4.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P8": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        }
+      },
+      "mean_sentiment_std": 0.0,
+      "max_sentiment_std": 0.0
+    }
+  },
+  "B_progress": {
+    "experiment": "exp1_B_progress",
+    "K": 1,
+    "n_personas": 8,
+    "model": "gpt-4o",
+    "theme_stability": {
+      "themes": {
+        "importance of scientific accuracy": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "interim targets": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "emission reduction progress": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "scope 3 emissions": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply_chain_transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "third-party verification": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain oversight": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "need for transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "greenwashing concerns": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "greenwashing potential": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "net-zero ambition": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "collaboration": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "investment allocation": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "community_impact": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "value_chain_transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "technological strategy": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "need for scope 3 emissions details": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "emissions reduction credibility": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "accountability_metrics": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "net-zero commitment": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "accountability": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "emissions reduction": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "greenwashing risk": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "skepticism about greenwashing": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "global strategy clarity": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "sustainability investment": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "verification": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "renewable energy": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "renewable energy transition": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        }
+      },
+      "total_unique_themes": 31,
+      "n_stable": 31,
+      "n_unstable": 0,
+      "stability_ratio": 1.0,
+      "K": 1
+    },
+    "variance_collapse": {
+      "per_run_mean_similarity": [
+        0.2742495541637773
+      ],
+      "overall_mean": 0.2742495541637773,
+      "overall_std": 0.0,
+      "delta_threshold": 0.85,
+      "n_flagged": 0,
+      "flagged_run_ids": [],
+      "collapse_detected": false
+    },
+    "sentiment": {
+      "overall": {
+        "mean": 4.375,
+        "std": 0.6959705453537527,
+        "median": 4.5,
+        "skewness": -0.6604840139049142,
+        "kurtosis": -0.7388137356919877,
+        "n": 8
+      },
+      "per_run": [
+        {
+          "mean": 4.375,
+          "std": 0.6959705453537527,
+          "median": 4.5,
+          "min": 3,
+          "max": 5
+        }
+      ],
+      "run_mean_std": 0.0,
+      "distribution": {
+        "3": 1,
+        "5": 4,
+        "4": 3
+      }
+    },
+    "credibility": {
+      "mean": 4.25,
+      "std": 0.6614378277661477,
+      "median": 4.0,
+      "distribution": {
+        "3": 1,
+        "4": 4,
+        "5": 3
+      },
+      "n": 8
+    },
+    "persona_consistency": {
+      "per_persona": {
+        "P1": {
+          "sentiment_mean": 3.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P2": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P3": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P4": {
+          "sentiment_mean": 4.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P5": {
+          "sentiment_mean": 4.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P6": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P7": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P8": {
+          "sentiment_mean": 4.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        }
+      },
+      "mean_sentiment_std": 0.0,
+      "max_sentiment_std": 0.0
+    }
+  },
+  "C_accountability": {
+    "experiment": "exp1_C_accountability",
+    "K": 1,
+    "n_personas": 8,
+    "model": "gpt-4o",
+    "theme_stability": {
+      "themes": {
+        "supply_chain_violations": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "audit transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "accountability_transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "transparency initiatives": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain audit criteria": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "corporate accountability": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "fund allocation transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain oversight": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "accountability measures": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "accountability_mechanisms": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "advisory board credentials": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain improvement": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "implementation_details": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "advisory_board_composition": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "environmental compliance efforts": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "greenwashing suspicion": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "environmental targets": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "fund allocation": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "net-zero skepticism": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "greenwashing caution": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "net-zero commitment": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "transparency efforts": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "audit_details": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "advisory board credibility": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "expert oversight": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "accountability": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "fund_allocation": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "transparency and accountability": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "implementation details": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "emissions measurement and reporting": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "implementation_strategy": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain risk": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "emission transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "emissions transparency": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "board_composition": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "execution credibility": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        },
+        "supply chain accountability": {
+          "frequency_per_run": [
+            1.0
+          ],
+          "appearance_rate": 1.0,
+          "std": 0.0,
+          "cv": 0.0,
+          "stable": "True",
+          "appears_in_k_of_K": 1
+        }
+      },
+      "total_unique_themes": 39,
+      "n_stable": 39,
+      "n_unstable": 0,
+      "stability_ratio": 1.0,
+      "K": 1
+    },
+    "variance_collapse": {
+      "per_run_mean_similarity": [
+        0.23669620874902123
+      ],
+      "overall_mean": 0.23669620874902123,
+      "overall_std": 0.0,
+      "delta_threshold": 0.85,
+      "n_flagged": 0,
+      "flagged_run_ids": [],
+      "collapse_detected": false
+    },
+    "sentiment": {
+      "overall": {
+        "mean": 4.625,
+        "std": 0.6959705453537527,
+        "median": 5.0,
+        "skewness": -1.5643042434590073,
+        "kurtosis": 0.8595213319458899,
+        "n": 8
+      },
+      "per_run": [
+        {
+          "mean": 4.625,
+          "std": 0.6959705453537527,
+          "median": 5.0,
+          "min": 3,
+          "max": 5
+        }
+      ],
+      "run_mean_std": 0.0,
+      "distribution": {
+        "3": 1,
+        "5": 6,
+        "4": 1
+      }
+    },
+    "credibility": {
+      "mean": 4.75,
+      "std": 0.6614378277661477,
+      "median": 5.0,
+      "distribution": {
+        "3": 1,
+        "5": 7
+      },
+      "n": 8
+    },
+    "persona_consistency": {
+      "per_persona": {
+        "P1": {
+          "sentiment_mean": 3.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P2": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P3": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P4": {
+          "sentiment_mean": 4.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P5": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P6": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P7": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        },
+        "P8": {
+          "sentiment_mean": 5.0,
+          "sentiment_std": 0.0,
+          "sentiment_range": 0,
+          "n_runs": 1,
+          "action_consistency": 1.0,
+          "most_common_action": "investigate"
+        }
+      },
+      "mean_sentiment_std": 0.0,
+      "max_sentiment_std": 0.0
+    }
+  }
+}

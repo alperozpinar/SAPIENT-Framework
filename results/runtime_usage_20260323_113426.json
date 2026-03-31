@@ -1,0 +1,12 @@
+{
+  "usage": {
+    "total_calls": 32,
+    "total_input_tokens": 22298,
+    "total_output_tokens": 6216,
+    "total_cost_usd": 0.1422,
+    "mean_latency_ms": 5888.8,
+    "model": "claude-sonnet-4-20250514",
+    "provider": "anthropic"
+  },
+  "elapsed_minutes": 0.5
+}
